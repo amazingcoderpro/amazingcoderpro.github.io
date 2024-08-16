@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Amazing Coder</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Amazing Coder"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Amazing Coder"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="00_CppInterviewaliases:tags: #cs#interview #cppdate: 2023-10-08 15:29  1. 基本语法对new和malloc的理解new和malloc都是动态内存分配函数。其中，new是C++中的操作符，malloc是C语言中的函数。new会调用对象的构造函数，而malloc不会。使用new可以简化代码，并且更加类型安全。new和malloc"><meta property="og:type" content="blog"><meta property="og:title" content="Amazing Coder"><meta property="og:url" content="http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-106-Cpp-00-CppInterview/"><meta property="og:site_name" content="Amazing Coder"><meta property="og:description" content="00_CppInterviewaliases:tags: #cs#interview #cppdate: 2023-10-08 15:29  1. 基本语法对new和malloc的理解new和malloc都是动态内存分配函数。其中，new是C++中的操作符，malloc是C语言中的函数。new会调用对象的构造函数，而malloc不会。使用new可以简化代码，并且更加类型安全。new和malloc"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="http://amazingcoderpro.github.io/img/og_image.png"><meta property="article:published_time" content="2024-08-15T09:50:31.526Z"><meta property="article:modified_time" content="2024-08-15T09:50:43.445Z"><meta property="article:author" content="小武哥"><meta property="article:tag" content="代码 国学 篮球 音乐 Python Cpp 协作 项目管理"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="http://amazingcoderpro.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-106-Cpp-00-CppInterview/"},"headline":"Amazing Coder","image":["http://amazingcoderpro.github.io/img/og_image.png"],"datePublished":"2024-08-15T09:50:31.526Z","dateModified":"2024-08-15T09:50:43.445Z","author":{"@type":"Person","name":"小武哥"},"publisher":{"@type":"Organization","name":"Amazing Coder","logo":{"@type":"ImageObject","url":"http://amazingcoderpro.github.io/img/logo.svg"}},"description":"00_CppInterviewaliases:tags: #cs#interview #cppdate: 2023-10-08 15:29  1. 基本语法对new和malloc的理解new和malloc都是动态内存分配函数。其中，new是C++中的操作符，malloc是C语言中的函数。new会调用对象的构造函数，而malloc不会。使用new可以简化代码，并且更加类型安全。new和malloc"}</script><link rel="canonical" href="http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-106-Cpp-00-CppInterview/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Amazing Coder" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/amazingcoderpro/"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2024-08-15T09:50:31.526Z" title="2024/8/15 17:50:31">2024-08-15</time>发表</span><span class="level-item"><time dateTime="2024-08-15T09:50:43.445Z" title="2024/8/15 17:50:43">2024-08-15</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/100-CodingSkills/">100_CodingSkills</a><span> / </span><a class="link-muted" href="/categories/100-CodingSkills/106-Cpp/">106_Cpp</a></span><span class="level-item">38 分钟读完 (大约5651个字)</span></div></div><div class="content"><hr>
+<p>00_CppInterview<br>aliases:<br>tags: #cs#interview #cpp<br>date: 2023-10-08 15:29</p>
+<hr>
+<h2 id="1-基本语法"><a href="#1-基本语法" class="headerlink" title="1. 基本语法"></a>1. 基本语法</h2><h3 id="对new和malloc的理解"><a href="#对new和malloc的理解" class="headerlink" title="对new和malloc的理解"></a>对new和malloc的理解</h3><p>new和malloc都是动态内存分配函数。其中，new是C++中的操作符，malloc是C语言中的函数。new会调用对象的构造函数，而malloc不会。使用new可以简化代码，并且更加类型安全。<br><strong>new和malloc区别：</strong></p>
+<ul>
+<li><p><strong>分配内存的位置</strong>：malloc是从堆上动态分配内存，new是从自由存储区为对象动态分配内存。自由存储区的位置取决于operator new的实现。自由存储区不仅可以为堆，还可以是静态存储区，这都看operator new在哪里为对象分配内存。</p>
+</li>
+<li><p><strong>返回类型安全性</strong>：malloc内存分配成功后返回void*，然后再强制类型转换为需要的类型；new操作符分配内存成功后返回与对象类型相匹配的指针类型；因此new是符合类型安全的操作符。</p>
+</li>
+<li><p><strong>内存分配失败返回值</strong>：malloc内存分配失败后返回NULL。new分配内存失败则会抛异常（bac_alloc）。</p>
+</li>
+<li><p><strong>分配内存的大小的计算</strong>：使用new操作符申请内存分配时无须指定内存块的大小，编译器会根据类型信息自行计算，而malloc则需要显式地指出所需内存的尺寸。</p>
+</li>
+<li><p><strong>是否可以被重载</strong>：opeartor new &#x2F;operator delete可以被重载。而malloc&#x2F;free则不能重载。</p>
+</li>
+</ul>
+<p><strong>new是在内存上哪一块去分配的内存</strong></p>
+<p>堆</p>
+<p><strong>补充：</strong></p>
+<p>new所申请的内存区域在C++中称为自由存储区。很多编译器的new&#x2F;delete都是以malloc&#x2F;free为基础来实现的，所以通常都是借由堆实现来实现自由存储，这时候就可以说new所申请的内存区域在堆上。</p>
+<p><strong>如果new内存失败了会是怎么样？</strong></p>
+<p>会抛出std::bad_alloc异常。</p>
+<p><strong>补充：</strong></p>
+<p>如果加上std::nothrow关键字，A* p &#x3D; new (std::nothrow) A;，new 就不会抛出异常而是会返回空指针。</p>
+<h3 id="析构函数为什么通常是会做成一个虚函数呢"><a href="#析构函数为什么通常是会做成一个虚函数呢" class="headerlink" title="析构函数为什么通常是会做成一个虚函数呢"></a>析构函数为什么通常是会做成一个虚函数呢</h3><p>如果一个类有虚函数，就应该为其定义一个虚析构函数。这是因为在使用delete操作符释放一个指向派生类对象的基类指针时，如果基类的析构函数不是虚函数，那么只会调用基类的析构函数，而不会调用派生类的析构函数，这样就会导致内存泄漏和未定义行为的问题。通过将析构函数定义为虚函数，可以确保在释放派生类对象时，先调用派生类的析构函数，再调用基类的析构函数，从而避免内存泄漏和未定义行为的问题。</p>
+<h3 id="右值引用有什么作用"><a href="#右值引用有什么作用" class="headerlink" title="右值引用有什么作用"></a>右值引用有什么作用</h3><p>右值引用是C++11引入的特性，它是指对右值进行引用的一种方式。右值引用的作用主要有两个：</p>
+<ul>
+<li>在传递一个对象时，如果使用的是左值引用，那么会调用对象的拷贝构造函数。但是如果该对象只需要被移动而不需要进行复制，就会浪费时间和内存。右值引用可以通过std::move将一个左值转换为右值，从而调用对象的移动构造函数，实现了移动语义，避免了不必要的拷贝操作，提高了程序的效率。</li>
+<li>右值引用还可以用于完美转发。在函数模板中，通过使用右值引用类型的形参来接收参数，可以实现完美转发，即保持原参数的值类别（左值还是右值），将参数传递给另一个函数。</li>
+</ul>
+<h3 id="智能指针相关"><a href="#智能指针相关" class="headerlink" title="智能指针相关"></a>智能指针相关</h3><p><strong>定义</strong><br>智能指针是C++中的一种特殊指针，它是一个对象，用来管理另一个指针所指向的对象的生命周期。智能指针可以自动地分配和释放内存，避免手动管理内存的麻烦和出错风险。</p>
+<p>C++标准库提供了三种智能指针：</p>
+<ul>
+<li>shared_ptr：多个智能指针可以共享同一个对象，当最后一个指针被销毁时，它会释放对象的内存。</li>
+<li>unique_ptr：独占式智能指针，不能共享同一个对象，当智能指针被销毁时，它会释放对象的内存。</li>
+<li>weak_ptr：弱引用智能指针，不会增加对象的引用计数，用于避免shared_ptr循环引用时的内存泄漏问题。</li>
+</ul>
+<p><strong>在哪些场景下会应用智能指针</strong></p>
+<p>我自己是在在动态内存管理中，使用智能指针可以避免手动管理内存的麻烦和出错风险。</p>
+<h3 id="如果遇到内存泄漏这种问题，你一般是怎么去解决"><a href="#如果遇到内存泄漏这种问题，你一般是怎么去解决" class="headerlink" title="如果遇到内存泄漏这种问题，你一般是怎么去解决"></a>如果遇到内存泄漏这种问题，你一般是怎么去解决</h3><ul>
+<li>在程序中加入必要的错误处理代码，避免程序因为异常情况而导致内存泄漏。</li>
+<li>使用智能指针等RAII机制，自动管理内存，避免手动管理内存的麻烦和出错风险。</li>
+<li>使用内存分析工具，检测程序中的内存泄漏，并进行相应的修复</li>
+</ul>
+<h3 id="shared-ptr的原理"><a href="#shared-ptr的原理" class="headerlink" title="shared_ptr的原理"></a>shared_ptr的原理</h3><p>答：内部的共享数据和引用计数实现</p>
+<p><strong>补充：</strong></p>
+<p>shared_ptr多个指针指向相同的对象。shared_ptr使用引用计数，每一个shared_ptr的拷贝都指向相同的内存。每使用他一次，内部的引用计数加1，每析构一次，内部的引用计数减1，减为0时，自动删除所指向的堆内存。shared_ptr内部的引用计数是线程安全的，但是对象的读取需要加锁。</p>
+<p>shared_ptr的一个最大的陷阱是循环引用，循环引用会导致堆内存无法正确释放，导致内存泄漏，可以通过 weak_ptr 来解决这个问题。</p>
+<h3 id="多线程怎么保证引用计数的安全的"><a href="#多线程怎么保证引用计数的安全的" class="headerlink" title="多线程怎么保证引用计数的安全的"></a>多线程怎么保证引用计数的安全的</h3><p>答：引用计数这个变量是std::atomic，操作时自带锁</p>
+<h3 id="常见的锁有哪些"><a href="#常见的锁有哪些" class="headerlink" title="常见的锁有哪些"></a>常见的锁有哪些</h3><p>答：读写锁、互斥锁这些，再就是一些锁思想，比如乐观锁、悲观锁、自旋锁</p>
+<h3 id="valotile关键字的用处"><a href="#valotile关键字的用处" class="headerlink" title="valotile关键字的用处"></a>valotile关键字的用处</h3><p><code>volatile</code>是C和C++中的一个关键字，用于告诉编译器，所修饰的变量在程序执行期间可能会被意外地改变，因此不能进行优化。下面是几个<code>volatile</code>关键字的用处：</p>
+<ol>
+<li>防止编译器进行优化 当使用<code>volatile</code>关键字修饰变量时，编译器就不会对这个变量进行优化，因为这个变量可能会在程序运行期间被其他程序或者硬件进行修改。例如：</li>
+</ol>
+<p><code>volatile int* ptr = ...; int a = *ptr;</code></p>
+<p>如果<code>ptr</code>所指向的内存是由硬件设备直接控制，则编译器不能对其进行优化。</p>
+<ol start="2">
+<li><p>多线程访问同一个变量 在多线程编程中，如果多个线程都需要访问同一个变量，并且该变量可能会被其他线程修改，则应该使用<code>volatile</code>来修饰这个变量，以确保每个线程都能正确读取变量的最新值。</p>
+</li>
+<li><p>访问硬件寄存器 当程序需要访问硬件寄存器时，应该使用<code>volatile</code>来修饰寄存器，因为寄存器的值可能会被其他程序或者硬件进行修改。</p>
+</li>
+</ol>
+<p>总之，<code>volatile</code>关键字用于告诉编译器，所修饰的变量在程序执行期间可能会被意外地改变，因此不能进行优化。在多线程编程和访问硬件寄存器时，应该使用<code>volatile</code>来修饰变量，以确保程序能够正确地读取最新的值。</p>
+<ul>
+<li>数组、指针和引用的区别</li>
+<li>类成员和方法，说出方法匹配顺序、默认参数</li>
+<li>继承 构造函数和析构函数 调用顺序</li>
+<li>const、static的使用场景</li>
+<li>多态的实现、虚表实现多态机制</li>
+<li>虚函数、纯虚函数、抽象类概念，抽象类为什么不能实例化</li>
+</ul>
+<h3 id="vector和list区别，-内存分别，-不同的使用场景，"><a href="#vector和list区别，-内存分别，-不同的使用场景，" class="headerlink" title="vector和list区别， 内存分别， 不同的使用场景，"></a>vector和list区别， 内存分别， 不同的使用场景，</h3><p><code>vector</code>和<code>list</code>都是C++ STL（Standard Template Library）中的容器。它们在存储数据时的内存分配方式不同，具有以下几点区别：</p>
+<ol>
+<li><p>存储方式 <code>vector</code>采用连续的动态数组存储元素，因此在访问元素时可以随机访问，速度较快。而<code>list</code>采用双向链表存储元素，因此在访问元素时只能顺序访问，速度相对较慢。</p>
+</li>
+<li><p>内存分配 由于<code>vector</code>采用连续的动态数组存储元素，因此需要预分配一块连续的内存空间。当插入元素时，如果当前内存空间不足，则需要重新分配一块更大的内存空间，并将原有元素复制到新的内存空间中。而<code>list</code>则是通过链表进行存储，每个节点存储一个元素，因此在插入或者删除元素时，只需要修改相应的链表指针即可。</p>
+</li>
+<li><p>内存占用 由于<code>vector</code>需要预分配一段连续的内存空间，因此在存储大量元素时可能会浪费一定的内存空间。而<code>list</code>则是通过链表进行存储，每个节点只存储一个元素和两个指针，因此在存储大量元素时占用的内存空间相对较小。</p>
+</li>
+<li><p>插入、删除操作 由于<code>vector</code>采用连续的动态数组存储元素，因此在插入或者删除元素时需要移动其它元素，并且可能需要重新分配内存空间。而<code>list</code>则是通过链表进行存储，每个节点只需要修改指针即可进行插入或者删除操作。</p>
+</li>
+</ol>
+<p>总之，<code>vector</code>和<code>list</code>是C++ STL中的常用容器，它们在存储数据时的内存分配方式不同，具有各自的优缺点。在使用时需要根据具体情况选择合适的容器，并结合实际场景进行性能分析和测试，以确保程序的高效运行。</p>
+<h3 id="swap实现快速删除"><a href="#swap实现快速删除" class="headerlink" title="swap实现快速删除"></a>swap实现快速删除</h3><h3 id="vector和list区别"><a href="#vector和list区别" class="headerlink" title="vector和list区别"></a><code>vector</code>和list区别</h3><p>都是C++ STL（Standard Template Library）中的容器。它们在存储数据时的内存分配方式不同，具有以下几点区别：</p>
+<ol>
+<li><p>存储方式 <code>vector</code>采用连续的动态数组存储元素，因此在访问元素时可以随机访问，速度较快。而<code>list</code>采用双向链表存储元素，因此在访问元素时只能顺序访问，速度相对较慢。</p>
+</li>
+<li><p>内存分配 由于<code>vector</code>采用连续的动态数组存储元素，因此需要预分配一块连续的内存空间。当插入元素时，如果当前内存空间不足，则需要重新分配一块更大的内存空间，并将原有元素复制到新的内存空间中。而<code>list</code>则是通过链表进行存储，每个节点存储一个元素，因此在插入或者删除元素时，只需要修改相应的链表指针即可。</p>
+</li>
+<li><p>内存占用 由于<code>vector</code>需要预分配一段连续的内存空间，因此在存储大量元素时可能会浪费一定的内存空间。而<code>list</code>则是通过链表进行存储，每个节点只存储一个元素和两个指针，因此在存储大量元素时占用的内存空间相对较小。</p>
+</li>
+<li><p>插入、删除操作 由于<code>vector</code>采用连续的动态数组存储元素，因此在插入或者删除元素时需要移动其它元素，并且可能需要重新分配内存空间。而<code>list</code>则是通过链表进行存储，每个节点只需要修改指针即可进行插入或者删除操作。</p>
+</li>
+</ol>
+<p>总之，<code>vector</code>和<code>list</code>是C++ STL中的常用容器，它们在存储数据时的内存分配方式不同，具有各自的优缺点。在使用时需要根据具体情况选择合适的容器，并结合实际场景进行性能分析和测试，以确保程序的高效运行。</p>
+<ul>
+<li><p>map实现，map.find时间复杂度</p>
+</li>
+<li><p>gdb的使用， 如何调试多线程</p>
+</li>
+<li><p>浅拷贝、深拷贝，如何通过自定义拷贝构造函数实现深拷贝</p>
+</li>
+<li><p>map、unorder_map区别，了解使用场景</p>
+</li>
+<li><p>new、delete过程，继承情况下调用顺序</p>
+</li>
+<li><p>全局变量可不可以定义在可被多个.C文件包含的头文件中？为什么？<br>  <code>  可以，在不同的C文件中以static形式来声明同名全局变量。可以在不同的C文件中声明同名的全局变量，前提是其中只能有一个C文件中对此变量赋初值，此时连接不会出错.  </code></p>
+</li>
+<li><p>static全局变量与普通的全局变量有什么区别？static局部变量和普通局部变量有什么区别？Static函数与普通函数有什么区别？<br>  <code>  (1)把全局变量改变为静态变量后是改变了它的作用域，限制了它的使用范围。    全局变量(外部变量)的说明之前再冠以static 就构成了静态的全局变量。全局变量本身就是静态存储方式， 静态全局变量当然也是静态存储方式。 这两者在存储方式上并无不同。这两者的区别在于非静态全局变量的作用域是整个源程序， 当一个源程序由多个源文件组成时，非静态的全局变量在各个源文件中都是有效的。 而静态全局变量则限制了其作用域， 即只在定义该变量的源文件内有效， 在同一源程序的其它源文件中不能使用它。(2)把局部变量改变为静态变量后是改变了它的存储方式即改变了它的生存期。(3)static函数与普通函数作用域不同,仅在本文件。    综上所述:     static全局变量与普通的全局变量有什么区别：    static全局变量只初使化一次，防止在其他文件单元中被引用;    static局部变量和普通局部变量有什么区别：    static局部变量只被初始化一次，下一次依据上一次结果值；    static函数与普通函数有什么区别：    static函数在内存中只有一份，普通函数在每个被调用中维持一份拷贝  </code></p>
+</li>
+<li><p>以下代码存在的问题？<br>  <code>  char string[] = “Linux C”;   char *p = “Linux C”;   string[0] = &#39;a&#39;;   p[0] = &#39;a&#39;;   注：”Linux C”是一个字符串常量。C语言对于字符串常量通常是这样处理的：在内存中开辟一个字符数组来存储该字符串常量，并把开辟出的字符数组的首地址赋给p.   注：string[0] = ‘a’是可以的，而p[0] = ‘a’是非法的，因为p指向的是字符串常量，常量的内容不可改变。把p指向一个字符串常量或字符数组时合法的，例如：p = “Hello World!”; p= string;</code></p>
+</li>
+<li><p>什么函数不能声明为虚函数？<br>  <code>构造函数</code></p>
+</li>
+<li><p>不能做switch()的参数类型<br>  <code>switch的参数不能为实型。</code></p>
+</li>
+<li><p>如何引用一个已经定义过的全局变量？<br>  <code>可以用引用头文件的方式，也可以用extern关键字，如果用引用头文件方式来引用某个在头文件中声明的全局变量，假定你将那个变量写错了，那么在编译期间会报错，如果你用extern方式引用时，假定你犯了同样的错误，那么在编译期间不会报错，而在连接期间报错。</code></p>
+</li>
+<li><p>C++中虚函数的意义<br>  &#96;&#96;<br>  C++中的虚函数的作用主要是实现了多态的机制。基类定义虚函数，子类可以重写该函数；在派生类中对基类定义的虚函数进行重写时，需要再派生类中声明该方法为虚方法。当子类重新定义了父类的虚函数后，当父类的指针指向子类对象的地址时，[即B b; A a &#x3D; &amp;b;] 父类指针根据赋给它的不同子类指针，动态的调用子类的该函数，而不是父类的函数（如果不使用virtual方法，请看后面★*），且这样的函数调用发生在运行阶段，而不是发生在编译阶段，称为动态联编。而函数的重载可以认为是多态，只不过是静态的。注意，非虚函数静态联编，效率要比虚函数高，但是不具备动态联编能力。</p>
+<p>  如果使用了virtual关键字，程序将根据引用或指针指向的 对 象 类 型 来选择方法，否则使用引用类型或指针类型来选择方法。<br>  编译器处理虚函数的方法是：为每个类对象添加一个隐藏成员，隐藏成员中保存了一个指向函数地址数组的指针，称为虚表指针（vptr），这种数组成为虚函数表（virtual function table, vtbl），即，每个类使用一个虚函数表，每个类对象用一个虚表指针。<br>  举个例子：基类对象包含一个虚表指针，指向基类中所有虚函数的地址表。派生类对象也将包含一个虚表指针，指向派生类虚函数表。看下面两种情况：<br>  如果派生类重写了基类的虚方法，该派生类虚函数表将保存重写的虚函数的地址，而不是基类的虚函数地址。<br>  如果基类中的虚方法没有在派生类中重写，那么派生类将继承基类中的虚方法，而且派生类中虚函数表将保存基类中未被重写的虚函数的地址。注意，如果派生类中定义了新的虚方法，则该虚函数的地址也将被添加到派生类虚函数表中。</p>
+<p>  &#96;&#96;</p>
+</li>
+<li><p>参见《Effective C++》 条款09：绝不在构造函数或析构函数中调用虚函数。<br>  <code>原因分析：１.　从语法上讲，调用完全没有问题。２.　但是从效果上看，往往不能达到需要的目的。Effective 的解释是：派生类对象构造期间进入基类的构造函数时，对象类型变成了基类类型，而不是派生类类型。同样，进入基类析构函数时，对象也是基类类型。所以，虚函数始终仅仅调用基类的虚函数（如果是基类调用虚函数），不能达到多态的效果，所以放在构造函数中是没有意义的，而且往往不能达到本来想要的效果。</code></p>
+</li>
+<li><p>一个C++对象的大小由哪些因素决定？基类，成员，内存对齐，虚函数。</p>
+</li>
+<li><p>C++对象的成员函数对对象大小有什么影响？是否有虚函数，虚函数的个数多少对对象大小有什么影响？</p>
+</li>
+<li><p>一个C++对象的初始化顺序是什么？</p>
+</li>
+<li><p>虚析构函数有什么用途？</p>
+</li>
+<li><p>new operator和operator new什么区别和联系？</p>
+</li>
+<li><p>什么是placement new？</p>
+</li>
+<li><p>STL迭代器按照支持的操作分为哪几类？</p>
+</li>
+<li><p>Map和UnorderedMap的主要区别是什么？如何选择？</p>
+</li>
+<li><p>UnorderedMap如何解决Hash冲突？</p>
+</li>
+<li><p>Deque和Vector有什么区别？</p>
+</li>
+<li><p>什么是RAII机制？</p>
+</li>
+<li><p>在C++中，如何避免内存泄漏？</p>
+</li>
+<li><p>智能指针有哪些？什么用途？</p>
+</li>
+</ul>
+<p>面试问题</p>
+<p>1）TCP&#x2F;IP协议<br>    1）三次握手&#x2F;四次挥手过程<br>    2）TIME_WAIT状态<br>        1）主动关闭&#x2F;被动关闭<br>        2）需要的原因<br>        3）缓解措施<br>        4）有没有方式不出现TIME_WAIT状态<br>    3）RST出现的场景<br>    4）滑动窗口<br>2）网络编程<br>    1）EPOLL&#x2F;SELECT的区别<br>    2）边沿触发&#x2F;水平触发<br>    3）事件触发的场景<br>        1）读事件 有哪些场景<br>        2）写事件 有哪些场景<br>    4）READ调用返回值场景<br>        1）0<br>        2）-1<br>        3）&gt;0<br>    5）UDP客户端可以CONNECT不，那CONNECT和不CONNECT有啥区别<br>3）后台编程<br>    1）FORK的用途，FORK区分父子进程方式<br>    2）进程间通信方式<br>    3）僵尸进程<br>    4）内存模型，有哪些段构成<br>    5）进程&#x2F;线程&#x2F;协程的区别<br>4）常见中间件<br>    1）MYSQL<br>        1）为啥不建议SELECT *<br>        2）覆盖索引<br>        3）分页优化<br>    2）ZOOKEEPER<br>        1）有哪些WATCH以及对应唤醒事件<br>    3）KAFKA<br>        1）分区分服<br>        2）生产者<br>        3）消费者<br>5）语言<br>    1）JAVA语言<br>        1）内存管理<br>6）设计模式<br>    1）单例模式<br>7）项目中的难点、挑战点</p>
+</div><div class="article-licensing box"><div class="licensing-title"><p><a href="http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-106-Cpp-00-CppInterview/">http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-106-Cpp-00-CppInterview/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>小武哥</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2024-08-15</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2024-08-15</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="notification is-danger">You need to set <code>install_url</code> to use ShareThis. Please set it in <code>_config.yml</code>.</div></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3><div class="buttons is-centered"><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>支付宝</span><span class="qrcode"><img src="/img/alipay.jpg" alt="支付宝"></span></a><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>微信</span><span class="qrcode"><img src="/img/wechatpay.jpg" alt="微信"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2024/08/15/100-CodingSkills-107-Network-00-NetworkInterview/"><i class="level-item fas fa-chevron-left"></i><span class="level-item"> </span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2024/08/15/100-CodingSkills-105-Python-%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98-20210908-%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"><span class="level-item"> </span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div class="notification is-danger">You forgot to set the <code>shortname</code> for Disqus. Please set it in <code>_config.yml</code>.</div></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/avatar.png" alt="Amazing Coder"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Amazing Coder</p><p class="is-size-6 is-block">A programmer who loves coding and life.</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Xi&#039;an China</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">45</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">14</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">5</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/amazingcoderpro/" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/amazingcoderpro/"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">链接</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li><li><a class="level is-mobile" href="https://bulma.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Bulma</span></span><span class="level-right"><span class="level-item tag">bulma.io</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/100-CodingSkills/"><span class="level-start"><span class="level-item">100_CodingSkills</span></span><span class="level-end"><span class="level-item tag">24</span></span></a><ul><li><a class="level is-mobile" href="/categories/100-CodingSkills/101-Basic/"><span class="level-start"><span class="level-item">101_Basic</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/100-CodingSkills/102-Architecture/"><span class="level-start"><span class="level-item">102_Architecture</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/100-CodingSkills/103-Productivity/"><span class="level-start"><span class="level-item">103_ Productivity</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile" href="/categories/100-CodingSkills/104-MiddleWare/"><span class="level-start"><span class="level-item">104_MiddleWare</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/100-CodingSkills/105-Python/"><span class="level-start"><span class="level-item">105_Python</span></span><span class="level-end"><span class="level-item tag">6</span></span></a><ul><li><a class="level is-mobile" href="/categories/100-CodingSkills/105-Python/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"><span class="level-start"><span class="level-item">数据挖掘</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/100-CodingSkills/106-Cpp/"><span class="level-start"><span class="level-item">106_Cpp</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/100-CodingSkills/107-Network/"><span class="level-start"><span class="level-item">107_Network</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/categories/100-CodingSkills/108-Coding/"><span class="level-start"><span class="level-item">108_Coding</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/200-SoftSkills/"><span class="level-start"><span class="level-item">200_SoftSkills</span></span><span class="level-end"><span class="level-item tag">15</span></span></a><ul><li><a class="level is-mobile" href="/categories/200-SoftSkills/Trade/"><span class="level-start"><span class="level-item">Trade</span></span><span class="level-end"><span class="level-item tag">10</span></span></a></li><li><a class="level is-mobile" href="/categories/200-SoftSkills/%E8%AF%BB%E4%B9%A6%E5%8D%A1/"><span class="level-start"><span class="level-item">读书卡</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/300-Sinology/"><span class="level-start"><span class="level-item">300_Sinology</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/TAG1/"><span class="tag">TAG1</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/TAG2/"><span class="tag">TAG2</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/cs/"><span class="tag">cs</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/interview/"><span class="tag">interview</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/os/"><span class="tag">os</span><span class="tag">1</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">订阅更新</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-08-15T12:14:36.000Z">2024-08-15</time></p><p class="title"><a href="/2024/08/15/hideabcabcef-md/">_hideabcabcef.md</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-08-15T12:13:54.000Z">2024-08-15</time></p><p class="title"><a href="/2024/08/15/abcabcef-md/">abcabcef.md</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-08-15T09:50:31.529Z">2024-08-15</time></p><p class="title"><a href="/2024/08/15/100-CodingSkills-107-Network-20220814-%E7%BD%91%E7%BB%9C%E4%BF%AE%E7%82%BC-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"> </a></p><p class="categories"><a href="/categories/100-CodingSkills/">100_CodingSkills</a> / <a href="/categories/100-CodingSkills/107-Network/">107_Network</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-08-15T09:50:31.529Z">2024-08-15</time></p><p class="title"><a href="/2024/08/15/100-CodingSkills-108-Coding-00-CodingInterview/"> </a></p><p class="categories"><a href="/categories/100-CodingSkills/">100_CodingSkills</a> / <a href="/categories/100-CodingSkills/108-Coding/">108_Coding</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-08-15T09:50:31.528Z">2024-08-15</time></p><p class="title"><a href="/2024/08/15/100-CodingSkills-107-Network-20220101-%E7%BD%91%E7%BB%9C%E4%BF%AE%E7%82%BC-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"> </a></p><p class="categories"><a href="/categories/100-CodingSkills/">100_CodingSkills</a> / <a href="/categories/100-CodingSkills/107-Network/">107_Network</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2024/08/"><span class="level-start"><span class="level-item">八月 2024</span></span><span class="level-end"><span class="level-item tag">25</span></span></a></li><li><a class="level is-mobile" href="/archives/2024/01/"><span class="level-start"><span class="level-item">一月 2024</span></span><span class="level-end"><span class="level-item tag">19</span></span></a></li><li><a class="level is-mobile" href="/archives/2023/10/"><span class="level-start"><span class="level-item">十月 2023</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="Amazing Coder" height="28"></a><p class="is-size-7"><span>&copy; 2024 小武哥</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2019</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/amazingcoderpro/"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
