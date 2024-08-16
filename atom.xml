@@ -6,7 +6,7 @@
   <link href="http://amazingcoderpro.github.io/atom.xml" rel="self"/>
   
   <link href="http://amazingcoderpro.github.io/"/>
-  <updated>2024-08-15T12:14:36.000Z</updated>
+  <updated>2024-08-15T09:50:43.445Z</updated>
   <id>http://amazingcoderpro.github.io/</id>
   
   <author>
@@ -15,72 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>_hideabcabcef.md</title>
-    <link href="http://amazingcoderpro.github.io/2024/08/15/hideabcabcef-md/"/>
-    <id>http://amazingcoderpro.github.io/2024/08/15/hideabcabcef-md/</id>
-    <published>2024-08-15T12:14:36.000Z</published>
-    <updated>2024-08-15T12:14:36.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="ABDD"><a href="#ABDD" class="headerlink" title="ABDD"></a>ABDD</h1><h2 id="121"><a href="#121" class="headerlink" title="121"></a>121</h2>]]></content>
-    
-    
-    <summary type="html">这里是摘要。也可以用在文章中需要截断的地方增加&lt;!--more--&gt;,首页就会显示这条指令以上的内容，隐藏接下来的内容</summary>
-    
-    
-    
-    
-    <category term="TAG1" scheme="http://amazingcoderpro.github.io/tags/TAG1/"/>
-    
-    <category term="TAG2" scheme="http://amazingcoderpro.github.io/tags/TAG2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>abcabcef.md</title>
-    <link href="http://amazingcoderpro.github.io/2024/08/15/abcabcef-md/"/>
-    <id>http://amazingcoderpro.github.io/2024/08/15/abcabcef-md/</id>
-    <published>2024-08-15T12:13:54.000Z</published>
-    <updated>2024-08-15T12:13:54.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="测试-1-1"><a href="#测试-1-1" class="headerlink" title="测试 1 1"></a>测试 1 1</h1><h2 id="121212"><a href="#121212" class="headerlink" title="121212"></a>121212</h2><ul><li>发放</li></ul>]]></content>
-    
-    
-    <summary type="html">这里是摘要。也可以用在文章中需要截断的地方增加&lt;!--more--&gt;,首页就会显示这条指令以上的内容，隐藏接下来的内容</summary>
-    
-    
-    
-    
-    <category term="TAG1" scheme="http://amazingcoderpro.github.io/tags/TAG1/"/>
-    
-    <category term="TAG2" scheme="http://amazingcoderpro.github.io/tags/TAG2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-107-Network-20220814-%E7%BD%91%E7%BB%9C%E4%BF%AE%E7%82%BC-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    <id>http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-107-Network-20220814-%E7%BD%91%E7%BB%9C%E4%BF%AE%E7%82%BC-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
-    <published>2024-08-15T09:50:31.529Z</published>
-    <updated>2024-08-15T09:50:43.445Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="基础问题"><a href="#基础问题" class="headerlink" title="基础问题"></a>基础问题</h2><h3 id="1-如果一个内网中有多台机器同时访问外部服务是做了snat之后，回包怎么确定要回到哪台呢？"><a href="#1-如果一个内网中有多台机器同时访问外部服务是做了snat之后，回包怎么确定要回到哪台呢？" class="headerlink" title="1. 如果一个内网中有多台机器同时访问外部服务是做了snat之后，回包怎么确定要回到哪台呢？"></a>1. 如果一个内网中有多台机器同时访问外部服务是做了snat之后，回包怎么确定要回到哪台呢？</h3><ul><li>在snat的时候不仅对ip做了转换，同时对于端口号也做了转换，并在网关上保存了ip+port到源ip的映射关系，虽然回包的目的ip都一样，但是通过回包的目的端口就可以区分要回给哪个内网地址。 </li><li>那如果对于没有端口号的网络协议呢，比如icmp, 用type+code的方式来区分，其他类似网络协议也是同理，通过一些特殊标记来区分</li></ul><h3 id="2-Tcp-udp最大的区别"><a href="#2-Tcp-udp最大的区别" class="headerlink" title="2. Tcp, udp最大的区别"></a>2. Tcp, udp最大的区别</h3><p><a href="https://www.youtube.com/watch?v=Iuvjwrm_O5g">https://www.youtube.com/watch?v=Iuvjwrm_O5g</a></p><ul><li><p>tcp是面向链接的，upd不是。 类别打电话和写信，在不考虑速度的情况下，他们的区别就类似tcp和udp的区别。tcp用于需要可靠链的，稳定可靠的。</p></li><li><p>tcp如何保证链接过程的有效性的呢：三次握手，传输确认， 四次挥手。</p></li><li><p>三次握手的必要性：如果换成二次握手，没有最后的ack, 那假如客户端向服务端发送一个syn1包， 然后由于网络原因这个syn包没有到达服务端， 然后客户端会重新发送一个syn2包，然后服务端收到了这个syn2包，并回复了syn+ack建起了链接 , 这时如果原来的那个syn1也到达了服务端，服务端认为是客户端又发起了一个链接请求， 会回复syn+ack , 然后建立起了一个新的链接。并等待接受数据。而在客户端认为只有一个链接，两边的状态不一致。如果在三次握手的情况下， 服务端收不到最后的ack，自然不会认为链接建立成功。所以三次握手本质上就是为了解决网络信道不可靠的问题，为了能够在不可靠的信道上建立起可靠的链接。经过三次握手后， 客户端和服务端都进入了数据传输状态。</p></li><li><img src="https://tva1.sinaimg.cn/large/e6c9d24ely1h56o45kg2fj20wo0t8tb2.jpg" alt="image-20220814223240813" style="zoom:50%;" /></li><li><p>分包之后的丢包或者乱序的问题怎么解决：通过序列号和长度。 ack可以一发一答，也可以累积多包后一次性应答。缺失了那段就要求重传哪一段。另外tcp是全双工的， 这个机制不区分客户端和服务端，都采用这个机制。</p><img src="/Users/charles/data/01_CSIG/03_工作总结/01_朝花夕拾/e6c9d24ely1h56ogt9lv1j21800u0jw1.jpg" alt="image-20220814224608503" style="zoom:50%;" /></li><li><p>四次挥手：处于链接状态的客户端和服务端都可以发起关闭链接的请求。</p><ul><li>Fin-wait-2状态，服务端还可以继续发送未完成的数据包，客户端也可以接受数据。待服务端发送完数据之后，发送一个fin包，</li><li>主动断开方进入time_wait状态后，等待超时后关闭链接。而服务端收到最后一个ack之后立刻断开链接。主动方等待超时时间是为保障对端收到了最后一个ack, 如果不等待，那么一旦ack在网络中丢失，那么对端就一直处于last-ack状态。如果等待，服务端一直收不到ack则会重发fin包， 这样客户端就可以再次响应fin，回复ack，并刷新超时时间。和三次握手一样，也是为了在不可靠的网络中进行可靠的连接断开确认。</li></ul><img src="/Users/charles/data/01_CSIG/03_工作总结/01_朝花夕拾/e6c9d24ely1h56olmh236j21kd0u0q8o.jpg" alt="image-20220814225047711" style="zoom:50%;" /></li><li><p>Udp: 非连接，无状态，简单封装后直接发出， 性能损耗少，资源占用少，稳定性若，速度快，不能保证不丢包。 udp用于速度快，不care丢包， 还有隧道网络，如vpn,vxlan.</p></li></ul><h3 id="tun网卡，只有ip没有Mac"><a href="#tun网卡，只有ip没有Mac" class="headerlink" title="tun网卡，只有ip没有Mac"></a>tun网卡，只有ip没有Mac</h3><h3 id="3-SDN介绍"><a href="#3-SDN介绍" class="headerlink" title="3. SDN介绍"></a>3. SDN介绍</h3><p><a href="https://www.youtube.com/watch?v=0_LYsGKStJI">乾颐堂大话云计算架构第二季 SDN </a></p><p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h58vg7z764j20w10joacc.jpg" alt="image-20220816201854753"></p><p>下一步：基于意图的网络   诉求–》控制器–》设备  更平滑，不关心下面的实现，兼容更多的设备型号</p><h4 id="传统数据中心架构"><a href="#传统数据中心架构" class="headerlink" title="传统数据中心架构"></a>传统数据中心架构</h4><p>top of rack switches–&gt;aggregation layer switches<br>end of row switches<br>南北向流量n-s: 客户在北， 数据中心在南</p><h4 id="虚拟化数据中心架构"><a href="#虚拟化数据中心架构" class="headerlink" title="虚拟化数据中心架构"></a>虚拟化数据中心架构</h4><p>东西流量：web-&gt;app server-&gt;db, 服务器之间的流量<br>spine and leaf架构 扁平化。利于东西访问</p><h4 id="SDN为什么要吧数据平面和控制平面分开"><a href="#SDN为什么要吧数据平面和控制平面分开" class="headerlink" title="SDN为什么要吧数据平面和控制平面分开"></a>SDN为什么要吧数据平面和控制平面分开</h4><p>传统网络独立配置，独立控制，容易出错</p><p>集中控制， 网络可编程, 自定义</p><p>openflow 开源南向控制协议</p><h4 id="发展路线"><a href="#发展路线" class="headerlink" title="发展路线"></a>发展路线</h4><p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h58s9attf6j20yq0g5q5k.jpg" alt="image-20220816182747661"></p><h4 id="overlay-underlay"><a href="#overlay-underlay" class="headerlink" title="overlay underlay"></a>overlay underlay</h4><p>Overlay: vxlan、 gre </p><p>Underlay: ospf, bgp, is-is,  路由可达即可</p><h4 id="sdn与nfv"><a href="#sdn与nfv" class="headerlink" title="sdn与nfv"></a>sdn与nfv</h4><p>Nfv: net function virtualization, not network virtualization.  把网络功能移植到标准的虚拟服务器上</p><p>网络虚拟化： vlan, vxlan, vrf</p><p>网络功能虚拟化：把某些网络功能移植到标准的虚拟服务器上， 路由器，防火墙，负载均衡等。 降低成本+现在的硬件计算能力也够</p><p>Sdn nfv区别：</p><p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h58wd3elt4j20z50e0dip.jpg" alt="image-20220816205033627"></p><p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h58wcyi8vyj20x20jndit.jpg" alt="image-20220816205000884"></p><p>Sdn 和nfv本质上是不同层面的东西。 sdn是用来控制与数据分离， nfv是用通用服务器来虚拟化特定的网络功能，比如防火墙等。</p><p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h58wi78athj20pe0luac7.jpg" alt="image-20220816205522778"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;基础问题&quot;&gt;&lt;a href=&quot;#基础问题&quot; class=&quot;headerlink&quot; title=&quot;基础问题&quot;&gt;&lt;/a&gt;基础问题&lt;/h2&gt;&lt;h3 id=&quot;1-如果一个内网中有多台机器同时访问外部服务是做了snat之后，回包怎么确定要回到哪台呢？&quot;&gt;&lt;a href=&quot;#</summary>
-      
-    
-    
-    
-    <category term="100_CodingSkills" scheme="http://amazingcoderpro.github.io/categories/100-CodingSkills/"/>
-    
-    <category term="107_Network" scheme="http://amazingcoderpro.github.io/categories/100-CodingSkills/107-Network/"/>
-    
-    
-  </entry>
   
   <entry>
     <title></title>
@@ -105,6 +39,30 @@
     <category term="100_CodingSkills" scheme="http://amazingcoderpro.github.io/categories/100-CodingSkills/"/>
     
     <category term="108_Coding" scheme="http://amazingcoderpro.github.io/categories/100-CodingSkills/108-Coding/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-107-Network-20220814-%E7%BD%91%E7%BB%9C%E4%BF%AE%E7%82%BC-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <id>http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-107-Network-20220814-%E7%BD%91%E7%BB%9C%E4%BF%AE%E7%82%BC-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
+    <published>2024-08-15T09:50:31.529Z</published>
+    <updated>2024-08-15T09:50:43.445Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="基础问题"><a href="#基础问题" class="headerlink" title="基础问题"></a>基础问题</h2><h3 id="1-如果一个内网中有多台机器同时访问外部服务是做了snat之后，回包怎么确定要回到哪台呢？"><a href="#1-如果一个内网中有多台机器同时访问外部服务是做了snat之后，回包怎么确定要回到哪台呢？" class="headerlink" title="1. 如果一个内网中有多台机器同时访问外部服务是做了snat之后，回包怎么确定要回到哪台呢？"></a>1. 如果一个内网中有多台机器同时访问外部服务是做了snat之后，回包怎么确定要回到哪台呢？</h3><ul><li>在snat的时候不仅对ip做了转换，同时对于端口号也做了转换，并在网关上保存了ip+port到源ip的映射关系，虽然回包的目的ip都一样，但是通过回包的目的端口就可以区分要回给哪个内网地址。 </li><li>那如果对于没有端口号的网络协议呢，比如icmp, 用type+code的方式来区分，其他类似网络协议也是同理，通过一些特殊标记来区分</li></ul><h3 id="2-Tcp-udp最大的区别"><a href="#2-Tcp-udp最大的区别" class="headerlink" title="2. Tcp, udp最大的区别"></a>2. Tcp, udp最大的区别</h3><p><a href="https://www.youtube.com/watch?v=Iuvjwrm_O5g">https://www.youtube.com/watch?v=Iuvjwrm_O5g</a></p><ul><li><p>tcp是面向链接的，upd不是。 类别打电话和写信，在不考虑速度的情况下，他们的区别就类似tcp和udp的区别。tcp用于需要可靠链的，稳定可靠的。</p></li><li><p>tcp如何保证链接过程的有效性的呢：三次握手，传输确认， 四次挥手。</p></li><li><p>三次握手的必要性：如果换成二次握手，没有最后的ack, 那假如客户端向服务端发送一个syn1包， 然后由于网络原因这个syn包没有到达服务端， 然后客户端会重新发送一个syn2包，然后服务端收到了这个syn2包，并回复了syn+ack建起了链接 , 这时如果原来的那个syn1也到达了服务端，服务端认为是客户端又发起了一个链接请求， 会回复syn+ack , 然后建立起了一个新的链接。并等待接受数据。而在客户端认为只有一个链接，两边的状态不一致。如果在三次握手的情况下， 服务端收不到最后的ack，自然不会认为链接建立成功。所以三次握手本质上就是为了解决网络信道不可靠的问题，为了能够在不可靠的信道上建立起可靠的链接。经过三次握手后， 客户端和服务端都进入了数据传输状态。</p></li><li><img src="https://tva1.sinaimg.cn/large/e6c9d24ely1h56o45kg2fj20wo0t8tb2.jpg" alt="image-20220814223240813" style="zoom:50%;" /></li><li><p>分包之后的丢包或者乱序的问题怎么解决：通过序列号和长度。 ack可以一发一答，也可以累积多包后一次性应答。缺失了那段就要求重传哪一段。另外tcp是全双工的， 这个机制不区分客户端和服务端，都采用这个机制。</p><img src="/Users/charles/data/01_CSIG/03_工作总结/01_朝花夕拾/e6c9d24ely1h56ogt9lv1j21800u0jw1.jpg" alt="image-20220814224608503" style="zoom:50%;" /></li><li><p>四次挥手：处于链接状态的客户端和服务端都可以发起关闭链接的请求。</p><ul><li>Fin-wait-2状态，服务端还可以继续发送未完成的数据包，客户端也可以接受数据。待服务端发送完数据之后，发送一个fin包，</li><li>主动断开方进入time_wait状态后，等待超时后关闭链接。而服务端收到最后一个ack之后立刻断开链接。主动方等待超时时间是为保障对端收到了最后一个ack, 如果不等待，那么一旦ack在网络中丢失，那么对端就一直处于last-ack状态。如果等待，服务端一直收不到ack则会重发fin包， 这样客户端就可以再次响应fin，回复ack，并刷新超时时间。和三次握手一样，也是为了在不可靠的网络中进行可靠的连接断开确认。</li></ul><img src="/Users/charles/data/01_CSIG/03_工作总结/01_朝花夕拾/e6c9d24ely1h56olmh236j21kd0u0q8o.jpg" alt="image-20220814225047711" style="zoom:50%;" /></li><li><p>Udp: 非连接，无状态，简单封装后直接发出， 性能损耗少，资源占用少，稳定性若，速度快，不能保证不丢包。 udp用于速度快，不care丢包， 还有隧道网络，如vpn,vxlan.</p></li></ul><h3 id="tun网卡，只有ip没有Mac"><a href="#tun网卡，只有ip没有Mac" class="headerlink" title="tun网卡，只有ip没有Mac"></a>tun网卡，只有ip没有Mac</h3><h3 id="3-SDN介绍"><a href="#3-SDN介绍" class="headerlink" title="3. SDN介绍"></a>3. SDN介绍</h3><p><a href="https://www.youtube.com/watch?v=0_LYsGKStJI">乾颐堂大话云计算架构第二季 SDN </a></p><p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h58vg7z764j20w10joacc.jpg" alt="image-20220816201854753"></p><p>下一步：基于意图的网络   诉求–》控制器–》设备  更平滑，不关心下面的实现，兼容更多的设备型号</p><h4 id="传统数据中心架构"><a href="#传统数据中心架构" class="headerlink" title="传统数据中心架构"></a>传统数据中心架构</h4><p>top of rack switches–&gt;aggregation layer switches<br>end of row switches<br>南北向流量n-s: 客户在北， 数据中心在南</p><h4 id="虚拟化数据中心架构"><a href="#虚拟化数据中心架构" class="headerlink" title="虚拟化数据中心架构"></a>虚拟化数据中心架构</h4><p>东西流量：web-&gt;app server-&gt;db, 服务器之间的流量<br>spine and leaf架构 扁平化。利于东西访问</p><h4 id="SDN为什么要吧数据平面和控制平面分开"><a href="#SDN为什么要吧数据平面和控制平面分开" class="headerlink" title="SDN为什么要吧数据平面和控制平面分开"></a>SDN为什么要吧数据平面和控制平面分开</h4><p>传统网络独立配置，独立控制，容易出错</p><p>集中控制， 网络可编程, 自定义</p><p>openflow 开源南向控制协议</p><h4 id="发展路线"><a href="#发展路线" class="headerlink" title="发展路线"></a>发展路线</h4><p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h58s9attf6j20yq0g5q5k.jpg" alt="image-20220816182747661"></p><h4 id="overlay-underlay"><a href="#overlay-underlay" class="headerlink" title="overlay underlay"></a>overlay underlay</h4><p>Overlay: vxlan、 gre </p><p>Underlay: ospf, bgp, is-is,  路由可达即可</p><h4 id="sdn与nfv"><a href="#sdn与nfv" class="headerlink" title="sdn与nfv"></a>sdn与nfv</h4><p>Nfv: net function virtualization, not network virtualization.  把网络功能移植到标准的虚拟服务器上</p><p>网络虚拟化： vlan, vxlan, vrf</p><p>网络功能虚拟化：把某些网络功能移植到标准的虚拟服务器上， 路由器，防火墙，负载均衡等。 降低成本+现在的硬件计算能力也够</p><p>Sdn nfv区别：</p><p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h58wd3elt4j20z50e0dip.jpg" alt="image-20220816205033627"></p><p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h58wcyi8vyj20x20jndit.jpg" alt="image-20220816205000884"></p><p>Sdn 和nfv本质上是不同层面的东西。 sdn是用来控制与数据分离， nfv是用通用服务器来虚拟化特定的网络功能，比如防火墙等。</p><p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h58wi78athj20pe0luac7.jpg" alt="image-20220816205522778"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;基础问题&quot;&gt;&lt;a href=&quot;#基础问题&quot; class=&quot;headerlink&quot; title=&quot;基础问题&quot;&gt;&lt;/a&gt;基础问题&lt;/h2&gt;&lt;h3 id=&quot;1-如果一个内网中有多台机器同时访问外部服务是做了snat之后，回包怎么确定要回到哪台呢？&quot;&gt;&lt;a href=&quot;#</summary>
+      
+    
+    
+    
+    <category term="100_CodingSkills" scheme="http://amazingcoderpro.github.io/categories/100-CodingSkills/"/>
+    
+    <category term="107_Network" scheme="http://amazingcoderpro.github.io/categories/100-CodingSkills/107-Network/"/>
     
     
   </entry>
@@ -264,17 +222,17 @@
   
   <entry>
     <title></title>
-    <link href="http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-105-Python-201911-%E7%8E%A9%E8%BD%ACPython/"/>
-    <id>http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-105-Python-201911-%E7%8E%A9%E8%BD%ACPython/</id>
+    <link href="http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-105-Python-201904-Python%E9%97%AD%E5%8C%85/"/>
+    <id>http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-105-Python-201904-Python%E9%97%AD%E5%8C%85/</id>
     <published>2024-08-15T09:50:31.524Z</published>
     <updated>2024-08-15T09:50:43.445Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Python-基础篇"><a href="#Python-基础篇" class="headerlink" title="Python 基础篇"></a>Python 基础篇</h1><h1 id="Python-进阶"><a href="#Python-进阶" class="headerlink" title="Python 进阶"></a>Python 进阶</h1><h1 id="Python-Web"><a href="#Python-Web" class="headerlink" title="Python Web"></a>Python Web</h1><h1 id="Python-爬虫"><a href="#Python-爬虫" class="headerlink" title="Python 爬虫"></a>Python 爬虫</h1><h1 id="Python-数据分析"><a href="#Python-数据分析" class="headerlink" title="Python 数据分析"></a>Python 数据分析</h1>]]></content>
+    <content type="html"><![CDATA[<h1 id="关于Python闭包（Closures）的那点事"><a href="#关于Python闭包（Closures）的那点事" class="headerlink" title="关于Python闭包（Closures）的那点事"></a>关于Python闭包（Closures）的那点事</h1><hr><h2 id="什么是闭包？"><a href="#什么是闭包？" class="headerlink" title="什么是闭包？"></a>什么是闭包？</h2><p>类比一下对象，对象是封装了方法的数据，闭包是封装了数据的方法。</p><h2 id="举个栗子"><a href="#举个栗子" class="headerlink" title="举个栗子"></a>举个栗子</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">def outer(x):</span><br><span class="line">  # 1</span><br><span class="line">  def inner(y):</span><br><span class="line">    print(x)</span><br><span class="line">    return x+y</span><br><span class="line">  return inner  # 2</span><br><span class="line">g = outer(5)  # 3</span><br><span class="line">print(g.__closure__)  # 4</span><br><span class="line">print(g(6))   # 5</span><br></pre></td></tr></table></figure><p>请问上面的代码能够顺利执行吗？</p><p>上面的代码执行没有任何问题。<br>但我相信第一次接触闭包的同学肯定会对x的作用域有疑问，在这段代码中x是一个outer函数内部的<br>局部变量， 生命周期应该从入参到 # 1到 # 2才对， 所以当#3执行完后x已经被释放了， 当执行#5时<br>innner函数被触发，但此时应该访问不到x，应该会抛出一个x未定义的异常才对，但是这一些都没有发生，<br>inner函数依旧正常执行，打印了x。</p><p>输出结果：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(&lt;cell at 0x7efd66558108: int object at 0xa67b40&gt;,)</span><br><span class="line">5</span><br><span class="line">11</span><br></pre></td></tr></table></figure><h2 id="分析一下"><a href="#分析一下" class="headerlink" title="分析一下"></a>分析一下</h2><p><strong>Python支持一种特性叫做函数闭包（function closures）：在非全局（global）作用域中定义inner函数（即嵌套函数）时，会记录下它的嵌套函数namespaces（嵌套函数作用域的locals），可以称作：定义时状态，可以通过__closure__ 这个属性来获得inner函数的外层嵌套函数的namespaces。(如上例中#5，打印了func_closure ，里面保存了一个int对象，这个int对象就是x)</strong></p><p>在这个例子中，我们能看到闭包实际上是记录了外层嵌套函数作用域中的local变量</p><h2 id="闭包的应用场景"><a href="#闭包的应用场景" class="headerlink" title="闭包的应用场景"></a>闭包的应用场景</h2><ul><li>替换硬编码常量</li><li>终结全局</li><li>提供一致的功能签名</li><li>实现面向对象</li></ul><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="http://ynniv.com/blog/2007/08/closures-in-python.html">http://ynniv.com/blog/2007/08/closures-in-python.html</a></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;Python-基础篇&quot;&gt;&lt;a href=&quot;#Python-基础篇&quot; class=&quot;headerlink&quot; title=&quot;Python 基础篇&quot;&gt;&lt;/a&gt;Python 基础篇&lt;/h1&gt;&lt;h1 id=&quot;Python-进阶&quot;&gt;&lt;a href=&quot;#Python-进阶&quot; c</summary>
+    <summary type="html">&lt;h1 id=&quot;关于Python闭包（Closures）的那点事&quot;&gt;&lt;a href=&quot;#关于Python闭包（Closures）的那点事&quot; class=&quot;headerlink&quot; title=&quot;关于Python闭包（Closures）的那点事&quot;&gt;&lt;/a&gt;关于Python闭包（Clo</summary>
       
     
     
@@ -288,17 +246,17 @@
   
   <entry>
     <title></title>
-    <link href="http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-105-Python-201904-Python%E9%97%AD%E5%8C%85/"/>
-    <id>http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-105-Python-201904-Python%E9%97%AD%E5%8C%85/</id>
+    <link href="http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-105-Python-201911-%E7%8E%A9%E8%BD%ACPython/"/>
+    <id>http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-105-Python-201911-%E7%8E%A9%E8%BD%ACPython/</id>
     <published>2024-08-15T09:50:31.524Z</published>
     <updated>2024-08-15T09:50:43.445Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="关于Python闭包（Closures）的那点事"><a href="#关于Python闭包（Closures）的那点事" class="headerlink" title="关于Python闭包（Closures）的那点事"></a>关于Python闭包（Closures）的那点事</h1><hr><h2 id="什么是闭包？"><a href="#什么是闭包？" class="headerlink" title="什么是闭包？"></a>什么是闭包？</h2><p>类比一下对象，对象是封装了方法的数据，闭包是封装了数据的方法。</p><h2 id="举个栗子"><a href="#举个栗子" class="headerlink" title="举个栗子"></a>举个栗子</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">def outer(x):</span><br><span class="line">  # 1</span><br><span class="line">  def inner(y):</span><br><span class="line">    print(x)</span><br><span class="line">    return x+y</span><br><span class="line">  return inner  # 2</span><br><span class="line">g = outer(5)  # 3</span><br><span class="line">print(g.__closure__)  # 4</span><br><span class="line">print(g(6))   # 5</span><br></pre></td></tr></table></figure><p>请问上面的代码能够顺利执行吗？</p><p>上面的代码执行没有任何问题。<br>但我相信第一次接触闭包的同学肯定会对x的作用域有疑问，在这段代码中x是一个outer函数内部的<br>局部变量， 生命周期应该从入参到 # 1到 # 2才对， 所以当#3执行完后x已经被释放了， 当执行#5时<br>innner函数被触发，但此时应该访问不到x，应该会抛出一个x未定义的异常才对，但是这一些都没有发生，<br>inner函数依旧正常执行，打印了x。</p><p>输出结果：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(&lt;cell at 0x7efd66558108: int object at 0xa67b40&gt;,)</span><br><span class="line">5</span><br><span class="line">11</span><br></pre></td></tr></table></figure><h2 id="分析一下"><a href="#分析一下" class="headerlink" title="分析一下"></a>分析一下</h2><p><strong>Python支持一种特性叫做函数闭包（function closures）：在非全局（global）作用域中定义inner函数（即嵌套函数）时，会记录下它的嵌套函数namespaces（嵌套函数作用域的locals），可以称作：定义时状态，可以通过__closure__ 这个属性来获得inner函数的外层嵌套函数的namespaces。(如上例中#5，打印了func_closure ，里面保存了一个int对象，这个int对象就是x)</strong></p><p>在这个例子中，我们能看到闭包实际上是记录了外层嵌套函数作用域中的local变量</p><h2 id="闭包的应用场景"><a href="#闭包的应用场景" class="headerlink" title="闭包的应用场景"></a>闭包的应用场景</h2><ul><li>替换硬编码常量</li><li>终结全局</li><li>提供一致的功能签名</li><li>实现面向对象</li></ul><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="http://ynniv.com/blog/2007/08/closures-in-python.html">http://ynniv.com/blog/2007/08/closures-in-python.html</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Python-基础篇"><a href="#Python-基础篇" class="headerlink" title="Python 基础篇"></a>Python 基础篇</h1><h1 id="Python-进阶"><a href="#Python-进阶" class="headerlink" title="Python 进阶"></a>Python 进阶</h1><h1 id="Python-Web"><a href="#Python-Web" class="headerlink" title="Python Web"></a>Python Web</h1><h1 id="Python-爬虫"><a href="#Python-爬虫" class="headerlink" title="Python 爬虫"></a>Python 爬虫</h1><h1 id="Python-数据分析"><a href="#Python-数据分析" class="headerlink" title="Python 数据分析"></a>Python 数据分析</h1>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;关于Python闭包（Closures）的那点事&quot;&gt;&lt;a href=&quot;#关于Python闭包（Closures）的那点事&quot; class=&quot;headerlink&quot; title=&quot;关于Python闭包（Closures）的那点事&quot;&gt;&lt;/a&gt;关于Python闭包（Clo</summary>
+    <summary type="html">&lt;h1 id=&quot;Python-基础篇&quot;&gt;&lt;a href=&quot;#Python-基础篇&quot; class=&quot;headerlink&quot; title=&quot;Python 基础篇&quot;&gt;&lt;/a&gt;Python 基础篇&lt;/h1&gt;&lt;h1 id=&quot;Python-进阶&quot;&gt;&lt;a href=&quot;#Python-进阶&quot; c</summary>
       
     
     
@@ -465,6 +423,31 @@
   
   <entry>
     <title></title>
+    <link href="http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-103-Productivity-2019-%E5%8A%A8%E6%80%81vps%E7%8E%AF%E5%A2%83%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AE/"/>
+    <id>http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-103-Productivity-2019-%E5%8A%A8%E6%80%81vps%E7%8E%AF%E5%A2%83%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AE/</id>
+    <published>2024-08-15T09:50:31.521Z</published>
+    <updated>2024-08-15T09:50:43.445Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="动态VPS环境初始化配置"><a href="#动态VPS环境初始化配置" class="headerlink" title="动态VPS环境初始化配置"></a>动态VPS环境初始化配置</h1><hr><p><strong>最近在做一个自动化项目，用到了动态VPS, 刚刚拿到一个新的VPS难免要对系统环境进行一番配置，特此记录下主要的操作步骤，方便自己也方便同道中人。</strong></p><p><em>注：我的VPS 系统是CentOS 7.2， 采用ADSL拨号方式。</em></p><h2 id="1-登录"><a href="#1-登录" class="headerlink" title="1.登录"></a>1.登录</h2><p>由于本人使用的ubuntu系统,所以采用以下命令方式登录。当然也可以借助xshell&#x2F;putty 等ssh工具方便的进行登录。如果是windows系统我强烈推荐使用用MobaXterm, 强大好用！</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -p port user@host</span><br></pre></td></tr></table></figure><p>如: ssh -p 20110 <a href="mailto:&#114;&#x6f;&#x6f;&#116;&#x40;&#49;&#48;&#x30;&#46;&#x32;&#x30;&#48;&#x2e;&#51;&#x30;&#48;&#x2e;&#x34;&#x30;&#48;">&#114;&#x6f;&#x6f;&#116;&#x40;&#49;&#48;&#x30;&#46;&#x32;&#x30;&#48;&#x2e;&#51;&#x30;&#48;&#x2e;&#x34;&#x30;&#48;</a> <br>输上以上命令后，按提示输入正确的密码，登录成功。</p><h2 id="2-修改root密码-建议"><a href="#2-修改root密码-建议" class="headerlink" title="2.修改root密码(建议)"></a>2.修改root密码(建议)</h2><p>以root身份登录成功后，建议先修改root密码，一是为了安全; 二是方便自己登录, 不用每次都拷贝粘贴复杂难记的初始密码。</p><p>使用如下命令，按提示输入两次新密码即可</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">passwd</span><br></pre></td></tr></table></figure><h2 id="3-查看系统信息"><a href="#3-查看系统信息" class="headerlink" title="3.查看系统信息"></a>3.查看系统信息</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /etc/redhat-release</span><br></pre></td></tr></table></figure><p>本人使用的环境信息是：<br>CentOS Linux release 7.2.1511 (Core)<br>注：还可以通过 df&#x2F;top等命令查看磁盘、cpu负载信息</p><h2 id="4-拨号网络配置"><a href="#4-拨号网络配置" class="headerlink" title="4.拨号网络配置"></a>4.拨号网络配置</h2><p>如果不进行网络配置是无法正常上网的，这一步很重要。<br>主要使用的命令有：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">pppoe-setup</span><br><span class="line">pppoe-start</span><br><span class="line">pppoe-stop</span><br><span class="line">pppoe-status</span><br></pre></td></tr></table></figure><ul><li>先通过pppoe-setup命令进行拨号网络配置，此时需要用到VPS服务商给你的ADSL账号及密码，按照提示进行即可。<br>详细操作步骤可参考<a href="https://www.92ez.com/?action=show&id=23447">如何正确的使用动态VPS（Linux）自动更换IP</a></li></ul><h2 id="5-切换国内源"><a href="#5-切换国内源" class="headerlink" title="5.切换国内源"></a>5.切换国内源</h2><p>先对原源进行备份， 然后切换国内163镜像源，提供安装下载速度，特是针对国内VPS</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup</span><br><span class="line">wget -O /etc/yum.repos.d/CentOS-163-Base.repo http://mirrors.163.com/.help/CentOS7-Base-163.repo</span><br><span class="line">yum clean all</span><br><span class="line">yum makecache</span><br></pre></td></tr></table></figure><p>以上操作完成后, 你的VPS就可以正常使用了, 接下来按照自己的需求自如的使用你的VPS吧。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;动态VPS环境初始化配置&quot;&gt;&lt;a href=&quot;#动态VPS环境初始化配置&quot; class=&quot;headerlink&quot; title=&quot;动态VPS环境初始化配置&quot;&gt;&lt;/a&gt;动态VPS环境初始化配置&lt;/h1&gt;&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;最近在做一个自动化项目，用到了动态</summary>
+      
+    
+    
+    
+    <category term="100_CodingSkills" scheme="http://amazingcoderpro.github.io/categories/100-CodingSkills/"/>
+    
+    <category term="103_ Productivity" scheme="http://amazingcoderpro.github.io/categories/100-CodingSkills/103-Productivity/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
     <link href="http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-103-Productivity-20210401-%E9%AB%98%E6%95%88%E4%BD%BF%E7%94%A8%E6%90%9C%E7%B4%A2/"/>
     <id>http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-103-Productivity-20210401-%E9%AB%98%E6%95%88%E4%BD%BF%E7%94%A8%E6%90%9C%E7%B4%A2/</id>
     <published>2024-08-15T09:50:31.521Z</published>
@@ -492,18 +475,43 @@
   
   <entry>
     <title></title>
-    <link href="http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-103-Productivity-2019-%E5%8A%A8%E6%80%81vps%E7%8E%AF%E5%A2%83%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AE/"/>
-    <id>http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-103-Productivity-2019-%E5%8A%A8%E6%80%81vps%E7%8E%AF%E5%A2%83%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AE/</id>
+    <link href="http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-103-Productivity-202201-GIT%E4%BF%AE%E7%82%BC/"/>
+    <id>http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-103-Productivity-202201-GIT%E4%BF%AE%E7%82%BC/</id>
     <published>2024-08-15T09:50:31.521Z</published>
     <updated>2024-08-15T09:50:43.445Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="动态VPS环境初始化配置"><a href="#动态VPS环境初始化配置" class="headerlink" title="动态VPS环境初始化配置"></a>动态VPS环境初始化配置</h1><hr><p><strong>最近在做一个自动化项目，用到了动态VPS, 刚刚拿到一个新的VPS难免要对系统环境进行一番配置，特此记录下主要的操作步骤，方便自己也方便同道中人。</strong></p><p><em>注：我的VPS 系统是CentOS 7.2， 采用ADSL拨号方式。</em></p><h2 id="1-登录"><a href="#1-登录" class="headerlink" title="1.登录"></a>1.登录</h2><p>由于本人使用的ubuntu系统,所以采用以下命令方式登录。当然也可以借助xshell&#x2F;putty 等ssh工具方便的进行登录。如果是windows系统我强烈推荐使用用MobaXterm, 强大好用！</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -p port user@host</span><br></pre></td></tr></table></figure><p>如: ssh -p 20110 <a href="mailto:&#x72;&#111;&#111;&#116;&#64;&#x31;&#48;&#x30;&#x2e;&#50;&#48;&#48;&#x2e;&#51;&#48;&#48;&#x2e;&#x34;&#x30;&#48;">&#x72;&#111;&#111;&#116;&#64;&#x31;&#48;&#x30;&#x2e;&#50;&#48;&#48;&#x2e;&#51;&#48;&#48;&#x2e;&#x34;&#x30;&#48;</a> <br>输上以上命令后，按提示输入正确的密码，登录成功。</p><h2 id="2-修改root密码-建议"><a href="#2-修改root密码-建议" class="headerlink" title="2.修改root密码(建议)"></a>2.修改root密码(建议)</h2><p>以root身份登录成功后，建议先修改root密码，一是为了安全; 二是方便自己登录, 不用每次都拷贝粘贴复杂难记的初始密码。</p><p>使用如下命令，按提示输入两次新密码即可</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">passwd</span><br></pre></td></tr></table></figure><h2 id="3-查看系统信息"><a href="#3-查看系统信息" class="headerlink" title="3.查看系统信息"></a>3.查看系统信息</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /etc/redhat-release</span><br></pre></td></tr></table></figure><p>本人使用的环境信息是：<br>CentOS Linux release 7.2.1511 (Core)<br>注：还可以通过 df&#x2F;top等命令查看磁盘、cpu负载信息</p><h2 id="4-拨号网络配置"><a href="#4-拨号网络配置" class="headerlink" title="4.拨号网络配置"></a>4.拨号网络配置</h2><p>如果不进行网络配置是无法正常上网的，这一步很重要。<br>主要使用的命令有：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">pppoe-setup</span><br><span class="line">pppoe-start</span><br><span class="line">pppoe-stop</span><br><span class="line">pppoe-status</span><br></pre></td></tr></table></figure><ul><li>先通过pppoe-setup命令进行拨号网络配置，此时需要用到VPS服务商给你的ADSL账号及密码，按照提示进行即可。<br>详细操作步骤可参考<a href="https://www.92ez.com/?action=show&id=23447">如何正确的使用动态VPS（Linux）自动更换IP</a></li></ul><h2 id="5-切换国内源"><a href="#5-切换国内源" class="headerlink" title="5.切换国内源"></a>5.切换国内源</h2><p>先对原源进行备份， 然后切换国内163镜像源，提供安装下载速度，特是针对国内VPS</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup</span><br><span class="line">wget -O /etc/yum.repos.d/CentOS-163-Base.repo http://mirrors.163.com/.help/CentOS7-Base-163.repo</span><br><span class="line">yum clean all</span><br><span class="line">yum makecache</span><br></pre></td></tr></table></figure><p>以上操作完成后, 你的VPS就可以正常使用了, 接下来按照自己的需求自如的使用你的VPS吧。</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="git-删除分支"><a href="#git-删除分支" class="headerlink" title="git 删除分支"></a>git 删除分支</h3><ol><li>切换到要操作的项目文件夹命令行: $ cd <ProjectPath></li><li>查看项目的<strong>分支</strong>们(包括本地和远程) …</li><li><strong>删除</strong>本地<strong>分支</strong>命令行: $ <strong>git</strong> branch -d <BranchName></li><li><strong>删除</strong>远程<strong>分支</strong>命令行: $ <strong>git</strong> push origin –delete <BranchName></li></ol><h3 id="git分支重命名"><a href="#git分支重命名" class="headerlink" title="git分支重命名"></a>git分支重命名</h3><p><strong>1. 本地分支重命名(还没有推送到远程)</strong></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -m oldName newName</span><br></pre></td></tr></table></figure><p><strong>2. 远程分支重命名 (已经推送远程-假设本地分支和远程对应分支名称相同)</strong><br> a. 重命名远程分支对应的本地分支</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -m oldName newName</span><br></pre></td></tr></table></figure><p>b. 删除远程分支</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push --delete origin oldName</span><br></pre></td></tr></table></figure><p>c. 上传新命名的本地分支</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin newName</span><br></pre></td></tr></table></figure><p>d.把修改后的本地分支与远程分支关联</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch --set-upstream-to origin/newName</span><br></pre></td></tr></table></figure><h3 id="git回滚代码"><a href="#git回滚代码" class="headerlink" title="git回滚代码"></a>git回滚代码</h3><p>只commit并未push的代码回滚</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard &lt;版本号&gt;</span><br><span class="line">或</span><br><span class="line">git reset --soft HEAD~1</span><br><span class="line">撤销最近一次的commit(撤销commit，不撤销git add)</span><br><span class="line"></span><br><span class="line">git reset --mixed HEAD~1</span><br><span class="line">撤销最近一次的commit(撤销commit，撤销git add)</span><br><span class="line"></span><br><span class="line">git reset --hard HEAD~1 </span><br><span class="line">撤销最近一次的commit(撤销commit，撤销git add，工作区的代码改动将丢失。操作完成后回到上一次commit状态)</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>如果已经push:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">执行完上面的rest之后再继续</span><br><span class="line">git push origin &lt;分支名&gt; --force   // 需要有force权限</span><br></pre></td></tr></table></figure><h3 id="git-放弃本地修改"><a href="#git-放弃本地修改" class="headerlink" title="git 放弃本地修改"></a>git 放弃本地修改</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout . &amp;&amp; git clean -xdf</span><br></pre></td></tr></table></figure><h3 id="修改最后一次commits-已经push过的"><a href="#修改最后一次commits-已经push过的" class="headerlink" title="修改最后一次commits  ,已经push过的"></a>修改最后一次commits  ,已经push过的</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit --amend</span><br></pre></td></tr></table></figure><h3 id="git-撤回commit"><a href="#git-撤回commit" class="headerlink" title="git 撤回commit"></a>git 撤回commit</h3><p>写完代码后，我们一般这样</p><p>git add . &#x2F;&#x2F;添加所有文件</p><p>git commit -m “本功能全部完成”</p><p>执行完commit后，想撤回commit，怎么办？</p><p>这样凉拌：</p><p>git  reset –hard HEAD</p><p>这样就成功的撤销了你的commit</p><p>注意，仅仅是撤回commit操作，您写的代码仍然保留。</p><h4 id="说一下个人理解："><a href="#说一下个人理解：" class="headerlink" title="说一下个人理解："></a>说一下个人理解：</h4><p>HEAD^的意思是上一个版本，也可以写成HEAD~1</p><p>如果你进行了2次commit，想都撤回，可以使用HEAD~2</p><h4 id="至于这几个参数："><a href="#至于这几个参数：" class="headerlink" title="至于这几个参数："></a>至于这几个参数：</h4><ul><li>–mixed</li></ul><p>意思是：不删除工作空间改动代码，撤销commit，并且撤销git add . 操作</p><p>这个为默认参数,git reset –mixed HEAD^ 和 git reset HEAD^ 效果是一样的。</p><ul><li>–soft</li></ul><p>不删除工作空间改动代码，撤销commit，不撤销git add . </p><ul><li>–hard</li></ul><p>删除工作空间改动代码，撤销commit，撤销git add . </p><p>注意完成这个操作后，就恢复到了上一次的commit状态。</p><h4 id="顺便说一下，如果commit注释写错了，只是想改一下注释，只需要："><a href="#顺便说一下，如果commit注释写错了，只是想改一下注释，只需要：" class="headerlink" title="顺便说一下，如果commit注释写错了，只是想改一下注释，只需要："></a>顺便说一下，如果commit注释写错了，只是想改一下注释，只需要：</h4><p>git commit –amend</p><p>此时会进入默认vim编辑器，修改注释完毕后保存就好了。</p><h2 id="git-回退本地修改"><a href="#git-回退本地修改" class="headerlink" title="git 回退本地修改"></a>git 回退本地修改</h2><p>Git checkout . &amp;&amp; git clean -xdf </p><p>git reset -soft HEAD^</p><p>忽略本地所有，和远程分支保持一致<br>git reset –hard origin&#x2F;dev&#x2F;internal_ipv6</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;动态VPS环境初始化配置&quot;&gt;&lt;a href=&quot;#动态VPS环境初始化配置&quot; class=&quot;headerlink&quot; title=&quot;动态VPS环境初始化配置&quot;&gt;&lt;/a&gt;动态VPS环境初始化配置&lt;/h1&gt;&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;最近在做一个自动化项目，用到了动态</summary>
+    <summary type="html">&lt;h3 id=&quot;git-删除分支&quot;&gt;&lt;a href=&quot;#git-删除分支&quot; class=&quot;headerlink&quot; title=&quot;git 删除分支&quot;&gt;&lt;/a&gt;git 删除分支&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;切换到要操作的项目文件夹命令行: $ cd &lt;ProjectPath&gt;&lt;/li&gt;</summary>
+      
+    
+    
+    
+    <category term="100_CodingSkills" scheme="http://amazingcoderpro.github.io/categories/100-CodingSkills/"/>
+    
+    <category term="103_ Productivity" scheme="http://amazingcoderpro.github.io/categories/100-CodingSkills/103-Productivity/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-103-Productivity-2018-Ubuntu%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8%E5%88%AB%E5%90%8D%E5%BF%AB%E9%80%9F%E8%AE%BF%E9%97%AE%E4%BA%91%E4%B8%BB%E6%9C%BA/"/>
+    <id>http://amazingcoderpro.github.io/2024/08/15/100-CodingSkills-103-Productivity-2018-Ubuntu%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8%E5%88%AB%E5%90%8D%E5%BF%AB%E9%80%9F%E8%AE%BF%E9%97%AE%E4%BA%91%E4%B8%BB%E6%9C%BA/</id>
+    <published>2024-08-15T09:50:31.520Z</published>
+    <updated>2024-08-15T09:50:43.445Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Ubuntu如何利用别名快速访问云主机"><a href="#Ubuntu如何利用别名快速访问云主机" class="headerlink" title="Ubuntu如何利用别名快速访问云主机"></a>Ubuntu如何利用别名快速访问云主机</h1><hr><p>问： 在Ubuntu上访问云主机，共分几步？<br>答： 分以下三步:</p><ul><li>打开记事本，找到要访问的主机的IP、用户名和密码，并拷贝</li><li>输入ssh命令,如ssh <a href="mailto:&#x72;&#x6f;&#x6f;&#x74;&#64;&#x31;&#50;&#x2e;&#x32;&#x33;&#46;&#x34;&#x35;&#46;&#x36;&#x37;">&#x72;&#x6f;&#x6f;&#x74;&#64;&#x31;&#50;&#x2e;&#x32;&#x33;&#46;&#x34;&#x35;&#46;&#x36;&#x37;</a></li><li>输入或粘贴密码，然后回车，进入云主机</li></ul><p>问：你感觉这样的操作复杂吗？<br>答：不复杂啊，只要三步呀<br>问：那如果你同时要管理十台甚到几十台云主机呢，每次访问一台都要这么做吗？你不累吗？<br>答：滚！</p><p>好了，进入正题，让我们看看如何优雅快速的访问你的云主机吧。</p><p>先说方案，其实很简单: <strong>利用别名（alias）, 事先为每一台云主机设置一个别名（见名知义的那种），并且上传ssh密钥到每一台云主机，这样以后访问该云主机时只需要输入它对应的别名就可以了!什么IP,用户名，密码统统不要了，即安全又省事！</strong><br><em>PS:关于别名这个小技巧也是我从其他同事那学到的，所谓三人行必有我师，真是学到老活到老啊。另外，别名的用途可不仅仅如此啊，可以对很多常用又复杂的命令设置别名，达到快速执行的目的哦！</em>  </p><h2 id="来（wo）看-yao-看-kai-怎-shi-么-zhuang-做-bi-吧（la）-1-配置别名-编辑-bashrc文件-输入别名和对应的云主机登录命令-按G跳到最后一行，输入别名和别名对应的云主机信息-这里假设我的云主机-ip-x3D-12-23-45-56-user-x3D-root-密码-x3D-123456-别名-x3D-zhuji1-2-生成ssh密钥直接三次回车，保存rsa格式的密钥到默认位置，-当然你也可以指定位置。这里的密钥生成一次就可以了，如果提示提示已经有密钥了，跳过此步即可。-3-上传密钥到目标云主机上按照提示，输入该云主机的root账号密码即可。-4-让别名生效"><a href="#来（wo）看-yao-看-kai-怎-shi-么-zhuang-做-bi-吧（la）-1-配置别名-编辑-bashrc文件-输入别名和对应的云主机登录命令-按G跳到最后一行，输入别名和别名对应的云主机信息-这里假设我的云主机-ip-x3D-12-23-45-56-user-x3D-root-密码-x3D-123456-别名-x3D-zhuji1-2-生成ssh密钥直接三次回车，保存rsa格式的密钥到默认位置，-当然你也可以指定位置。这里的密钥生成一次就可以了，如果提示提示已经有密钥了，跳过此步即可。-3-上传密钥到目标云主机上按照提示，输入该云主机的root账号密码即可。-4-让别名生效" class="headerlink" title="~~来（wo）看(yao)看(kai)怎(shi)么(zhuang)做(bi)吧（la）## 1.配置别名- 编辑.bashrc文件, 输入别名和对应的云主机登录命令.按G跳到最后一行，输入别名和别名对应的云主机信息,这里假设我的云主机 ip&#x3D;12.23.45.56,user&#x3D;root,密码&#x3D;123456, 别名&#x3D;zhuji1## 2.生成ssh密钥直接三次回车，保存rsa格式的密钥到默认位置， 当然你也可以指定位置。这里的密钥生成一次就可以了，如果提示提示已经有密钥了，跳过此步即可。## 3.上传密钥到目标云主机上按照提示，输入该云主机的root账号密码即可。## 4.让别名生效"></a><em><strong>~~来（wo）看(yao)看(kai)怎(shi)么(zhuang)做(bi)吧（la）</strong></em><br>## 1.配置别名<br>- 编辑.bashrc文件, 输入别名和对应的云主机登录命令.<br>按G跳到最后一行，输入别名和别名对应的云主机信息,<br><em>这里假设我的云主机 ip&#x3D;12.23.45.56,user&#x3D;root,密码&#x3D;123456, 别名&#x3D;zhuji1</em><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vi ~/.bashrc</span><br><span class="line">alias zhuji1=&quot;ssh root@12.23.45.56&quot;   #123456这里可以备注下密码，方便以后查看</span><br></pre></td></tr></table></figure><br>## 2.生成ssh密钥<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa</span><br></pre></td></tr></table></figure><br>直接三次回车，保存rsa格式的密钥到默认位置， 当然你也可以指定位置。这里的密钥生成一次就可以了，如果提示提示已经有密钥了，跳过此步即可。<br>## 3.上传密钥到目标云主机上<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-copy-id root@12.23.45.56</span><br></pre></td></tr></table></figure><br>按照提示，输入该云主机的root账号密码即可。<br>## 4.让别名生效<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.bashrc</span><br></pre></td></tr></table></figure></h2><p>好了，别名已经设置好了,现在试试吧</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zhuji1</span><br></pre></td></tr></table></figure><p>输入刚才设置好的别名， 敲下回车，已经安全进入到我们的云主机了，是不是很方便啊！</p><p>如果你有多台云主机，就继续重复1,3,4步即可。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Ubuntu如何利用别名快速访问云主机&quot;&gt;&lt;a href=&quot;#Ubuntu如何利用别名快速访问云主机&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu如何利用别名快速访问云主机&quot;&gt;&lt;/a&gt;Ubuntu如何利用别名快速访问云主机&lt;/h1&gt;&lt;hr&gt;
+</summary>
       
     
     
