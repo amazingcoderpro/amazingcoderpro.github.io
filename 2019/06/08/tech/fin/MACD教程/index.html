@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>MACD教程 - Amazing Coder</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Amazing Coder"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Amazing Coder"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="MACD教程"><meta property="og:type" content="blog"><meta property="og:title" content="MACD教程"><meta property="og:url" content="http://amazingcoderpro.github.io/2019/06/08/tech/fin/MACD%E6%95%99%E7%A8%8B/"><meta property="og:site_name" content="Amazing Coder"><meta property="og:description" content="MACD教程"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://tva1.sinaimg.cn/large/008i3skNgy1gx8qe6p71xj319w0sq0wx.jpg"><meta property="og:image" content="https://tva1.sinaimg.cn/large/008i3skNgy1gx8qg1ychyj314m0kgtbh.jpg"><meta property="og:image" content="https://tva1.sinaimg.cn/large/008i3skNgy1gx8qhg91xpj31a00t80w0.jpg"><meta property="og:image" content="https://tva1.sinaimg.cn/large/008i3skNgy1gx8qml5ricj31ag0rm78w.jpg"><meta property="og:image" content="https://tva1.sinaimg.cn/large/008i3skNgy1gx8qmg32lwj31980qqgpw.jpg"><meta property="article:published_time" content="2019-06-08T07:29:00.000Z"><meta property="article:modified_time" content="2019-10-08T07:29:00.000Z"><meta property="article:author" content="Amazing Coder"><meta property="article:tag" content="fin"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://tva1.sinaimg.cn/large/008i3skNgy1gx8qe6p71xj319w0sq0wx.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://amazingcoderpro.github.io/2019/06/08/tech/fin/MACD%E6%95%99%E7%A8%8B/"},"headline":"MACD教程","image":["https://tva1.sinaimg.cn/large/008i3skNgy1gx8qe6p71xj319w0sq0wx.jpg","https://tva1.sinaimg.cn/large/008i3skNgy1gx8qg1ychyj314m0kgtbh.jpg","https://tva1.sinaimg.cn/large/008i3skNgy1gx8qhg91xpj31a00t80w0.jpg","https://tva1.sinaimg.cn/large/008i3skNgy1gx8qml5ricj31ag0rm78w.jpg","https://tva1.sinaimg.cn/large/008i3skNgy1gx8qmg32lwj31980qqgpw.jpg"],"datePublished":"2019-06-08T07:29:00.000Z","dateModified":"2019-10-08T07:29:00.000Z","author":{"@type":"Person","name":"Amazing Coder"},"publisher":{"@type":"Organization","name":"Amazing Coder","logo":{"@type":"ImageObject","url":"http://amazingcoderpro.github.io/img/logo.svg"}},"description":"MACD教程"}</script><link rel="canonical" href="http://amazingcoderpro.github.io/2019/06/08/tech/fin/MACD%E6%95%99%E7%A8%8B/"><link rel="alternate" href="https://blog.amazingcoder.xyz/atom.xml" title="Amazing Coder" type="application/atom+xml"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Amazing Coder" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/amazingcoderpro/"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-08T07:29:00.000Z" title="2019/6/8 15:29:00">2019-06-08</time>发表</span><span class="level-item"><time dateTime="2019-10-08T07:29:00.000Z" title="2019/10/8 15:29:00">2019-10-08</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/tech/">tech</a><span> / </span><a class="link-muted" href="/categories/tech/fin/">fin</a></span><span class="level-item">40 分钟读完 (大约5965个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">MACD教程</h1><div class="content"><h1 id="MACD教程"><a href="#MACD教程" class="headerlink" title="MACD教程"></a>MACD教程</h1><h3 id="1-基本概念口诀"><a href="#1-基本概念口诀" class="headerlink" title="1. 基本概念口诀"></a>1. 基本概念口诀</h3><p>   1.多空分界在零轴，水下少操作，能不做就不做<br>   2.水下金叉多反弹，一坑更比一坑低, 水下死叉 ，弱更弱<br>   3.水上金叉多上涨，一山更比一山高<br>   4.抄底要看水下底背离，股价创新低MACD没有创新低<br>   5.逃顶要看水上顶背离，股价创新高MACD没有创新高<br>   6.水上金叉，多头信号，二次金叉，强转更强<br>   7.水上死叉，不一定看空，也可能是上升过程中的回档调整<br>   8.其中量价齐升初步走强时，macd刚上零轴形成的第一个死叉，多数是休整期，二次金叉突破是转强买点<br>   9.价格走势累积了一定幅度，量升价不涨，盘整中出现Macd死叉，多数是真正的空头期。<br>   10.倒鸭子-将金不金&#x3D;高概率下杀，看似回踩完毕，股价要向上突破的时候，就差临门一脚，转头向下，本次反弹或突破是假的， 或者风向突然变卦，接下来股价大概率下杀， 线上线下都要注意。<br>   11.拈花佛手-将死不死&#x3D;高概率上攻：在形成金叉后（0轴上）， 股价修整，眼看macd要死叉， 股价突然扭转局面向上突破，使得macd再次开口向上，说明有资金护盘，形成上涨拐点，建立背景是要在0轴上方。<br>   12.起死回生-短期有大阳，macd形成死叉，3天内又重新拉回成金叉，大量阳线强行扭转，后市还会有一次拉升动作，建立背景0轴以上。<br>   13.不可救药-扶不起的反弹，在上涨之后出现回调，然后反弹的过程中出现金叉，3天内又被扭转成死叉，说明反弹极弱， 短期内还有一次探底。如果出现在0轴以下则更加危险。</p>
+<ol start="14">
+<li>火烧连营：macd在零轴上方了，之前至少大于一个月全部是红柱，没有绿柱，价格没有大涨，配合成交量往往出现阳线倍量柱，以为资金在积极吸筹，适合回落时低点潜伏，因为一旦爆发速度极快。eg:联创股份，2021.5.11–6.23, 安记食品2021.2.18–4.1</li>
+<li>背离有预警作用，越大周期的背离，也不容易化解。背离可以是两个点，也可以是更多的点，顶背离的预警效果底背离更强。底背离抄底不一定可行，可能还有更低。背离想要化解需要放量，需要钱。</li>
+</ol>
+<h3 id="2-线上死叉多回调，箱体下轨要低吸"><a href="#2-线上死叉多回调，箱体下轨要低吸" class="headerlink" title="2. 线上死叉多回调，箱体下轨要低吸"></a>2. 线上死叉多回调，箱体下轨要低吸</h3><p>   <img src="https://tva1.sinaimg.cn/large/008i3skNgy1gx8qe6p71xj319w0sq0wx.jpg" alt="image-20211210144108602"></p>
+<h3 id="3-先下回抽到零轴，-反弹多数要到头"><a href="#3-先下回抽到零轴，-反弹多数要到头" class="headerlink" title="3. 先下回抽到零轴， 反弹多数要到头"></a>3. 先下回抽到零轴， 反弹多数要到头</h3><p>   <img src="https://tva1.sinaimg.cn/large/008i3skNgy1gx8qg1ychyj314m0kgtbh.jpg" alt="image-20211210144307242"></p>
+<h3 id="4-线上回抽到零轴，就算不涨也反弹"><a href="#4-线上回抽到零轴，就算不涨也反弹" class="headerlink" title="4.线上回抽到零轴，就算不涨也反弹"></a>4.线上回抽到零轴，就算不涨也反弹</h3><p><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gx8qhg91xpj31a00t80w0.jpg" alt="image-20211210144420885"></p>
+<h3 id="5-顶底背离挺管用，就怕量能来捣乱。"><a href="#5-顶底背离挺管用，就怕量能来捣乱。" class="headerlink" title="5.顶底背离挺管用，就怕量能来捣乱。"></a>5.顶底背离挺管用，就怕量能来捣乱。</h3><ul>
+<li>合格的底背离就不应该再创新低， 前提是底背离时缩量，如果放量，或被破坏<br><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gx8qml5ricj31ag0rm78w.jpg" alt="image-20211210144840411"></li>
+<li>合格的顶背离不应该再创新高，前提是顶背离时缩量，如果放量，或被破坏<br><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gx8qmg32lwj31980qqgpw.jpg" alt="image-20211210144911789"></li>
+</ul>
+<h3 id="量比"><a href="#量比" class="headerlink" title="量比"></a>量比</h3><p>1 概念</p>
+<p>量比&#x3D;现在每分钟的成交量&#x2F;过去5日平均每分钟的成交量</p>
+<p>比值越大，成交量爆发的强度越高</p>
+<p>短线很有用</p>
+<p>量比在0.8-1.5 正常水平</p>
+<p>1.5-2.5 温和放量， 股价将维持原来的上涨或下跌趋势</p>
+<p>2.5-5 明显放量，如果股价突破了重要的压力位， 突破的有效性很高</p>
+<p>5倍甚至10倍， 剧烈放量， 如果出现在一段上涨趋势之后，那么见顶的几率很高。如果出现在底部，见底的概率也很大</p>
+<p>超过10倍，一定要反向操作，方巨量下跌，看涨，放巨量上涨看跌。</p>
+<h3 id="成交量，放量上涨和缩量下跌好不好"><a href="#成交量，放量上涨和缩量下跌好不好" class="headerlink" title="成交量，放量上涨和缩量下跌好不好"></a>成交量，放量上涨和缩量下跌好不好</h3><ol>
+<li>低位尚未启动，温和放量，换手率3-5，主力开始吸筹了，后市可期，但不一定立马突破，在关键位置可能继续震荡，温和放量，突破箱体（关键压力位）有机会跟进. 可以加自选等一等，</li>
+<li>均匀放量，此时股价往往是在拉升阶段，市场会出现大阳线，且上涨持续性较好，是短线买点。 60日量均线几乎是走平的状态，这样往往能走的更远，如果不停的往上打量，走的波段会比较快，走快之后，一般要有个回打的过程。而对于均匀放量的，60量线不会翘头，很多牛股60量线基本走平，上涨过程中阳量基本是在60量线上，整体很均匀的量，持续力度都是月级别的。多半是机构持股 。底部温和放量之后，突破之后量级高一点，均匀放量。</li>
+<li>巨量上涨有两种情况：1.低位巨量要震荡，低位巨量标明有主力介入，但同时卖出盘也很大，其主要原因是上方的套牢盘太多，后期股价大概率还要震荡一段时间，以消化上方的套牢盘，低位巨量不一定代表主动买盘多，量分多空，量大其实也是分歧大，2。高位巨量很危险，股价高位上涨（或下跌）放大量，意味着高分歧，而买入的资金多是短线资金，后市很难再有往上推的动力，一旦情况不对，短线资金出逃，多方变成空方，后市危险，这时多是卖点。大阴线放巨量，基本就到头了。</li>
+<li>缩量上涨，代表只要花少量的资金就能拉升股价，此时强烈看好后市，这种情况多是主力高度控盘的情况。低位放量上涨，之后量能缩小，但是股价没有明显的回调，而是保持小斜率的上涨，交易量持续缩小，突破之后压力线下线上都缩量，线中关键位置放量突破，线上股价不跌，完美多头。</li>
+</ol>
+<h3 id="威廉指标-WR"><a href="#威廉指标-WR" class="headerlink" title="威廉指标 WR"></a>威廉指标 WR</h3><p>6,10改成40， 40</p>
+<p>WR在50以下为持股周期</p>
+<p>WR在50以上为持币周期</p>
+<p>WR从上往下穿过50为买点</p>
+<p>WR从下往上穿过50为卖点</p>
+<h3 id="换手率"><a href="#换手率" class="headerlink" title="换手率"></a>换手率</h3><ol>
+<li>股价在低位，成交量在60线以下，股性不活跃，不用关注，一旦温和放量持续在60线以上，关注度提高了，不管阴阳，每天换手率保持在3–5之间，人气扭转，说明主力开始吸筹，可以关注买入时机</li>
+<li>换手率8–15， 标明主力资金大笔流入，这时股价一旦突破平台瓶颈线，量柱合理，股价往往迎来加速上涨，如果换手+量柱太高，分歧比较大，大概率还有冲高回落，或二次洗盘，震荡调整。而两三倍的量柱和8–15的换手率去突破压力位，比较正常可信。也是突破性买点。</li>
+<li>换手率接近或大于25%， 而且股价在高位，一般代表主力在出货。量柱比突破瓶颈是还要大，高位高换手，出大量，都代表高位分歧很大。出货特征</li>
+<li>换手率超过70%， 死亡换手率，主力疯狂出货，立即卖出，不报任何幻想。</li>
+<li>新股刚开板，换手率大于50%， 然后维持在20%左右，说明后市还有空间。 开板回落在618，50位置企稳，换手率维持在20左右，量能放大，代表承接较好，这是第一个承接点。第二个是突破压力位时，换手能维持在30，突破压力后再冲出去一段的概率很高</li>
+</ol>
+<h3 id="波段做T，高抛低吸-降低成本"><a href="#波段做T，高抛低吸-降低成本" class="headerlink" title="波段做T，高抛低吸,降低成本"></a>波段做T，高抛低吸,降低成本</h3><p>做T不要贪心，目标是降成本，目标要明确。行情好的时候可以先吸后抛，以免抛飞。</p>
+<ol>
+<li>日内T+0，分时图</li>
+</ol>
+<ul>
+<li>顶背离：股价与成交量背离，股价与macd背离（包括指标线的背离或者红绿柱的背离，比如macd不创新高或红柱比之前变少，但股价还在冲高）。两个背离都出现时大概率是到顶了要回撤，可以先卖出。这里量价背离的准确率更高，因为量能可以扭转一切指标背离。关注平均成本线的支撑和压力</li>
+<li>底背离： macd底背离，先买后卖</li>
+<li>V型：分时图上，低位阳量反包之前的阴量，二次低点不创新低，macd0轴上可以做低吸。相反高位阴量反包可高抛</li>
+<li>养成习惯，分时图也多画线</li>
+<li>低点出阴量，今天不低明天低，不要低吸了</li>
+<li>趋势决定方向，成本决定高低，</li>
+<li>开盘前15分钟一般是昨夜情绪的一个释放，15分钟后会慢慢修复，按大方向走</li>
+</ul>
+<ol start="2">
+<li>分钟或日K图上做高抛低吸（没时间看盘）<br>指标ene日线加5分钟 expma（12，50）, macd<br>ene（基于股价乖离）改成10， 11， 9 用在日线图里，</li>
+</ol>
+<ul>
+<li>下降通道<br>ene回打下轨时一般会拉会修复，产生了低吸的机会，<br>结合5分钟的分钟图，构成反弹的三要素：1.价格不创新低，2.绿柱缩小或者出现了底背离，绿柱比上一次探到地点时要小，说明空头能量衰减，3.expma构成金叉，<br>日线股价反弹到ene中轨，高抛掉。行情差的时候，注意有时候到下轨有可能继续下跌</li>
+<li>宽幅震荡通道：日线反弹到ene上轨高抛。</li>
+<li>可以分多次做，如果没有机会就不做。如果基本面出现系统性风险，赶紧出来，</li>
+<li>只做确定性最高的。</li>
+</ul>
+<h3 id="分时看盘"><a href="#分时看盘" class="headerlink" title="分时看盘"></a>分时看盘</h3><ul>
+<li>以阴度阳，从分时盘口看主力资金撤退的痕迹</li>
+<li>不健康的涨停板：板上出货。在高点的时候应该出现阳高量，如果没出现甚至出现高音量。开板的量大于封板的量，后面封板的时候量不够，全天的高量是开板时的高阴量。这不正常。对于大阳线也可以应用。出货板之后的几天，不要轻易去抄底，有可能会跌很多</li>
+<li>主力出货：对敲开涨停，涨停价大量委卖营造氛围，然后抽单转身再挂。主力有通道可以把买单撤掉。</li>
+<li>健康的涨停板：放量突破，调整再放量上涨，封板时方大量阳线</li>
+<li>高点大阴量（卖出的单子多），高位绿帽子，资金在撤退，要减仓。如果那个大阴量是全天最大量，尾盘清仓</li>
+</ul>
+<h3 id="什么样的涨停板不能追"><a href="#什么样的涨停板不能追" class="headerlink" title="什么样的涨停板不能追"></a>什么样的涨停板不能追</h3><ul>
+<li>涨停之后，次日尾盘拉升， 尾盘拉升的原因有两个可能：1是主力实力不济，先前资金用完了，只能在尾盘来一下，以便于次日高开出货；2是早盘多空激烈博弈，分歧比较大，虽然尾盘多方占优，但做多能力消耗差不多了，后续拉升比较困难，可能震荡调整。短线滞涨，都不适合再追</li>
+<li>涨停之后，再爆出倍量不封板，意味着有较大的分歧，说明后面可能走补跌的过程，当然分歧也可能转一致，继续向上。</li>
+<li>涨停之后大幅低开，短线散户情绪恐慌，一般难以维持股价。如果主力不护盘，主力甚至可能顺势打压再吸筹</li>
+<li>涨停封板之后炸板，抛盘较大，有出货嫌疑。如果15-30分钟内能重新封板还可以做。</li>
+<li>高开的，上午没有出现回调绿盘，下午还有可能有动作拉升。如果拉高又跳水，有出货的嫌疑</li>
+<li>涨停之后，次日上午震荡，下午拉升之后跳水，诱多嫌疑</li>
+</ul>
+<h3 id="持仓股票高开怎么办"><a href="#持仓股票高开怎么办" class="headerlink" title="持仓股票高开怎么办"></a>持仓股票高开怎么办</h3><h2 id="越早拉升越强，注意拉升过程出现背离-前半个小时是交易最活跃的时候，也是主力下场操纵情绪的时候-高开封涨停，继续持有，同时在不破板的情况下，看尾盘封单成交比，对后市的溢价有个预期。尾盘买一封板的量除以全天成交量，如果超过10-，-表示封单很强，继续珍惜，可能连板。比值3-10-之间，大概溢价还有5个点。比值小于三，就冲个三四给点。如果比值小于1，尾盘可以减仓，第二天如果低开就出局。-高开快速拉升五浪，但是没有涨停，减仓。量跟不上，如果日k在高位，有诱多的嫌疑-高开已1，2个点，震荡不收绿，-守到下午。下午可能有动作-高开快速下杀，30分钟不能翻红，减仓。早盘一般是杀情绪，不要着急，高开本来是强开局，如果能翻红，更能证明早上在杀情绪，下午可能还有动作。如果一直翻不上来，证明今天比较弱，注意后续可能继续下跌的风险，注意支撑位，如果破位，减仓-高开平走，下午拉涨停，减仓。像是强弩之末，后面冲劲不太强。-高开涨停，盘中炸板，15分钟能够拉会，还可以，烂板出牛股。开闸放水，让想进来做多的跟风盘进来合力封板。如果不能重新封板，没有跟风盘进来，可能顺势下杀，或风向已经变了，减仓。同类题材都出现开闸放水，有可能风向变了。"><a href="#越早拉升越强，注意拉升过程出现背离-前半个小时是交易最活跃的时候，也是主力下场操纵情绪的时候-高开封涨停，继续持有，同时在不破板的情况下，看尾盘封单成交比，对后市的溢价有个预期。尾盘买一封板的量除以全天成交量，如果超过10-，-表示封单很强，继续珍惜，可能连板。比值3-10-之间，大概溢价还有5个点。比值小于三，就冲个三四给点。如果比值小于1，尾盘可以减仓，第二天如果低开就出局。-高开快速拉升五浪，但是没有涨停，减仓。量跟不上，如果日k在高位，有诱多的嫌疑-高开已1，2个点，震荡不收绿，-守到下午。下午可能有动作-高开快速下杀，30分钟不能翻红，减仓。早盘一般是杀情绪，不要着急，高开本来是强开局，如果能翻红，更能证明早上在杀情绪，下午可能还有动作。如果一直翻不上来，证明今天比较弱，注意后续可能继续下跌的风险，注意支撑位，如果破位，减仓-高开平走，下午拉涨停，减仓。像是强弩之末，后面冲劲不太强。-高开涨停，盘中炸板，15分钟能够拉会，还可以，烂板出牛股。开闸放水，让想进来做多的跟风盘进来合力封板。如果不能重新封板，没有跟风盘进来，可能顺势下杀，或风向已经变了，减仓。同类题材都出现开闸放水，有可能风向变了。" class="headerlink" title="越早拉升越强，注意拉升过程出现背离- 前半个小时是交易最活跃的时候，也是主力下场操纵情绪的时候- 高开封涨停，继续持有，同时在不破板的情况下，看尾盘封单成交比，对后市的溢价有个预期。尾盘买一封板的量除以全天成交量，如果超过10%， 表示封单很强，继续珍惜，可能连板。比值3-10%之间，大概溢价还有5个点。比值小于三，就冲个三四给点。如果比值小于1，尾盘可以减仓，第二天如果低开就出局。- 高开快速拉升五浪，但是没有涨停，减仓。量跟不上，如果日k在高位，有诱多的嫌疑- 高开已1，2个点，震荡不收绿， 守到下午。下午可能有动作- 高开快速下杀，30分钟不能翻红，减仓。早盘一般是杀情绪，不要着急，高开本来是强开局，如果能翻红，更能证明早上在杀情绪，下午可能还有动作。如果一直翻不上来，证明今天比较弱，注意后续可能继续下跌的风险，注意支撑位，如果破位，减仓- 高开平走，下午拉涨停，减仓。像是强弩之末，后面冲劲不太强。- 高开涨停，盘中炸板，15分钟能够拉会，还可以，烂板出牛股。开闸放水，让想进来做多的跟风盘进来合力封板。如果不能重新封板，没有跟风盘进来，可能顺势下杀，或风向已经变了，减仓。同类题材都出现开闸放水，有可能风向变了。"></a>越早拉升越强，注意拉升过程出现背离<br>- 前半个小时是交易最活跃的时候，也是主力下场操纵情绪的时候<br>- 高开封涨停，继续持有，同时在不破板的情况下，看尾盘封单成交比，对后市的溢价有个预期。尾盘买一封板的量除以全天成交量，如果超过10%， 表示封单很强，继续珍惜，可能连板。比值3-10%之间，大概溢价还有5个点。比值小于三，就冲个三四给点。如果比值小于1，尾盘可以减仓，第二天如果低开就出局。<br>- 高开快速拉升五浪，但是没有涨停，减仓。量跟不上，如果日k在高位，有诱多的嫌疑<br>- 高开已1，2个点，震荡不收绿， 守到下午。下午可能有动作<br>- 高开快速下杀，30分钟不能翻红，减仓。早盘一般是杀情绪，不要着急，高开本来是强开局，如果能翻红，更能证明早上在杀情绪，下午可能还有动作。如果一直翻不上来，证明今天比较弱，注意后续可能继续下跌的风险，注意支撑位，如果破位，减仓<br>- 高开平走，下午拉涨停，减仓。像是强弩之末，后面冲劲不太强。<br>- 高开涨停，盘中炸板，15分钟能够拉会，还可以，烂板出牛股。开闸放水，让想进来做多的跟风盘进来合力封板。如果不能重新封板，没有跟风盘进来，可能顺势下杀，或风向已经变了，减仓。同类题材都出现开闸放水，有可能风向变了。</h2><h3 id="十大误区"><a href="#十大误区" class="headerlink" title="十大误区"></a>十大误区</h3><ol>
+<li>抄底不抄年线以下</li>
+<li>短线不要买10日线在上，五日线在下的</li>
+<li>犹豫不决时坚决不买，只买看得懂，有信心的</li>
+<li>股价在上涨如果要做T, 应该先买再卖， 以免做丢</li>
+<li>坚决不买新闻股，热点股，不买不亏</li>
+<li>个股高开五个点以上， 没有能够直接封板，直接出局</li>
+<li>永远不要一次性满仓</li>
+<li>不要在跌停板补仓，涨停板加仓，失败概率太大</li>
+<li>拿得住、割的狠， 严格按交易计划执行</li>
+<li>不要看到个股业绩报告好，就去买， 散户看到的都是滞后信息</li>
+</ol>
+<h3 id="分时图"><a href="#分时图" class="headerlink" title="分时图"></a>分时图</h3><ul>
+<li>大盘：白色加权指数，黄色是未加权的， 可以理解为白色是大盘，黄色是小盘， 二八分化，二是大盘股<ul>
+<li>大盘上涨 ，黄上白下， 权重搭台，题材唱戏， 既赚指数又赚钱， 积极参与</li>
+<li>大盘上涨，黄下白上， 题材唱罢， 权重登台， 只赚指数不赚钱，高抛低吸，要轮动</li>
+<li>大盘下跌，黄上白下，权重拆台， 题材等待， 只亏指数，不亏钱，逢高减仓， 御寒冬。</li>
+<li>大盘下跌，黄下白上，题材退场，权重收队， 既亏指数又亏钱， 多看少动， 忌伸手。</li>
+<li>大盘震荡，黄上白下，权重沉默，题材冒头， 此时，重个股轻指数。</li>
+<li>大盘震荡，黄下白上，题材沉默，权重冒头，此时，就地卧倒，少操作。</li>
+</ul>
+</li>
+<li>个股：白色是实时价格，黄色是当日平均买卖成本，黄线有支撑和压力作用</li>
+<li>白线远离黄线向上，但出现成交量反而越来越小，或macd红柱顶背离，高概率要回档</li>
+<li>白线远离黄线向下，macd水下金叉，股价有反弹。不建议新股建仓，但是如果本来持有，可以先低吸后抛出。</li>
+<li>分时图股价在黄线下方，坚决不买股</li>
+<li>分时图股价在黄线上方可以买，放量拉升时买，或者拉升之后缩量整理靠近黄线时买入，不放量不买。</li>
+<li>分时图中若股价缩量拉升，有诱多的成分，无量上行走不远，不应该买入，如果持有，应该逢高减仓</li>
+<li>虎踞龙盘，分时攻击波</li>
+</ul>
+<h3 id="板上星"><a href="#板上星" class="headerlink" title="板上星"></a>板上星</h3><p>涨停板突破平台或楔形，+ 高开的试盘十字星 + 跳空缺口（可以是涨停那天也可以是十字星那天）， 十字星最低价不会踩到前一天的涨停板+ 个股是热点或风口&#x3D; 十字星那天尾盘介入，值博率很高</p>
+<h3 id="庄家洗盘"><a href="#庄家洗盘" class="headerlink" title="庄家洗盘"></a>庄家洗盘</h3><p>目的是为了减少后续拉升股价时的压力。方便后续拉升。</p>
+<p>机构洗盘：边拉边洗，两步一停，三步一卡，阳放阴缩（价格阴跌时缩量），上升斜率大了之后，亦可能出现放量阴。月线季线半年线多头排列，60日成交量比较恒定，量能在一个区间，不会突兀的放大，关键位置会护盘，</p>
+<p>游资洗盘：游资一般爱热点股，持续周期比较短，时间有限，所以一般拉升完没有横盘，直接砸盘，甚至借助利空消息故意挖坑。如果卖错，股价重新涨回时可以再杀进去。一般会先拉出30-50%的空间。洗盘一定要在收回失地。</p>
+<h3 id="推算庄家成本价"><a href="#推算庄家成本价" class="headerlink" title="推算庄家成本价"></a>推算庄家成本价</h3><p>通过测算锁定建仓期间的均价来测算庄家成本，当出现明显放量的大底部区域，可视为庄家建仓的成本区。</p>
+<ol>
+<li>底部盘整放量的那段时间的股票均价*1.3&#x3D;庄家成本。 说明：低位放量才是是收集筹码，另外庄家有交易和融资成本</li>
+<li>庄家初步目标是50%， 这时可能会兑现一部分，股价回档</li>
+<li>进一步目标是100%，此时有可能回档甚至出货下跌</li>
+</ol>
+<h3 id="涨停板"><a href="#涨停板" class="headerlink" title="涨停板"></a>涨停板</h3><ul>
+<li>低位涨停，最好获利比例超过90%，甚至达到100%， 这样后市将高效上涨</li>
+<li>中位涨停板，看是否突破关键位，量能要放大， 最好一口气吃掉及突破前期套牢盘</li>
+<li>高位涨停板，看换手率， 小于5%， 还可以继续拿， 超过20%的换手率就危险，建议获利了结</li>
+</ul>
+<h3 id="主力洗盘"><a href="#主力洗盘" class="headerlink" title="主力洗盘"></a>主力洗盘</h3><p>洗盘的目的是洗掉高位的套牢盘筹码，以及低位的获利盘筹码， 目的是为了后面更容易的拉升。</p>
+<p>如果你不是套牢盘，就不要硬挤到主力压力区，或者短线远离的位置了。 都是追高惹的祸。</p>
+<h3 id="RSI指标"><a href="#RSI指标" class="headerlink" title="RSI指标"></a>RSI指标</h3><ul>
+<li>概念<br>短线指标，注意下面趋势和波段的区别<br>20以下为超卖， RSI上传20平行线为趋势买点<br>80以上为超买， RSI下穿80平行线为趋势卖点<br>20-50波段低位， RSI9金叉RSI24为波段买点<br>50-80波段高位， RSI9死叉RSI24为波段卖点<br>数值50以上宜持股， 50以下宜持币</li>
+<li>实操<br>改参数为9，9， 24， 三线变两线<br>添加20， 50， 80 三条基准线</li>
+</ul>
+<h2 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h2><h3 id="520买入"><a href="#520买入" class="headerlink" title="520买入"></a>520买入</h3><p>条件：5日线上穿20日线， 成交量5上穿20， macd在0轴上， dif上穿dea</p>
+<h3 id="关键K线决定是否止盈"><a href="#关键K线决定是否止盈" class="headerlink" title="关键K线决定是否止盈"></a>关键K线决定是否止盈</h3><ul>
+<li>放量上涨的阳线，找到关键防守位置</li>
+<li>不跌破关键k线底部就一直持股</li>
+<li>随着股价继续突破，产生新的关键k线， 防守位置上移到这个k线</li>
+<li>依次递进，所谓移动止盈</li>
+</ul>
+<h3 id="个股开盘三十分钟内走势反映当天的走势"><a href="#个股开盘三十分钟内走势反映当天的走势" class="headerlink" title="个股开盘三十分钟内走势反映当天的走势"></a>个股开盘三十分钟内走势反映当天的走势</h3><ul>
+<li>股价先跌后涨，反弹没有超过开盘价，该股当天大概率是弱势</li>
+<li>股价先涨后跌， 并且跌破了开盘价，据此可以判断， 下午两点之后会有一波下跌，要卖的趁早</li>
+<li>股价先涨后跌，但是没有跌破开盘价，主力在洗盘，下午两点以后上涨的可能性很大，盘中低点可以买</li>
+<li>开盘三十分钟内出现小幅拉升，最好不超过3%，同时分时上图上股价出现稳步上扬，主力快要拉升了，找位置坐好</li>
+</ul>
+<h3 id="季报业绩与股价"><a href="#季报业绩与股价" class="headerlink" title="季报业绩与股价"></a>季报业绩与股价</h3><ul>
+<li>炒股炒的是预期， 预期业绩增长主力会提前进场，就会上涨，否则会下跌</li>
+<li>合理估值p1(历史回归获得)， 业绩公布后的当前估值p2,  p2&gt;p1下跌，p2&lt;p1上涨</li>
+<li>举例，假如某行业不景气，公司季报发出之前，市场已经预期不好，股价一直下跌，导致股价估值过低，季报发布后，反而有可能开始反弹。</li>
+</ul>
+<h3 id="集合竞价"><a href="#集合竞价" class="headerlink" title="集合竞价"></a>集合竞价</h3><ul>
+<li>9.15–9.20可以随意挂单并撤销</li>
+<li>9.20–9.25 可以挂单，不可以撤单，挂单大小进行匹配，并以最大匹配量的价格，定为开盘价—-9.25</li>
+<li>9.25–9.30 继续挂单，继续匹配但不成交-</li>
+<li>匹配的单子越来越多了（小圆点），且成交量放大，标明主力匹配医院很强</li>
+<li>多单为红色，空单为绿色，已匹配的在下方，未匹配的在上方，如果红色越来越多，代表主力强势多单匹配过程中</li>
+<li>假如前五分钟有大量买单，但中间五分钟却急剧下降，主力手段注意风险</li>
+<li>只能提高成功率，不能太依赖</li>
+</ul>
+<h3 id="抄底-识别底部形态"><a href="#抄底-识别底部形态" class="headerlink" title="抄底-识别底部形态"></a>抄底-识别底部形态</h3><ul>
+<li>不创新低，反新高， 即低点越来越高，高点越来越高</li>
+<li>上涨放量，下跌缩量。</li>
+<li>颈线被突破，颈线突破回踩可以放心买</li>
+<li></li>
+</ul>
+<h3 id="严格止损，顺势而为，入市果断，心态平和，止损坚决，亏小赚大"><a href="#严格止损，顺势而为，入市果断，心态平和，止损坚决，亏小赚大" class="headerlink" title="严格止损，顺势而为，入市果断，心态平和，止损坚决，亏小赚大"></a>严格止损，顺势而为，入市果断，心态平和，止损坚决，亏小赚大</h3></div><div class="article-licensing box"><div class="licensing-title"><p>MACD教程</p><p><a href="http://amazingcoderpro.github.io/2019/06/08/tech/fin/MACD教程/">http://amazingcoderpro.github.io/2019/06/08/tech/fin/MACD教程/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>Amazing Coder</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2019-06-08</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2019-10-08</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/fin/">fin</a></div><!--!--></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3><div class="buttons is-centered"><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>支付宝</span><span class="qrcode"><img src="/images/alipay.jpg" alt="支付宝"></span></a><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>微信</span><span class="qrcode"><img src="/images/wechatpay.jpg" alt="微信"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2019/11/08/tech/%E5%8A%A8%E6%80%81vps%E7%8E%AF%E5%A2%83%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AE/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">动态vps环境初始化配置</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2018/10/08/tech/Ubuntu%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8%E5%88%AB%E5%90%8D%E5%BF%AB%E9%80%9F%E8%AE%BF%E9%97%AE%E4%BA%91%E4%B8%BB%E6%9C%BA/"><span class="level-item">Ubuntu如何利用别名快速访问云主机</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
+            this.page.url = 'http://amazingcoderpro.github.io/2019/06/08/tech/fin/MACD%E6%95%99%E7%A8%8B/';
+            this.page.identifier = 'blog-amazingcoder-xyz';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');  
+            s.src = '//' + 'blog-amazingcoder-xyz' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/avatar.png" alt="Amazing Coder"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Amazing Coder</p><p class="is-size-6 is-block">A programmer who loves coding and life.</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Tencent Holdings Ltd. China</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">32</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">4</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">22</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/amazingcoderpro/" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/amazingcoderpro/"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="https://blog.amazingcoder.xyz/atom.xml"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#MACD教程"><span class="level-left"><span class="level-item">1</span><span class="level-item">MACD教程</span></span></a><ul class="menu-list"><ul class="menu-list"><li><a class="level is-mobile" href="#1-基本概念口诀"><span class="level-left"><span class="level-item">1.1.1</span><span class="level-item">1. 基本概念口诀</span></span></a></li><li><a class="level is-mobile" href="#2-线上死叉多回调，箱体下轨要低吸"><span class="level-left"><span class="level-item">1.1.2</span><span class="level-item">2. 线上死叉多回调，箱体下轨要低吸</span></span></a></li><li><a class="level is-mobile" href="#3-先下回抽到零轴，-反弹多数要到头"><span class="level-left"><span class="level-item">1.1.3</span><span class="level-item">3. 先下回抽到零轴， 反弹多数要到头</span></span></a></li><li><a class="level is-mobile" href="#4-线上回抽到零轴，就算不涨也反弹"><span class="level-left"><span class="level-item">1.1.4</span><span class="level-item">4.线上回抽到零轴，就算不涨也反弹</span></span></a></li><li><a class="level is-mobile" href="#5-顶底背离挺管用，就怕量能来捣乱。"><span class="level-left"><span class="level-item">1.1.5</span><span class="level-item">5.顶底背离挺管用，就怕量能来捣乱。</span></span></a></li><li><a class="level is-mobile" href="#量比"><span class="level-left"><span class="level-item">1.1.6</span><span class="level-item">量比</span></span></a></li><li><a class="level is-mobile" href="#成交量，放量上涨和缩量下跌好不好"><span class="level-left"><span class="level-item">1.1.7</span><span class="level-item">成交量，放量上涨和缩量下跌好不好</span></span></a></li><li><a class="level is-mobile" href="#威廉指标-WR"><span class="level-left"><span class="level-item">1.1.8</span><span class="level-item">威廉指标 WR</span></span></a></li><li><a class="level is-mobile" href="#换手率"><span class="level-left"><span class="level-item">1.1.9</span><span class="level-item">换手率</span></span></a></li><li><a class="level is-mobile" href="#波段做T，高抛低吸-降低成本"><span class="level-left"><span class="level-item">1.1.10</span><span class="level-item">波段做T，高抛低吸,降低成本</span></span></a></li><li><a class="level is-mobile" href="#分时看盘"><span class="level-left"><span class="level-item">1.1.11</span><span class="level-item">分时看盘</span></span></a></li><li><a class="level is-mobile" href="#什么样的涨停板不能追"><span class="level-left"><span class="level-item">1.1.12</span><span class="level-item">什么样的涨停板不能追</span></span></a></li><li><a class="level is-mobile" href="#持仓股票高开怎么办"><span class="level-left"><span class="level-item">1.1.13</span><span class="level-item">持仓股票高开怎么办</span></span></a></li></ul><li><a class="level is-mobile" href="#越早拉升越强，注意拉升过程出现背离-前半个小时是交易最活跃的时候，也是主力下场操纵情绪的时候-高开封涨停，继续持有，同时在不破板的情况下，看尾盘封单成交比，对后市的溢价有个预期。尾盘买一封板的量除以全天成交量，如果超过10-，-表示封单很强，继续珍惜，可能连板。比值3-10-之间，大概溢价还有5个点。比值小于三，就冲个三四给点。如果比值小于1，尾盘可以减仓，第二天如果低开就出局。-高开快速拉升五浪，但是没有涨停，减仓。量跟不上，如果日k在高位，有诱多的嫌疑-高开已1，2个点，震荡不收绿，-守到下午。下午可能有动作-高开快速下杀，30分钟不能翻红，减仓。早盘一般是杀情绪，不要着急，高开本来是强开局，如果能翻红，更能证明早上在杀情绪，下午可能还有动作。如果一直翻不上来，证明今天比较弱，注意后续可能继续下跌的风险，注意支撑位，如果破位，减仓-高开平走，下午拉涨停，减仓。像是强弩之末，后面冲劲不太强。-高开涨停，盘中炸板，15分钟能够拉会，还可以，烂板出牛股。开闸放水，让想进来做多的跟风盘进来合力封板。如果不能重新封板，没有跟风盘进来，可能顺势下杀，或风向已经变了，减仓。同类题材都出现开闸放水，有可能风向变了。"><span class="level-left"><span class="level-item">1.2</span><span class="level-item">越早拉升越强，注意拉升过程出现背离- 前半个小时是交易最活跃的时候，也是主力下场操纵情绪的时候- 高开封涨停，继续持有，同时在不破板的情况下，看尾盘封单成交比，对后市的溢价有个预期。尾盘买一封板的量除以全天成交量，如果超过10%， 表示封单很强，继续珍惜，可能连板。比值3-10%之间，大概溢价还有5个点。比值小于三，就冲个三四给点。如果比值小于1，尾盘可以减仓，第二天如果低开就出局。- 高开快速拉升五浪，但是没有涨停，减仓。量跟不上，如果日k在高位，有诱多的嫌疑- 高开已1，2个点，震荡不收绿， 守到下午。下午可能有动作- 高开快速下杀，30分钟不能翻红，减仓。早盘一般是杀情绪，不要着急，高开本来是强开局，如果能翻红，更能证明早上在杀情绪，下午可能还有动作。如果一直翻不上来，证明今天比较弱，注意后续可能继续下跌的风险，注意支撑位，如果破位，减仓- 高开平走，下午拉涨停，减仓。像是强弩之末，后面冲劲不太强。- 高开涨停，盘中炸板，15分钟能够拉会，还可以，烂板出牛股。开闸放水，让想进来做多的跟风盘进来合力封板。如果不能重新封板，没有跟风盘进来，可能顺势下杀，或风向已经变了，减仓。同类题材都出现开闸放水，有可能风向变了。</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#十大误区"><span class="level-left"><span class="level-item">1.2.1</span><span class="level-item">十大误区</span></span></a></li><li><a class="level is-mobile" href="#分时图"><span class="level-left"><span class="level-item">1.2.2</span><span class="level-item">分时图</span></span></a></li><li><a class="level is-mobile" href="#板上星"><span class="level-left"><span class="level-item">1.2.3</span><span class="level-item">板上星</span></span></a></li><li><a class="level is-mobile" href="#庄家洗盘"><span class="level-left"><span class="level-item">1.2.4</span><span class="level-item">庄家洗盘</span></span></a></li><li><a class="level is-mobile" href="#推算庄家成本价"><span class="level-left"><span class="level-item">1.2.5</span><span class="level-item">推算庄家成本价</span></span></a></li><li><a class="level is-mobile" href="#涨停板"><span class="level-left"><span class="level-item">1.2.6</span><span class="level-item">涨停板</span></span></a></li><li><a class="level is-mobile" href="#主力洗盘"><span class="level-left"><span class="level-item">1.2.7</span><span class="level-item">主力洗盘</span></span></a></li><li><a class="level is-mobile" href="#RSI指标"><span class="level-left"><span class="level-item">1.2.8</span><span class="level-item">RSI指标</span></span></a></li></ul></li><li><a class="level is-mobile" href="#模型"><span class="level-left"><span class="level-item">1.3</span><span class="level-item">模型</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#520买入"><span class="level-left"><span class="level-item">1.3.1</span><span class="level-item">520买入</span></span></a></li><li><a class="level is-mobile" href="#关键K线决定是否止盈"><span class="level-left"><span class="level-item">1.3.2</span><span class="level-item">关键K线决定是否止盈</span></span></a></li><li><a class="level is-mobile" href="#个股开盘三十分钟内走势反映当天的走势"><span class="level-left"><span class="level-item">1.3.3</span><span class="level-item">个股开盘三十分钟内走势反映当天的走势</span></span></a></li><li><a class="level is-mobile" href="#季报业绩与股价"><span class="level-left"><span class="level-item">1.3.4</span><span class="level-item">季报业绩与股价</span></span></a></li><li><a class="level is-mobile" href="#集合竞价"><span class="level-left"><span class="level-item">1.3.5</span><span class="level-item">集合竞价</span></span></a></li><li><a class="level is-mobile" href="#抄底-识别底部形态"><span class="level-left"><span class="level-item">1.3.6</span><span class="level-item">抄底-识别底部形态</span></span></a></li><li><a class="level is-mobile" href="#严格止损，顺势而为，入市果断，心态平和，止损坚决，亏小赚大"><span class="level-left"><span class="level-item">1.3.7</span><span class="level-item">严格止损，顺势而为，入市果断，心态平和，止损坚决，亏小赚大</span></span></a></li></ul></li></ul></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/essay/"><span class="level-start"><span class="level-item">essay</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/categories/softskill/"><span class="level-start"><span class="level-item">softskill</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/categories/tech/"><span class="level-start"><span class="level-item">tech</span></span><span class="level-end"><span class="level-item tag">23</span></span></a><ul><li><a class="level is-mobile" href="/categories/tech/fin/"><span class="level-start"><span class="level-item">fin</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li></ul></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/ai/"><span class="tag">ai</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/centos/"><span class="tag">centos</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/cpp/"><span class="tag">cpp</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/cs/"><span class="tag">cs</span><span class="tag">16</span></a></div><div class="control"><a class="tags has-addons" href="/tags/data/"><span class="tag">data</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/fin/"><span class="tag">fin</span><span class="tag">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/git/"><span class="tag">git</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/intervew/"><span class="tag">intervew</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/interview/"><span class="tag">interview</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/job/"><span class="tag">job</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/linux/"><span class="tag">linux</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/mysql/"><span class="tag">mysql</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/network/"><span class="tag">network</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/os/"><span class="tag">os</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/productivity/"><span class="tag">productivity</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/python/"><span class="tag">python</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/read/"><span class="tag">read</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/redis/"><span class="tag">redis</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/sinology/"><span class="tag">sinology</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/softskills/"><span class="tag">softskills</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ubuntu/"><span class="tag">ubuntu</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/writ/"><span class="tag">writ</span><span class="tag">6</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="https://api.follow.it/subscription-form/RjJFYjRSRU9nSXF1T01PNEVyL3JCd0hEQXY1enpxcVJyZmFnTmRQcFZvdWplUDdNL1h4Y1M2bFZQenE4dm9ZYVV3M0tlckZzYnRzSzhrWjlJbllkNExqazVxWUZzUmlkcVNJeGtVcXgwaWNqOWRCZXdmQXRFT0hadXVRc1dJaHR8RGUyZGVFOFVRV0ptRFd5cUZPRkxaSjNid3BUVlpRWDlKUzVlc0o4SThoaz0=/8" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-10-08T07:29:00.000Z">2023-10-08</time></p><p class="title"><a href="/2023/10/08/tech/Linux%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Linux系统管理常用命令</a></p><p class="categories"><a href="/categories/tech/">tech</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-10-08T07:29:00.000Z">2023-10-08</time></p><p class="title"><a href="/2023/10/08/tech/%E9%9D%A2%E8%AF%95%E5%85%AB%E8%82%A1%E4%B9%8B%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">面试八股之操作系统</a></p><p class="categories"><a href="/categories/tech/">tech</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-10-08T07:29:00.000Z">2023-10-08</time></p><p class="title"><a href="/2023/10/08/tech/%E9%9D%A2%E8%AF%95%E5%85%AB%E8%82%A1%E4%B9%8B%E7%BC%96%E7%A0%81/">面试八股之编码</a></p><p class="categories"><a href="/categories/tech/">tech</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-08-19T09:41:51.000Z">2023-08-19</time></p><p class="title"><a href="/2023/08/19/tech/%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/">面试问题汇总</a></p><p class="categories"><a href="/categories/tech/">tech</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-06-08T07:29:00.000Z">2023-06-08</time></p><p class="title"><a href="/2023/06/08/softskill/%E5%A6%82%E4%BD%95%E5%86%99%E5%8D%A1%E7%89%87/">如何写卡片</a></p><p class="categories"><a href="/categories/softskill/">softskill</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2023/10/"><span class="level-start"><span class="level-item">十月 2023</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2023/08/"><span class="level-start"><span class="level-item">八月 2023</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2023/06/"><span class="level-start"><span class="level-item">六月 2023</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2022/10/"><span class="level-start"><span class="level-item">十月 2022</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/06/"><span class="level-start"><span class="level-item">六月 2021</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/04/"><span class="level-start"><span class="level-item">四月 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/06/"><span class="level-start"><span class="level-item">六月 2020</span></span><span class="level-end"><span class="level-item tag">15</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/11/"><span class="level-start"><span class="level-item">十一月 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/06/"><span class="level-start"><span class="level-item">六月 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/10/"><span class="level-start"><span class="level-item">十月 2018</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="Amazing Coder" height="28"></a><p class="is-size-7"><span>&copy; 2024 Amazing Coder</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2019</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/amazingcoderpro/"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
