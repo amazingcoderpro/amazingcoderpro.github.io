@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>面试八股之编码 - Amazing Coder</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Amazing Coder"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Amazing Coder"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="积累编码相关面试问题及解答。包括cpp&amp;#x2F;python&amp;#x2F;数据结构等"><meta property="og:type" content="blog"><meta property="og:title" content="面试八股之编码"><meta property="og:url" content="http://amazingcoderpro.github.io/2023/10/08/technology/%E9%9D%A2%E8%AF%95%E5%85%AB%E8%82%A1%E4%B9%8B%E7%BC%96%E7%A0%81/"><meta property="og:site_name" content="Amazing Coder"><meta property="og:description" content="积累编码相关面试问题及解答。包括cpp&amp;#x2F;python&amp;#x2F;数据结构等"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="http://amazingcoderpro.github.io/img/og_image.png"><meta property="article:published_time" content="2023-10-08T07:29:00.000Z"><meta property="article:modified_time" content="2023-10-08T07:29:00.000Z"><meta property="article:author" content="Amazing Coder"><meta property="article:tag" content="cs"><meta property="article:tag" content="python"><meta property="article:tag" content="interview"><meta property="article:tag" content="cpp"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="http://amazingcoderpro.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://amazingcoderpro.github.io/2023/10/08/technology/%E9%9D%A2%E8%AF%95%E5%85%AB%E8%82%A1%E4%B9%8B%E7%BC%96%E7%A0%81/"},"headline":"面试八股之编码","image":["http://amazingcoderpro.github.io/img/og_image.png"],"datePublished":"2023-10-08T07:29:00.000Z","dateModified":"2023-10-08T07:29:00.000Z","author":{"@type":"Person","name":"Amazing Coder"},"publisher":{"@type":"Organization","name":"Amazing Coder","logo":{"@type":"ImageObject","url":"http://amazingcoderpro.github.io/img/logo.svg"}},"description":"积累编码相关面试问题及解答。包括cpp&#x2F;python&#x2F;数据结构等"}</script><link rel="canonical" href="http://amazingcoderpro.github.io/2023/10/08/technology/%E9%9D%A2%E8%AF%95%E5%85%AB%E8%82%A1%E4%B9%8B%E7%BC%96%E7%A0%81/"><link rel="alternate" href="https://blog.amazingcoder.xyz/atom.xml" title="Amazing Coder" type="application/atom+xml"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Amazing Coder" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/amazingcoderpro/"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2023-10-08T07:29:00.000Z" title="2023/10/8 15:29:00">2023-10-08</time>发表</span><span class="level-item"><time dateTime="2023-10-08T07:29:00.000Z" title="2023/10/8 15:29:00">2023-10-08</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/technology/">technology</a></span><span class="level-item">1 小时读完 (大约12224个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">面试八股之编码</h1><div class="content"><h1 id="面试八股之编码"><a href="#面试八股之编码" class="headerlink" title="面试八股之编码"></a>面试八股之编码</h1><h2 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h2><ul>
+<li><p>1.全局变量可不可以定义在可被多个.C文件包含的头文件中？为什么？<br>  <code>  可以，在不同的C文件中以static形式来声明同名全局变量。可以在不同的C文件中声明同名的全局变量，前提是其中只能有一个C文件中对此变量赋初值，此时连接不会出错.  </code></p>
+</li>
+<li><p>2.static全局变量与普通的全局变量有什么区别？static局部变量和普通局部变量有什么区别？Static函数与普通函数有什么区别？<br>  <code>  (1)把全局变量改变为静态变量后是改变了它的作用域，限制了它的使用范围。    全局变量(外部变量)的说明之前再冠以static 就构成了静态的全局变量。全局变量本身就是静态存储方式， 静态全局变量当然也是静态存储方式。 这两者在存储方式上并无不同。这两者的区别在于非静态全局变量的作用域是整个源程序， 当一个源程序由多个源文件组成时，非静态的全局变量在各个源文件中都是有效的。 而静态全局变量则限制了其作用域， 即只在定义该变量的源文件内有效， 在同一源程序的其它源文件中不能使用它。(2)把局部变量改变为静态变量后是改变了它的存储方式即改变了它的生存期。(3)static函数与普通函数作用域不同,仅在本文件。    综上所述:     static全局变量与普通的全局变量有什么区别：    static全局变量只初使化一次，防止在其他文件单元中被引用;    static局部变量和普通局部变量有什么区别：    static局部变量只被初始化一次，下一次依据上一次结果值；    static函数与普通函数有什么区别：    static函数在内存中只有一份，普通函数在每个被调用中维持一份拷贝  </code></p>
+</li>
+<li><p>3.以下代码存在的问题？<br>  <code>  char string[] = “Linux C”;   char *p = “Linux C”;   string[0] = &#39;a&#39;;   p[0] = &#39;a&#39;;   注：”Linux C”是一个字符串常量。C语言对于字符串常量通常是这样处理的：在内存中开辟一个字符数组来存储该字符串常量，并把开辟出的字符数组的首地址赋给p.   注：string[0] = ‘a’是可以的，而p[0] = ‘a’是非法的，因为p指向的是字符串常量，常量的内容不可改变。把p指向一个字符串常量或字符数组时合法的，例如：p = “Hello World!”; p= string;</code></p>
+</li>
+<li><ol start="4">
+<li>写一个实现字符串拷贝的函数。给定字符串拷贝函数strcpy的原型：<br>char *strcpy(char *dest,const char *src); 要求：（1）不调用任何库函数。（2）说明函数为什么返回char *.<br>  <code>  char *strcpy(char *dest,char *src) &#123;   if( (dest == NULL) || (src == NULL) )   &#123;   return NULL;   &#125;   char *ret_string = dest;   while( *dest ++ = *src++)!=’\0′);   return ret_string;   &#125;  </code></li>
+</ol>
+</li>
+</ul>
+<h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><ul>
+<li>可变类型与不可变类型，如何判断一个变量是可变还是不可变</li>
+<li>逻辑表达式中，哪些值是假？（0，空串，空容器，False，None）</li>
+<li>列表和元组有什么不同？</li>
+<li>range和xrange有什么区别？</li>
+<li>for循环如何同时遍历索引和值</li>
+<li>什么是静态方法，如何定义</li>
+<li>静态方法和类方法的区别是什么？</li>
+<li>list如何去重？</li>
+<li>如何判断字符串是否含有某个字串（in比str.find好）为什么？</li>
+<li>is None和&#x3D;&#x3D; None有什么区别？</li>
+<li>什么是GIL</li>
+<li>type isinstance区别</li>
+<li>字符串拼接用 join和+的区别</li>
+<li>python实现单例</li>
+<li></li>
+</ul>
+<h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><h2 id="上机编程"><a href="#上机编程" class="headerlink" title="上机编程"></a>上机编程</h2><p>编程题本身不考察算法掌握程度，但是考察基本的逻辑思维，把算法转换为代码的能力，以及基本的错误处理。现场面试用纸笔，白板，电脑都可以，远程面试可以用在线代码平台，比如<a target="_blank" rel="noopener" href="http://collabedit.com/">collabedit</a>，<a target="_blank" rel="noopener" href="https://codeshare.io/">codeshare.io</a>，<a target="_blank" rel="noopener" href="https://codeinterview.io/">codeinterview.io</a><br>复杂的算法不太容易验证，二十行内能解决的不太复杂的算法题为宜，速度越快越好，代码不能有明显的语法错误和低级错误，例如：</p>
+<h3 id="1-纯算法"><a href="#1-纯算法" class="headerlink" title="1. 纯算法"></a>1. 纯算法</h3><ul>
+<li>链表逆序</li>
+<li>二叉树求宽度&#x2F;深度</li>
+<li>字符串处理：Split, Trim，逆序</li>
+<li>编码：UTF8编解码，Varint编解码，十六进制编解码</li>
+<li>数组去重，保持顺序 [1, 2, 3, 1, 2] -&gt; [1, 2, 3]</li>
+<li>数组去重，保持顺序，后面的出现后，前面的去掉，[1, 2, 3, 2, 1] -&gt; [3, 2, 1]</li>
+<li>位图中查找第一个设置&#x2F;未设置的位的偏移量</li>
+</ul>
+<h3 id="2-接口设计"><a href="#2-接口设计" class="headerlink" title="2. 接口设计"></a>2. 接口设计</h3><ul>
+<li>比如String类的接口设计（构造函数，拷贝，赋值，拼接等），用数组实现循环队列</li>
+<li>可以考察一些函数的实现，比如String类+&#x3D;的实现，主要关注正确性和内存泄漏和越界</li>
+</ul>
+<h2 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h2><h2 id="中间件"><a href="#中间件" class="headerlink" title="中间件"></a>中间件</h2><h2 id="人员本身"><a href="#人员本身" class="headerlink" title="人员本身"></a>人员本身</h2><ul>
+<li>自我介绍</li>
+<li>项目亮点难点</li>
+<li>项目的领域模型可以画一下吗？</li>
+</ul>
+<h2 id="JD-example"><a href="#JD-example" class="headerlink" title="JD example"></a>JD example</h2><p>腾讯云后端开发工程师（西安）</p>
+<p>职责：<br>负责腾讯云网络产品的研发与设计工作，打造更稳定、安全、高效和可靠的专业后台支撑体系， 保障海量网络业务的稳定运行。</p>
+<p>必须具备的：<br>1、本科及以上学历，计算机相关专业，三年以上后台开发工作经验；<br>2、熟悉Linux操作系统下C++、python(或php)开发，能运用常见工具定位和调试问题代码；<br>3、熟悉http、tcp&#x2F;ip协议， 进程间通讯编程，多线程编程等，熟悉Linux常见网络服务器模型；<br>4、具有扎实的软件开发基础知识，包括算法、操作系统、软件工程、设计模式、数据结构、数据库系统、网络安全等；<br>5、具有良好的团队合作、沟通与口头、书面表达能力， 严谨的工作态度与高质量意识；<br>6、对新技术敏感，求知欲强，能快速学习并具备较强的技术领悟能力。</p>
+<p>有一定了解的：<br>1、Shell 、 Perl 等脚本语言；<br>2、MySQL及 SQL 语言、编程；<br>3、Docker、K8s、Nginx等常用技术组件；<br>4、常见的网络协议，包括但不限于arp、ip、vpn、gre等。</p>
+<p>可以加分的：<br>1、具备分布式系统设计与开发、负载均衡技术、系统容灾设计、高可用系统等知识；<br>2、通过腾讯云从业资格证认证或同等资格认证。</p>
+<p>注：此岗位为腾讯集团旗下全资子公司编制岗位  base 西安 雁塔区</p>
+<p><em>*<em>*10、什么函数不能声明为虚函数？*</em>**<br>*</em>*<em>**答：**constructor*</em>**</p>
+<p><em>*<em>*12、不能做switch()的参数类型*</em>**<br>*</em>*<em>**答** **：**switch的参数不能为实型。*</em>**</p>
+<p><em>*<em>*14、如何引用一个已经定义过的全局变量？*</em>**<br>*</em>*<em>**答** **、可以用引用头文件的方式，也可以用**extern关键字，如果用引用头文件方式来引用某个在头文件中声明的全局变量，假定你将那个变量写错了，那么在编译期间会报错，如果你用extern方式引用时，假定你犯了同样的错误，那么在编译期间不会报错，而在连接期间报错。*</em>**</p>
+<p>虚函数： 实现类的多态性</p>
+<p>关键字：虚函数；虚函数的作用；多态性；多态公有继承；动态联编</p>
+<p>C++中的虚函数的作用主要是实现了多态的机制。基类定义虚函数，子类可以重写该函数；在派生类中对基类定义的虚函数进行重写时，需要再派生类中声明该方法为虚方法。</p>
+<p>当子类重新定义了父类的虚函数后，当父类的指针指向子类对象的地址时，[即B b; A a &#x3D; &amp;b;] 父类指针根据赋给它的不同子类指针，动态的调用子类的该函数，而不是父类的函数（如果不使用virtual方法，请看后面★*），且这样的函数调用发生在运行阶段，而不是发生在编译阶段，称为动态联编。而函数的重载可以认为是多态，只不过是静态的。注意，非虚函数静态联编，效率要比虚函数高，但是不具备动态联编能力。</p>
+<p>★如果使用了virtual关键字，程序将根据引用或指针指向的 对 象 类 型 来选择方法，否则使用引用类型或指针类型来选择方法。</p>
+<p>下面的例子解释动态联编性：</p>
+<p>————————————————<br>版权声明：本文为CSDN博主「BigoSprite」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/iFuMI/article/details/51088091">https://blog.csdn.net/iFuMI/article/details/51088091</a></p>
+<p>实现原理：虚函数表+虚表指针</p>
+<p>关键字：虚函数底层实现机制；虚函数表；虚表指针</p>
+<p>编译器处理虚函数的方法是：为每个类对象添加一个隐藏成员，隐藏成员中保存了一个指向函数地址数组的指针，称为虚表指针（vptr），这种数组成为虚函数表（virtual function table, vtbl），即，每个类使用一个虚函数表，每个类对象用一个虚表指针。</p>
+<p>举个例子：基类对象包含一个虚表指针，指向基类中所有虚函数的地址表。派生类对象也将包含一个虚表指针，指向派生类虚函数表。看下面两种情况：</p>
+<p>如果派生类重写了基类的虚方法，该派生类虚函数表将保存重写的虚函数的地址，而不是基类的虚函数地址。</p>
+<p>如果基类中的虚方法没有在派生类中重写，那么派生类将继承基类中的虚方法，而且派生类中虚函数表将保存基类中未被重写的虚函数的地址。注意，如果派生类中定义了新的虚方法，则该虚函数的地址也将被添加到派生类虚函数表中。<br>————————————————<br>版权声明：本文为CSDN博主「BigoSprite」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/iFuMI/article/details/51088091">https://blog.csdn.net/iFuMI/article/details/51088091</a></p>
+<p>链接：<a target="_blank" rel="noopener" href="https://www.nowcoder.com/questionTerminal/4ef1d67edee049c78aa597067c519246">https://www.nowcoder.com/questionTerminal/4ef1d67edee049c78aa597067c519246</a><br>来源：牛客网</p>
+<p>参见《Effective C++》 条款09：绝不在构造函数或析构函数中调用虚函数。</p>
+<p>  这个链接有电子档：<a target="_blank" rel="noopener" href="http://blog.csdn.net/hxz_qlh/article/details/14089895">http://blog.csdn.net/hxz_qlh/article/details/14089895</a></p>
+<p>  简要结论：</p>
+<p>  １.　从语法上讲，调用完全没有问题。</p>
+<p>  ２.　但是从效果上看，往往不能达到需要的目的。</p>
+<p>  Effective 的解释是：</p>
+<p>  派生类对象构造期间进入基类的构造函数时，对象类型变成了基类类型，而不是派生类类型。</p>
+<p>  同样，进入基类析构函数时，对象也是基类类型。</p>
+<p>  所以，虚函数始终仅仅调用基类的虚函数（如果是基类调用虚函数），不能达到多态的效果，所以放在构造函数中是没有意义的，而且往往不能达到本来想要的效果。</p>
+<h3 id="2-3-依赖倒置原则"><a href="#2-3-依赖倒置原则" class="headerlink" title="2.3 依赖倒置原则"></a>2.3 依赖倒置原则</h3><blockquote>
+<p>抽象不应该依赖于具体类，具体类应当依赖于抽象。换言之，要针对接口编程，而不是针对实现编程。</p>
+</blockquote>
+<p>依赖倒转原则要求我们在程序代码中传递参数时或在关联关系中，尽量引用层次高的抽象层类，即使用接口和抽象类进行变量类型声明、参数类型声明、方法返回类型声明，以及数据类型的转换等，而不要用具体类来做这些事情。为了确保该原则的应用，一个具体类应当只实现接口或抽象类中声明过的方法，而不要给出多余的方法，否则将无法调用到在子类中增加的新方法。</p>
+<p>在引入抽象层后，系统将具有很好的灵活性，在程序中尽量使用抽象层进行编程，而将具体类写在配置文件中，这样一来，如果系统行为发生变化，只需要对抽象层进行扩展，并修改配置文件，而无须修改原有系统的源代码，在不修改的情况下来扩展系统的功能，满足开闭原则的要求。</p>
+<p><strong>优点：通过抽象来搭建框架，建立类和类的关联，以减少类间的耦合性。而且以抽象搭建的系统要比以具体实现搭建的系统更加稳定，扩展性更高，同时也便于维护。</strong></p>
+<p>作者：xietao3<br>链接：<a target="_blank" rel="noopener" href="https://juejin.im/post/5c8756e6e51d456cda2e7ff1">https://juejin.im/post/5c8756e6e51d456cda2e7ff1</a><br>来源：掘金<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<p>单例模式（Singleton Pattern）</p>
+<p>观察者模式(Observer Pattern)：定义对象之间的一种一对多依赖关系，使得每当一个对象状态发生改变时，其相关依赖对象皆得到通知并被自动更新。观察者模式的别名包括发布-订阅（Publish&#x2F;Subscribe）模式、模型-视图（Model&#x2F;View）模式、源-监听器（Source&#x2F;Listener）模式或从属者（Dependents）模式。观察者模式是一种对象行为型模式。</p>
+<p>作者：xietao3<br>链接：<a target="_blank" rel="noopener" href="https://juejin.im/post/5c8756e6e51d456cda2e7ff1">https://juejin.im/post/5c8756e6e51d456cda2e7ff1</a><br>来源：掘金<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<h3 id="3-详细介绍一下TCP的四次挥手机制，为什么要有TIME-WAIT状态，为什么需要四次握手？服务器出现了大量CLOSE-WAIT状态如何解决"><a href="#3-详细介绍一下TCP的四次挥手机制，为什么要有TIME-WAIT状态，为什么需要四次握手？服务器出现了大量CLOSE-WAIT状态如何解决" class="headerlink" title="3. 详细介绍一下TCP的四次挥手机制，为什么要有TIME_WAIT状态，为什么需要四次握手？服务器出现了大量CLOSE_WAIT状态如何解决"></a>3. 详细介绍一下TCP的四次挥手机制，为什么要有TIME_WAIT状态，为什么需要四次握手？服务器出现了大量CLOSE_WAIT状态如何解决</h3><p>当客户端要服务器断开连接时，客户端 TCP 会向服务器发送一个特殊的报文段，该报文段的 FIN 标志位会被置1，接着服务器会向客户端发送一个确认报文段。然后服务器也会客户端发送一个 FIN 标志位为1的终止报文段，随后客户端回送一个确认报文段，服务器立即断开连接。客户端等待一段时间后也断开连接。</p>
+<p>其实四次挥手的过程是很容易理解的，由于 TCP 协议是全双工的，也就是说客户端和服务端都可以发起断开连接。两边各发起一次断开连接的申请，加上各自的两次确认，看起来就像执行了四次挥手。</p>
+<p>为什么要有 TIME_WAIT 状态？因为客户端最后向服务器发送的确认 ACK 是有可能丢失的，当出现超时，服务端会再次发送 FIN 报文段，如果客户端已经关闭了就收不到了。还有一点是避免新旧连接混杂。</p>
+<p>大量 CLOSE_WAIT 表示程序出现了问题，对方的 socket 已经关闭连接，而我方忙于读或写没有及时关闭连接，需要检查代码，特别是释放资源的代码，或者是处理请求的线程配置</p>
+<p>\3. TIME_WAIT状态<br>    经过前面的铺垫，终于要讲到与本文主题相关的内容了。 ^_^<br>    从TCP状态迁移图可知，只有首先调用close()发起主动关闭的一方才会进入TIME_WAIT状态，而且是必须进入（图中左下角所示的3条状态迁移线最终均要进入该状态才能回到初始的CLOSED状态）。<br>    从图中还可看到，进入TIME_WAIT状态的TCP连接需要经过2MSL才能回到初始状态，其中，MSL是指Max<br>Segment Lifetime，即数据包在网络中的最大生存时间。每种TCP协议的实现方法均要指定一个合适的MSL值，如RFC1122给出的建议值为2分钟，又如Berkeley体系的TCP实现通常选择30秒作为MSL值。这意味着TIME_WAIT的典型持续时间为1-4分钟。<br>    TIME_WAIT状态存在的原因主要有两点：<br>    1）为实现TCP这种全双工（full-duplex）连接的可靠释放<br>    参考本文前面给出的TCP释放连接4次挥手示意图，假设发起active close的一方（图中为client）发送的ACK（4次交互的最后一个包）在网络中丢失，那么由于TCP的重传机制，执行passiveclose的一方（图中为server）需要重发其FIN，在该FIN到达client（client是active close发起方）之前，client必须维护这条连接的状态（尽管它已调用过close），具体而言，就是这条TCP连接对应的（local_ip, local_port）资源不能被立即释放或重新分配。直到romete peer重发的FIN达到，client也重发ACK后，该TCP连接才能恢复初始的CLOSED状态。如果activeclose方不进入TIME_WAIT以维护其连接状态，则当passive close方重发的FIN达到时，active close方的TCP传输层会以RST包响应对方，这会被对方认为有错误发生（而事实上，这是正常的关闭连接过程，并非异常）。<br>    2）为使旧的数据包在网络因过期而消失<br>    为说明这个问题，我们先假设TCP协议中不存在TIME_WAIT状态的限制，再假设当前有一条TCP连接：(local_ip, local_port, remote_ip,remote_port)，因某些原因，我们先关闭，接着很快以相同的四元组建立一条新连接。本文前面介绍过，TCP连接由四元组唯一标识，因此，在我们假设的情况中，TCP协议栈是无法区分前后两条TCP连接的不同的，在它看来，这根本就是同一条连接，中间先释放再建立的过程对其来说是“感知”不到的。这样就可能发生这样的情况：前一条TCP连接由local peer发送的数据到达remote peer后，会被该remot peer的TCP传输层当做当前TCP连接的正常数据接收并向上传递至应用层（而事实上，在我们假设的场景下，这些旧数据到达remote peer前，旧连接已断开且一条由相同四元组构成的新TCP连接已建立，因此，这些旧数据是不应该被向上传递至应用层的），从而引起数据错乱进而导致各种无法预知的诡异现象。作为一种可靠的传输协议，TCP必须在协议层面考虑并避免这种情况的发生，这正是TIME_WAIT状态存在的第2个原因。<br>    具体而言，local peer主动调用close后，此时的TCP连接进入TIME_WAIT状态，处于该状态下的TCP连接不能立即以同样的四元组建立新连接，即发起active close的那方占用的local port在TIME_WAIT期间不能再被重新分配。由于TIME_WAIT状态持续时间为2MSL，这样保证了旧TCP连接双工链路中的旧数据包均因过期（超过MSL）而消失，此后，就可以用相同的四元组建立一条新连接而不会发生前后两次连接数据错乱的情况。</p>
+<p>另一比较深入的说法</p>
+<p>TIME_WAIT状态的存在有两个理由：（1）让4次握手关闭流程更加可靠；4次握手的最后一个ACK是是由主动关闭方发送出去的，若这个ACK丢失，被动关闭方会再次发一个FIN过来。若主动关闭方能够保持一个2MSL的TIME_WAIT状态，则有更大的机会让丢失的ACK被再次发送出去。（2）防止lost duplicate对后续新建正常链接的传输造成破坏。lost duplicate在实际的网络中非常常见，经常是由于路由器产生故障，路径无法收敛，导致一个packet在路由器A，B，C之间做类似死循环的跳转。IP头部有个TTL，限制了一个包在网络中的最大跳数，因此这个包有两种命运，要么最后TTL变为0，在网络中消失；要么TTL在变为0之前路由器路径收敛，它凭借剩余的TTL跳数终于到达目的地。但非常可惜的是TCP通过超时重传机制在早些时候发送了一个跟它一模一样的包，并先于它达到了目的地，因此它的命运也就注定被TCP协议栈抛弃。另外一个概念叫做incarnation connection，指跟上次的socket pair一摸一样的新连接，叫做incarnation of previous connection。lost duplicate加上incarnation connection，则会对我们的传输造成致命的错误。大家都知道TCP是流式的，所有包到达的顺序是不一致的，依靠序列号由TCP协议栈做顺序的拼接；假设一个incarnation connection这时收到的seq&#x3D;1000, 来了一个lost duplicate为seq&#x3D;1000, len&#x3D;1000, 则tcp认为这个lost duplicate合法，并存放入了receive buffer，导致传输出现错误。通过一个2MSL TIME_WAIT状态，确保所有的lost duplicate都会消失掉，避免对新连接造成错误。</p>
+<h2 id="滑动窗口"><a href="#滑动窗口" class="headerlink" title="滑动窗口"></a>滑动窗口</h2><p>从上面的图可以看到滑动窗口左边的是已发送并且被确认的分组，滑动窗口右边是还没有轮到的分组。滑动窗口里面也分为两块，一块是已经发送但是未被确认的分组，另一块是窗口内等待发送的分组。随着已发送的分组不断被确认，窗口内等待发送的分组也会不断被发送。整个窗口就会往右移动，让还没轮到的分组进入窗口内。</p>
+<p>可以看到滑动窗口起到了一个限流的作用，也就是说当前滑动窗口的大小决定了当前 TCP 发送包的速率，而滑动窗口的大小取决于拥塞控制窗口和流量控制窗口的两者间的最小值。</p>
+<p>接着就讲讲什么是流量控制窗口，什么是拥塞控制窗口。</p>
+<p>先讲流量控制：</p>
+<p>TCP 是全双工的，客户端和服务器均可作为发送方或接收方，我们现在假设一个发送方向接收方发送数据的场景来讲解流量控制。首先我们的接收方有一块接收缓存，当数据来到时会先把数据放到缓存中，上层应用等缓存中有数据时就会到缓存中取数据。假如发送方没有限制地不断地向接收方发送数据，接收方的应用程序又没有及时把接收缓存中的数据读走，就会出现缓存溢出，数据丢失的现象，为了解决这个问题，我们引入流量控制窗口。</p>
+<p>假设应用程序最后读走的数据序号是 lastByteRead，接收缓存中接收到的最后一个数据序号是 lastByteRcv，接收缓存的大小为 RcvSize，那么必须要满足 lastByteRcv - lastByteRead &lt;&#x3D; RcvSize 才能保证接收缓存不会溢出，所以我们定义流量窗口为接收缓存剩余的空间，也就是Rcv &#x3D; RcvSize - (lastByteRcv - lastByteRead)。只要接收方在响应 ACK 的时候把这个窗口的值带给发送方，发送方就能知道接收方的接收缓存还有多大的空间，进而设置滑动窗口的大小。</p>
+<p>接着讲解拥塞控制：</p>
+<p>拥塞控制是指发送方先设置一个小的窗口值作为发送速率，当成功发包并接收到ACK时，便以指数速率增大发送窗口的大小，直到遇到丢包（超时&#x2F;三个冗余ACK），才停止并调整窗口的大小。这么做能最大限度地利用带宽，又不至于让网络环境变得太过拥挤。</p>
+<p>最终滑动窗口的值将设置为流量控制窗口和拥塞控制窗口中的较小值。</p>
+<p>Q: 编写 TCP&#x2F;SOCK_STREAM 服务程序时，SO_REUSEADDR到底什么意思？</p>
+<p>A: 这个套接字选项通知内核，如果端口忙，但TCP状态位于 TIME_WAIT ，可以重用端口。如果端口忙，而TCP状态位于其他状态，重用端口时依旧得到一个错误信息， 指明”地址已经使用中”。如果你的服务程序停止后想立即重启，而新套接字依旧 使用同一端口，此时 SO_REUSEADDR 选项非常有用。必须意识到，此时任何非期 望数据到达，都可能导致服务程序反应混乱，不过这只是一种可能，事实上很不可能。</p>
+<p>　CLOSE_WAIT： 这种状态的含义其实是表示在等待关闭。怎么理解呢？当对方close一个SOCKET后发送FIN报文给自己，你系统毫无疑问地会回应一个ACK报文给对方，此时则进入到CLOSE_WAIT状态。接下来呢，实际上你真正需要考虑的事情是察看你是否还有数据发送给对方，如果没有的话，那么你也就可以close这个SOCKET，发送FIN报文给对方，也即关闭连接。所以你在CLOSE_WAIT状态下，需要完成的事情是等待你去关闭连接。</p>
+<h3 id="5-讲一下HTTP与HTTPS的区别"><a href="#5-讲一下HTTP与HTTPS的区别" class="headerlink" title="5. 讲一下HTTP与HTTPS的区别"></a>5. 讲一下HTTP与HTTPS的区别</h3><p>HTTP和HTTPS的主要区别在于HTTP协议传递的是明文数据，而HTTPS传递的是加密过的数据，也就是说HTTPS更具有安全性。也正由HTTPS需要保证安全性，所以它的性能要比HTTP差一点。</p>
+<p>单说安全性肯定是不够的，我打算扩展讲一下HTTPS是怎么解决安全性问题的，通过这些HTTP没有机制，反映出HTTPS与HTTP的区别。下面尝试把HTTPS加密的过程推导出来。推导过程不涉及复杂的实现细节：</p>
+<h4 id="如何安全地进行数据传输？"><a href="#如何安全地进行数据传输？" class="headerlink" title="如何安全地进行数据传输？"></a>如何安全地进行数据传输？</h4><p>假设现在A和B要进行安全的通信，那么究竟怎样才算是安全的通信？很自然地会想到：A和B之间传递数据，这些数据只有A和B才看得懂，中间人就算截取了信息但也看不懂，这才算得上安全。</p>
+<h4 id="安全通信的处理手段："><a href="#安全通信的处理手段：" class="headerlink" title="安全通信的处理手段："></a>安全通信的处理手段：</h4><p>为了能让A和B才能看懂，就必须要对数据进行加密，而且首先想到的就是对称加密。对称加密的意思是A和B各持有一个相同的密钥，它们传递信息时会用密钥给信息加密，在消息到达端给消息解密，完成安全通信。</p>
+<p>在对称加密中又会涉及到加密算法的选择问题。现实世界中，通常是多个客户端面向一个服务器的情况，不可能让每个客户端和服务器之间都采用相同的加密算法，如果是这样那和没加密差不多。所以注定每个客户端和服务器之间都会采用不同的加密方式。</p>
+<h4 id="如何让每个客户端与服务器之间都采用不同的加密方式？"><a href="#如何让每个客户端与服务器之间都采用不同的加密方式？" class="headerlink" title="如何让每个客户端与服务器之间都采用不同的加密方式？"></a>如何让每个客户端与服务器之间都采用不同的加密方式？</h4><p>要想对不同的机器使用不同的加密方式，最直接想到的就是使用随机数。也就说客户端和服务器之间每次都基于一个随机数产生加密算法。（具体实现时为了保证随机，用到还不止一个随机数）</p>
+<p>这个产生加密算法的过程称之为协商，现在问题是协商的过程是透明的，也就是说中间人可以截获协商的过程，从而知道我们的加密方式。为了解决这个问题，我们需要对协商的过程进行加密。</p>
+<h4 id="如何对协商的过程进行加密？"><a href="#如何对协商的过程进行加密？" class="headerlink" title="如何对协商的过程进行加密？"></a>如何对协商的过程进行加密？</h4><p>之所以能来到这一步，是因为我们一开始就选择使用了对称加密，也就说一开始的对称加密导致了现在的问题，所以这时我们不能再使用对称加密了，否则会陷入死循环。</p>
+<p>在密码学领域，还有一种加密过程叫非对称加密，它的逻辑是这样的：通信双方一方持有私钥，一方持有公钥，经过私钥加密的信息，都能通过公钥进行解密。但是经过公钥加密的数据，只有私钥可以解密。</p>
+<p>按照非对称加密的规则，我们让服务器持有私钥，让客户端持有公钥。这样就能保证客户端给服务器发送消息的时候是安全的（相反，服务器给客户端发送消息就是不安全的），我们可以把协商时重要的逻辑安排在客户端给服务器发送信息的过程中，从而保证了协商过程的安全性。</p>
+<h4 id="客户端如何获得公钥？"><a href="#客户端如何获得公钥？" class="headerlink" title="客户端如何获得公钥？"></a>客户端如何获得公钥？</h4><p>现在用非对称加密算法解决了协商的安全问题，但是非对称加密的前提是客户端需要获得公钥，这又是一个问题了，客户端与服务器打交道之前是互不知道双方身份的，怎么才能让客户端获得公钥呢？</p>
+<p>也就只有两种办法：</p>
+<ol>
+<li>客户端向服务器要公钥</li>
+<li>客户端向一个远程的公共服务器获取公钥</li>
+</ol>
+<p>方法2显然是不行的，尚且不说多了一个访问节点，如何找到公共服务器的地址也是一个待解决的问题，所以还是使用方法1。</p>
+<p>但是方法1存在一个问题：如果中间人把服务器发送给客户端的公钥调包了怎么办？也就是说客户端无法知道发送公钥的是否是正真的服务器。</p>
+<h4 id="引入第三方机构解决问题"><a href="#引入第三方机构解决问题" class="headerlink" title="引入第三方机构解决问题"></a>引入第三方机构解决问题</h4><p>客户端无法辨识服务端和中间人的问题称为“身份验证”问题，也就是说我们需要为服务器向客户端发送公钥的过程进行加密。</p>
+<p>这下完了，之前我们因遇到对称加密的瓶颈选择了非对称加密，现在使用非对称加密也遇到了瓶颈。显然这两种加密方式都是不可用的了，否则会再次陷入死循环。</p>
+<p>接下来我们只好通过第三方机构的介入，解决这个问题。首先我们自己保存有第三方权威机构的公钥，然后第三方机构使用私钥对服务器将要发送给客户端的公钥进行加密，客户端接收到这个经加密的公钥后（数字证书），就能通过自己保存的第三方机构公钥进行解密。</p>
+<blockquote>
+<p>到这里为止，我们解释了HTTPS中使用到的对称加密，非对称加密，CA，数字证书的概念，但是还差一个叫数字签名的概念没有解释。</p>
+</blockquote>
+<p>在现实生活中，CA不单止会给我们正常公司发放证书，还会给中间人的坏公司发放证书，如果中间人把发放的证书调包了怎么办？这时我们仍能用CA的私钥进行解密，但是证书已经被调包了。</p>
+<p>那么客户端怎样验证证书的真伪呢？答案是证书本身会告诉客户端如何辨认真伪。比方说证书上面有一个证书编号，还有一个如何计算证书编号的方法，客户端可以根据计算证书编号的方法计算出自己要获得的证书的编号，然后把这个编号和证书上的编号进行比对，如果一样证明没有被调包。</p>
+<p>这里的证书编号指的就是数字签名，证书指的就是数字证书。</p>
+<p>总结一下HTTPS：HTTPS想要保证客户端与服务器之间的通信安全，就得使用对称加密算法进行加密。协商对称加密算法的过程通过非对称加密算法来保证。在非对称加密算法中，客户端获得公钥的过程需要第三方机构（CA）通过颁发数字证书保证安全性。</p>
+<p>总得来说通过这一系列机制协商出了一个对称加密算法后，客户端与服务器之间就能通过该算法进行安全的通信了</p>
+<h2 id="进程、线程、协程概念性区别"><a href="#进程、线程、协程概念性区别" class="headerlink" title="进程、线程、协程概念性区别"></a>进程、线程、协程概念性区别</h2><p>对于进程、线程，都是有内核进行调度，有CPU时间片的概念，进行抢占式调度（有多种调度算法）。</p>
+<p>对于协程(用户级线程)，这是对内核透明的，也就是系统并不知道有协程的存在，是完全由用户的程序自己调度的，因为是由用户程序自己控制，那么就很难像抢占式调度那样做到强制的CPU控制权切换到其他进程&#x2F;线程，通常只能进行协作式调度，需要协程自己主动把控制权转让出去之后，其他协程才能被执行到。</p>
+<ol>
+<li><p>goroutine 和协程区别</p>
+<p>本质上，goroutine 就是协程。 不同的是，Golang 在 runtime、系统调用等多方面对 goroutine 调度进行了封装和处理，当遇到长时间执行或者进行系统调用时，会主动把当前 goroutine 的CPU (P) 转让出去，让其他 goroutine 能被调度并执行，也就是 Golang 从语言层面支持了协程。</p>
+</li>
+<li><p>其他方面不同</p>
+<p>3.1 内存消耗方面</p>
+<p>每个 goroutine (协程) 默认占用内存远比 Java 、C 的线程少。<br>goroutine: 2KB<br>线程: 8MB</p>
+<p>3.2 线程&#x2F;goroutine 切换(调度)开销方面</p>
+<p>线程&#x2F;goroutine 切换开销方面，goroutine 远比线程小<br>线程: 涉及模式切换(从用户态切换到内核态)、16个寄存器、PC、SP…等寄存器的刷新等。<br>goroutine: 只有三个寄存器的值修改 - PC &#x2F; SP &#x2F; DX.</p>
+</li>
+<li><p>进程是程序执行的一个实例, 担当分担系统资源的实体.</p>
+</li>
+<li><p>进程是分配资源的基本单位，也是我们说的隔离。线程作为独立运行和独立调度的基本单位</p>
+</li>
+<li><p>进程切换只发生在内核态</p>
+</li>
+</ol>
+<h2 id="线程-用户级线程-x2F-内核级线程"><a href="#线程-用户级线程-x2F-内核级线程" class="headerlink" title="线程(用户级线程&#x2F;内核级线程)"></a>线程(用户级线程&#x2F;内核级线程)</h2><ul>
+<li>线程是进程的一个执行流, 线程是操作系统能够进行运算调度的最小单位</li>
+<li>对于进程和线程,都是有内核进行调度,有 CPU 时间片的概念, 进行抢占式调度</li>
+<li>线程可以在启动前设置栈的大小,启动后,线程的栈大小就固定了</li>
+<li>内核由系统内核进行调度, 系统为了实现并发,会不断地切换线程执行, 由此会带来线程的上下文切换.</li>
+</ul>
+<h3 id="协程"><a href="#协程" class="headerlink" title="协程"></a>协程</h3><ul>
+<li>Goroutine 是协程的go语言实现</li>
+<li>协程(用户态线程)是对内核透明的, 也就是系统完全不知道有协程的存在, 完全由用户自己的程序进行调度</li>
+<li>在栈大小分配方便,且每个协程占用的默认占用内存很小,只有 <code>2kb</code> ,而线程需要 <code>8mb</code>,相较于线程,因为协程是对内核透明的,所以栈空间大小可以按需增大减小</li>
+<li>在调度方面, 相较于线程,go 有自己的一套运行时调度系统,go的调度器类似于内核调度器, 而他不需要进行内核的上下文切换, 所以重新调度一个 Goroutine 的开销会小于重新调度线程的开销</li>
+</ul>
+<p><strong>协程与线程主要区别是它将不再被内核调度，而是交给了程序自己而线程是将自己交给内核调度，所以也不难理解golang中调度器的存在</strong></p>
+<h3 id="cpp"><a href="#cpp" class="headerlink" title="cpp"></a>cpp</h3><ul>
+<li>一个C++对象的大小由哪些因素决定？基类，成员，内存对齐，虚函数。</li>
+<li>C++对象的成员函数对对象大小有什么影响？是否有虚函数，虚函数的个数多少对对象大小有什么影响？</li>
+<li>一个C++对象的初始化顺序是什么？</li>
+<li>虚析构函数有什么用途？</li>
+<li>new operator和operator new什么区别和联系？</li>
+<li>什么是placement new？</li>
+<li>STL迭代器按照支持的操作分为哪几类？</li>
+<li>Map和UnorderedMap的主要区别是什么？如何选择？</li>
+<li>UnorderedMap如何解决Hash冲突？</li>
+<li>Deque和Vector有什么区别？</li>
+<li>什么是RAII机制？</li>
+<li>在C++中，如何避免内存泄漏？</li>
+<li>智能指针有哪些？什么用途？</li>
+</ul>
+<h3 id="linux"><a href="#linux" class="headerlink" title="linux"></a>linux</h3><ul>
+<li>个进程的多个线程之间，那些资源是共享的，哪些是私有的？</li>
+<li>多个线程之间，线程同步和通讯的原语主要有哪些？</li>
+<li>进程间通讯的方式有哪些？（共享内存，消息队列，管道，信号量，信号等）</li>
+<li>程序崩溃了，如何定位崩溃点？</li>
+<li>程序崩溃时，常见的主要有那些信号？</li>
+<li>内存泄漏如何调试？如何预防？</li>
+<li>SSD和机械硬盘的主要区别是什么？</li>
+<li>SSD的写放大是什么意思？</li>
+</ul>
+<p>不懂Linux的，Linux相关的问题可以不知道。</p>
+<p>\6. 数据库的事务的4个特性是什么？并发事务会带来什么问题？</p>
+<ol>
+<li><strong>原子性：</strong> 事务是最小的执行单位，不允许分割。事务的原子性确保动作要么全部完成，要么完全不起作用；</li>
+<li><strong>一致性：</strong> 执行事务前后，数据保持一致，多个事务对同一个数据读取的结果是相同的；</li>
+<li><strong>隔离性：</strong> 并发访问数据库时，一个用户的事务不被其他事务所干扰，各并发事务之间数据库是独立的；</li>
+<li><strong>持久性：</strong> 一个事务被提交之后。它对数据库中数据的改变是持久的，即使数据库发生故障也不应该对其有任何影响。</li>
+</ol>
+<p>并发事务的问题：</p>
+<ul>
+<li><strong>脏读（Dirty read）:</strong> 当一个事务正在访问数据并且对数据进行了修改，而这种修改还没有提交到数据库中，这时另外一个事务也访问了这个数据，然后使用了这个数据。因为这个数据是还没有提交的数据，那么另外一个事务读到的这个数据是“脏数据”，依据“脏数据”所做的操作可能是不正确的。</li>
+<li><strong>丢失修改（Lost to modify）:</strong> 指在一个事务读取一个数据时，另外一个事务也访问了该数据，那么在第一个事务中修改了这个数据后，第二个事务也修改了这个数据。这样第一个事务内的修改结果就被丢失，因此称为丢失修改。 例如：事务1读取某表中的数据A&#x3D;20，事务2也读取A&#x3D;20，事务1修改A&#x3D;A-1，事务2也修改A&#x3D;A-1，最终结果A&#x3D;19，事务1的修改被丢失。</li>
+<li><strong>不可重复读（Unrepeatableread）:</strong> 指在一个事务内多次读同一数据。在这个事务还没有结束时，另一个事务也访问该数据。那么，在第一个事务中的两次读数据之间，由于第二个事务的修改导致第一个事务两次读取的数据可能不太一样。这就发生了在一个事务内两次读到的数据是不一样的情况，因此称为不可重复读。</li>
+<li><strong>幻读（Phantom read）:</strong> 幻读与不可重复读类似。它发生在一个事务（T1）读取了几行数据，接着另一个并发事务（T2）插入了一些数据时。在随后的查询中，第一个事务（T1）就会发现多了一些原本不存在的记录，就好像发生了幻觉一样，所以称为幻读。</li>
+</ul>
+<p>事务隔离的级别：</p>
+<ul>
+<li><strong>READ-UNCOMMITTED(读取未提交)：</strong> 最低的隔离级别，允许读取尚未提交的数据变更，<strong>可能会导致脏读、幻读或不可重复读</strong>。</li>
+<li><strong>READ-COMMITTED(读取已提交)：</strong> 允许读取并发事务已经提交的数据，<strong>可以阻止脏读，但是幻读或不可重复读仍有可能发生</strong>。</li>
+<li><strong>REPEATABLE-READ(可重复读)：</strong> 对同一字段的多次读取结果都是一致的，除非数据是被本身事务自己所修改，<strong>可以阻止脏读和不可重复读，但幻读仍有可能发生</strong>。（MySQL默认）</li>
+<li><strong>SERIALIZABLE(可串行化)：</strong> 最高的隔离级别，完全服从ACID的隔离级别。所有的事务依次逐个执行，这样事务之间就完全不可能产生干扰，也就是说，<strong>该级别可以防止脏读、不可重复读以及幻读</strong>。</li>
+</ul>
+<h3 id="上机"><a href="#上机" class="headerlink" title="上机"></a>上机</h3><p>面试问题</p>
+<p>1）TCP&#x2F;IP协议<br>    1）三次握手&#x2F;四次挥手过程<br>    2）TIME_WAIT状态<br>        1）主动关闭&#x2F;被动关闭<br>        2）需要的原因<br>        3）缓解措施<br>        4）有没有方式不出现TIME_WAIT状态<br>    3）RST出现的场景<br>    4）滑动窗口<br>2）网络编程<br>    1）EPOLL&#x2F;SELECT的区别<br>    2）边沿触发&#x2F;水平触发<br>    3）事件触发的场景<br>        1）读事件 有哪些场景<br>        2）写事件 有哪些场景<br>    4）READ调用返回值场景<br>        1）0<br>        2）-1<br>        3）&gt;0<br>    5）UDP客户端可以CONNECT不，那CONNECT和不CONNECT有啥区别<br>3）后台编程<br>    1）FORK的用途，FORK区分父子进程方式<br>    2）进程间通信方式<br>    3）僵尸进程<br>    4）内存模型，有哪些段构成<br>    5）进程&#x2F;线程&#x2F;协程的区别<br>4）常见中间件<br>    1）MYSQL<br>        1）为啥不建议SELECT *<br>        2）覆盖索引<br>        3）分页优化<br>    2）ZOOKEEPER<br>        1）有哪些WATCH以及对应唤醒事件<br>    3）KAFKA<br>        1）分区分服<br>        2）生产者<br>        3）消费者<br>5）语言<br>    1）JAVA语言<br>        1）内存管理<br>6）设计模式<br>    1）单例模式<br>7）项目中的难点、挑战点</p>
+<p>22989-腾讯云网络后台开发工程师(CSIG全资子公司)（西安）</p>
+<p>建议用online ddl（网上可以查）修改，就是逗号后面的参数<br>另外，添加字段要加上after，根据表结构看看fromWanIp适合在哪个字段后<br>ALTER TABLE cEip ALTER COLUMN ispId SET DEFAULT -1, ALGORITHM&#x3D;INPLACE, LOCK&#x3D;NONE;</p>
+<h2 id="python"><a href="#python" class="headerlink" title="python"></a>python</h2><h3 id="1-基础语法"><a href="#1-基础语法" class="headerlink" title="1. 基础语法"></a>1. 基础语法</h3><ul>
+<li>可变类型与不可变类型，如何判断一个变量是可变还是不可变</li>
+<li>python的函数传参是值传递还是引用传递</li>
+<li>逻辑表达式中，哪些值是假？（0，空串，空容器，False，None）</li>
+<li>列表和元组有什么不同？</li>
+<li>range和xrange有什么区别？</li>
+<li>for循环如何同时遍历索引和值</li>
+<li>什么是静态方法，如何定义</li>
+<li>静态方法和类方法的区别是什么？</li>
+<li>list如何去重？</li>
+<li>如何判断字符串是否含有某个字串（in比str.find好）为什么？</li>
+<li>is None和&#x3D;&#x3D; None有什么区别？</li>
+<li>什么是GIL, 多线程多进程</li>
+<li>type isinstance区别</li>
+<li>字符串拼接用 join和+的区别</li>
+<li>list、set、tuple 区别，实现细节、效率</li>
+<li>python中的封装、继承、多态</li>
+</ul>
+<h2 id="2-python编码"><a href="#2-python编码" class="headerlink" title="2. python编码"></a>2. python编码</h2><ul>
+<li>python实现单例（多种）</li>
+<li>python实现带参数、带返回值的装饰器（统计函数执行时间为例等，函数名覆盖问题）  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">	</span><br><span class="line"><span class="keyword">import</span> functools</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">timer</span>(<span class="params">func</span>):</span><br><span class="line"><span class="meta">    @functools.wraps(<span class="params">func</span>)</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">wrapper</span>(<span class="params">*args, **kwargs</span>):</span><br><span class="line">        start_time = time.time()</span><br><span class="line">        result = func(*args, **kwargs)</span><br><span class="line">        end_time = time.time()</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&#x27;<span class="subst">&#123;func.__name__&#125;</span> took <span class="subst">&#123;end_time - start_time:<span class="number">.6</span>f&#125;</span>s.&#x27;</span>)</span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line">    <span class="keyword">return</span> wrapper</span><br><span class="line">    </span><br><span class="line"><span class="meta">@timer </span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">my_func</span>(<span class="params">x, y</span>): </span><br><span class="line">	time.sleep(<span class="number">1</span>) </span><br><span class="line">	<span class="keyword">return</span> x + y </span><br><span class="line">result = my_func(<span class="number">3</span>, <span class="number">4</span>) <span class="built_in">print</span>(result)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>如果需要传递额外参数给装饰器，可以在装饰器外层再添加一层函数，例如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">repeat</span>(<span class="params">n=<span class="number">3</span></span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">decorator</span>(<span class="params">func</span>):</span><br><span class="line"><span class="meta">        @functools.wraps(<span class="params">func</span>)</span></span><br><span class="line">        <span class="keyword">def</span> <span class="title function_">wrapper</span>(<span class="params">*args, **kwargs</span>):</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">                result = func(*args, **kwargs)</span><br><span class="line">            <span class="keyword">return</span> result</span><br><span class="line">        <span class="keyword">return</span> wrapper</span><br><span class="line">    <span class="keyword">return</span> decorator</span><br><span class="line"></span><br><span class="line"><span class="meta">@repeat(<span class="params">n=<span class="number">5</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">my_func</span>(<span class="params">x, y</span>):</span><br><span class="line">    time.sleep(<span class="number">1</span>)</span><br><span class="line">    <span class="keyword">return</span> x + y</span><br><span class="line"></span><br><span class="line">result = my_func(<span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line"><span class="built_in">print</span>(result)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>repeat是一个外层函数，用于接收额外参数n，并返回一个内层函数decorator。decorator函数则是真正的装饰器函数，接受一个函数作为参数，并返回一个内部函数wrapper。wrapper函数接受任意数量的位置参数和关键字参数，并调用原函数，重复执行n次，并返回最后一次函数执行结果。</p>
+<p>总之，Python的装饰器是一种强大的语法特性，可以用于对函数进行增强、统计函数执行时间等操作，提高程序的可维护性和可扩展性。在使用装饰器时，应该注意保留原函数名，避免装饰器对函数名造成覆盖。</p>
+<ul>
+<li>合并两个数组、排序</li>
+</ul>
+</div><div class="article-licensing box"><div class="licensing-title"><p>面试八股之编码</p><p><a href="http://amazingcoderpro.github.io/2023/10/08/technology/面试八股之编码/">http://amazingcoderpro.github.io/2023/10/08/technology/面试八股之编码/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>Amazing Coder</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2023-10-08</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2023-10-08</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/cs/">cs</a><a class="link-muted mr-2" rel="tag" href="/tags/python/">python</a><a class="link-muted mr-2" rel="tag" href="/tags/interview/">interview</a><a class="link-muted mr-2" rel="tag" href="/tags/cpp/">cpp</a></div><!--!--></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3><div class="buttons is-centered"><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>支付宝</span><span class="qrcode"><img src="/images/alipay.jpg" alt="支付宝"></span></a><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>微信</span><span class="qrcode"><img src="/images/wechatpay.jpg" alt="微信"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2023/10/08/technology/%E9%9D%A2%E8%AF%95%E5%85%AB%E8%82%A1%E4%B9%8B%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">面试八股之操作系统</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2023/08/19/technology/%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"><span class="level-item">面试问题汇总</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
+            this.page.url = 'http://amazingcoderpro.github.io/2023/10/08/technology/%E9%9D%A2%E8%AF%95%E5%85%AB%E8%82%A1%E4%B9%8B%E7%BC%96%E7%A0%81/';
+            this.page.identifier = 'blog-amazingcoder-xyz';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');  
+            s.src = '//' + 'blog-amazingcoder-xyz' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/avatar.png" alt="Amazing Coder"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Amazing Coder</p><p class="is-size-6 is-block">A programmer who loves coding and life.</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Tencent Holdings Ltd. China</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">32</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">4</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">23</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/amazingcoderpro/" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/amazingcoderpro/"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="https://blog.amazingcoder.xyz/atom.xml"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#面试八股之编码"><span class="level-left"><span class="level-item">1</span><span class="level-item">面试八股之编码</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#C"><span class="level-left"><span class="level-item">1.1</span><span class="level-item">C++</span></span></a></li><li><a class="level is-mobile" href="#Python"><span class="level-left"><span class="level-item">1.2</span><span class="level-item">Python</span></span></a></li><li><a class="level is-mobile" href="#Linux"><span class="level-left"><span class="level-item">1.3</span><span class="level-item">Linux</span></span></a></li><li><a class="level is-mobile" href="#网络"><span class="level-left"><span class="level-item">1.4</span><span class="level-item">网络</span></span></a></li><li><a class="level is-mobile" href="#上机编程"><span class="level-left"><span class="level-item">1.5</span><span class="level-item">上机编程</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#1-纯算法"><span class="level-left"><span class="level-item">1.5.1</span><span class="level-item">1. 纯算法</span></span></a></li><li><a class="level is-mobile" href="#2-接口设计"><span class="level-left"><span class="level-item">1.5.2</span><span class="level-item">2. 接口设计</span></span></a></li></ul></li><li><a class="level is-mobile" href="#设计模式"><span class="level-left"><span class="level-item">1.6</span><span class="level-item">设计模式</span></span></a></li><li><a class="level is-mobile" href="#中间件"><span class="level-left"><span class="level-item">1.7</span><span class="level-item">中间件</span></span></a></li><li><a class="level is-mobile" href="#人员本身"><span class="level-left"><span class="level-item">1.8</span><span class="level-item">人员本身</span></span></a></li><li><a class="level is-mobile" href="#JD-example"><span class="level-left"><span class="level-item">1.9</span><span class="level-item">JD example</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#2-3-依赖倒置原则"><span class="level-left"><span class="level-item">1.9.1</span><span class="level-item">2.3 依赖倒置原则</span></span></a></li><li><a class="level is-mobile" href="#3-详细介绍一下TCP的四次挥手机制，为什么要有TIME-WAIT状态，为什么需要四次握手？服务器出现了大量CLOSE-WAIT状态如何解决"><span class="level-left"><span class="level-item">1.9.2</span><span class="level-item">3. 详细介绍一下TCP的四次挥手机制，为什么要有TIME_WAIT状态，为什么需要四次握手？服务器出现了大量CLOSE_WAIT状态如何解决</span></span></a></li></ul></li><li><a class="level is-mobile" href="#滑动窗口"><span class="level-left"><span class="level-item">1.10</span><span class="level-item">滑动窗口</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#5-讲一下HTTP与HTTPS的区别"><span class="level-left"><span class="level-item">1.10.1</span><span class="level-item">5. 讲一下HTTP与HTTPS的区别</span></span></a></li></ul></li><li><a class="level is-mobile" href="#进程、线程、协程概念性区别"><span class="level-left"><span class="level-item">1.11</span><span class="level-item">进程、线程、协程概念性区别</span></span></a></li><li><a class="level is-mobile" href="#线程-用户级线程-x2F-内核级线程"><span class="level-left"><span class="level-item">1.12</span><span class="level-item">线程(用户级线程/内核级线程)</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#协程"><span class="level-left"><span class="level-item">1.12.1</span><span class="level-item">协程</span></span></a></li><li><a class="level is-mobile" href="#cpp"><span class="level-left"><span class="level-item">1.12.2</span><span class="level-item">cpp</span></span></a></li><li><a class="level is-mobile" href="#linux"><span class="level-left"><span class="level-item">1.12.3</span><span class="level-item">linux</span></span></a></li><li><a class="level is-mobile" href="#上机"><span class="level-left"><span class="level-item">1.12.4</span><span class="level-item">上机</span></span></a></li></ul></li><li><a class="level is-mobile" href="#python"><span class="level-left"><span class="level-item">1.13</span><span class="level-item">python</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#1-基础语法"><span class="level-left"><span class="level-item">1.13.1</span><span class="level-item">1. 基础语法</span></span></a></li></ul></li><li><a class="level is-mobile" href="#2-python编码"><span class="level-left"><span class="level-item">1.14</span><span class="level-item">2. python编码</span></span></a></li></ul></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/essay/"><span class="level-start"><span class="level-item">essay</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/categories/softskills/"><span class="level-start"><span class="level-item">softskills</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/categories/technology/"><span class="level-start"><span class="level-item">technology</span></span><span class="level-end"><span class="level-item tag">23</span></span></a><ul><li><a class="level is-mobile" href="/categories/technology/fin/"><span class="level-start"><span class="level-item">fin</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li></ul></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/ai/"><span class="tag">ai</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/centos/"><span class="tag">centos</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/cpp/"><span class="tag">cpp</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/cs/"><span class="tag">cs</span><span class="tag">16</span></a></div><div class="control"><a class="tags has-addons" href="/tags/data/"><span class="tag">data</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/fin/"><span class="tag">fin</span><span class="tag">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/git/"><span class="tag">git</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/intervew/"><span class="tag">intervew</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/interview/"><span class="tag">interview</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/job/"><span class="tag">job</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/linux/"><span class="tag">linux</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/mysql/"><span class="tag">mysql</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/network/"><span class="tag">network</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/os/"><span class="tag">os</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/productivity/"><span class="tag">productivity</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/python/"><span class="tag">python</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/read/"><span class="tag">read</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/redis/"><span class="tag">redis</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/sinology/"><span class="tag">sinology</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/softskills/"><span class="tag">softskills</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/technology/"><span class="tag">technology</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ubuntu/"><span class="tag">ubuntu</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/writ/"><span class="tag">writ</span><span class="tag">6</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="https://api.follow.it/subscription-form/RjJFYjRSRU9nSXF1T01PNEVyL3JCd0hEQXY1enpxcVJyZmFnTmRQcFZvdWplUDdNL1h4Y1M2bFZQenE4dm9ZYVV3M0tlckZzYnRzSzhrWjlJbllkNExqazVxWUZzUmlkcVNJeGtVcXgwaWNqOWRCZXdmQXRFT0hadXVRc1dJaHR8RGUyZGVFOFVRV0ptRFd5cUZPRkxaSjNid3BUVlpRWDlKUzVlc0o4SThoaz0=/8" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-10-08T07:29:00.000Z">2023-10-08</time></p><p class="title"><a href="/2023/10/08/technology/Linux%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Linux系统管理常用命令</a></p><p class="categories"><a href="/categories/technology/">technology</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-10-08T07:29:00.000Z">2023-10-08</time></p><p class="title"><a href="/2023/10/08/technology/%E9%9D%A2%E8%AF%95%E5%85%AB%E8%82%A1%E4%B9%8B%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">面试八股之操作系统</a></p><p class="categories"><a href="/categories/technology/">technology</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-10-08T07:29:00.000Z">2023-10-08</time></p><p class="title"><a href="/2023/10/08/technology/%E9%9D%A2%E8%AF%95%E5%85%AB%E8%82%A1%E4%B9%8B%E7%BC%96%E7%A0%81/">面试八股之编码</a></p><p class="categories"><a href="/categories/technology/">technology</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-08-19T09:41:51.000Z">2023-08-19</time></p><p class="title"><a href="/2023/08/19/technology/%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/">面试问题汇总</a></p><p class="categories"><a href="/categories/technology/">technology</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-06-08T07:29:00.000Z">2023-06-08</time></p><p class="title"><a href="/2023/06/08/softskills/%E5%A6%82%E4%BD%95%E5%86%99%E5%8D%A1%E7%89%87/">如何写卡片</a></p><p class="categories"><a href="/categories/softskills/">softskills</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2023/10/"><span class="level-start"><span class="level-item">十月 2023</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2023/08/"><span class="level-start"><span class="level-item">八月 2023</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2023/06/"><span class="level-start"><span class="level-item">六月 2023</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2022/10/"><span class="level-start"><span class="level-item">十月 2022</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/06/"><span class="level-start"><span class="level-item">六月 2021</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/04/"><span class="level-start"><span class="level-item">四月 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/06/"><span class="level-start"><span class="level-item">六月 2020</span></span><span class="level-end"><span class="level-item tag">15</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/11/"><span class="level-start"><span class="level-item">十一月 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/06/"><span class="level-start"><span class="level-item">六月 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/10/"><span class="level-start"><span class="level-item">十月 2018</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="Amazing Coder" height="28"></a><p class="is-size-7"><span>&copy; 2024 Amazing Coder</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2019</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/amazingcoderpro/"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
