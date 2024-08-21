@@ -35,6 +35,8 @@
     
     <category term="cs" scheme="http://amazingcoderpro.github.io/tags/cs/"/>
     
+    <category term="tech" scheme="http://amazingcoderpro.github.io/tags/tech/"/>
+    
     <category term="os" scheme="http://amazingcoderpro.github.io/tags/os/"/>
     
     <category term="linux" scheme="http://amazingcoderpro.github.io/tags/linux/"/>
@@ -59,6 +61,8 @@
     
     
     <category term="cs" scheme="http://amazingcoderpro.github.io/tags/cs/"/>
+    
+    <category term="tech" scheme="http://amazingcoderpro.github.io/tags/tech/"/>
     
     <category term="os" scheme="http://amazingcoderpro.github.io/tags/os/"/>
     
@@ -89,6 +93,8 @@
     
     <category term="python" scheme="http://amazingcoderpro.github.io/tags/python/"/>
     
+    <category term="tech" scheme="http://amazingcoderpro.github.io/tags/tech/"/>
+    
     <category term="interview" scheme="http://amazingcoderpro.github.io/tags/interview/"/>
     
     <category term="cpp" scheme="http://amazingcoderpro.github.io/tags/cpp/"/>
@@ -111,6 +117,8 @@
     
     <category term="technology" scheme="http://amazingcoderpro.github.io/categories/technology/"/>
     
+    
+    <category term="tech" scheme="http://amazingcoderpro.github.io/tags/tech/"/>
     
     <category term="intervew" scheme="http://amazingcoderpro.github.io/tags/intervew/"/>
     
@@ -160,9 +168,13 @@
     
     <category term="cs" scheme="http://amazingcoderpro.github.io/tags/cs/"/>
     
+    <category term="tech" scheme="http://amazingcoderpro.github.io/tags/tech/"/>
+    
     <category term="network" scheme="http://amazingcoderpro.github.io/tags/network/"/>
     
     <category term="interview" scheme="http://amazingcoderpro.github.io/tags/interview/"/>
+    
+    <category term="tcp" scheme="http://amazingcoderpro.github.io/tags/tcp/"/>
     
   </entry>
   
@@ -184,6 +196,10 @@
     
     
     <category term="cs" scheme="http://amazingcoderpro.github.io/tags/cs/"/>
+    
+    <category term="python" scheme="http://amazingcoderpro.github.io/tags/python/"/>
+    
+    <category term="tech" scheme="http://amazingcoderpro.github.io/tags/tech/"/>
     
     <category term="data" scheme="http://amazingcoderpro.github.io/tags/data/"/>
     
@@ -208,32 +224,11 @@
     
     <category term="cs" scheme="http://amazingcoderpro.github.io/tags/cs/"/>
     
+    <category term="tech" scheme="http://amazingcoderpro.github.io/tags/tech/"/>
+    
     <category term="data" scheme="http://amazingcoderpro.github.io/tags/data/"/>
     
     <category term="ai" scheme="http://amazingcoderpro.github.io/tags/ai/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>技术指标</title>
-    <link href="http://amazingcoderpro.github.io/2021/06/08/technology/fin/%E6%8A%80%E6%9C%AF%E6%8C%87%E6%A0%87/"/>
-    <id>http://amazingcoderpro.github.io/2021/06/08/technology/fin/%E6%8A%80%E6%9C%AF%E6%8C%87%E6%A0%87/</id>
-    <published>2021-06-08T07:29:00.000Z</published>
-    <updated>2021-10-08T07:29:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="技术指标"><a href="#技术指标" class="headerlink" title="技术指标"></a>技术指标</h1><h3 id="均线"><a href="#均线" class="headerlink" title="均线"></a>均线</h3><ul><li><p>10月均线向上，中期指标</p></li><li><p>30月均线，长期指标</p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjfnhasenj319u0mmmzs.jpg" alt="image-20211219133651915"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjfnfj2bwj317k0n8q5w.jpg" alt="image-20211219133925714"></p></li></ul><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjfniaywaj317w0mugoj.jpg" alt="image-20211219134600341"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjfng0j4zj31700k840w.jpg" alt="image-20211219134720997"></p><h3 id="KDJ"><a href="#KDJ" class="headerlink" title="KDJ"></a>KDJ</h3><p>超买超卖，提示风险</p><p>月线</p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjfniqd5ej317s0n2q76.jpg" alt="image-20211219203418286"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjfngv8f3j316a0mu0vn.jpg" alt="image-20211219203940966"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjfngh609j319u0qkae8.jpg" alt="image-20211219204715570"></p><p>背离是辅助判断，不是买卖点。只是用来更加确认买卖点</p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjfnhr3ibj316q0my40q.jpg" alt="image-20211219204950389"></p><h3 id="MACD"><a href="#MACD" class="headerlink" title="MACD"></a>MACD</h3><p>月线</p><p>以柱线为准，长期稳定</p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjfs3zv8cj315q0l4q6a.jpg" alt="image-20211219205518843"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjfsjgrabj31640nmgok.jpg" alt="image-20211219205543734"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjfuee30pj317u0mu785.jpg" alt="image-20211219205730511"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjfwjqhxgj31880mu41w.jpg" alt="image-20211219205934087"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjg0blg4ej31760miwi2.jpg" alt="image-20211219210253627"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjg3gu0ayj31700m60uz.jpg" alt="image-20211219210614753"></p><h3 id="RSI"><a href="#RSI" class="headerlink" title="RSI"></a>RSI</h3><p>月线，预测未来，不是仅短线用， </p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjg6g0207j31720kaq5t.jpg" alt="image-20211219210906129"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjg7jsrqqj31640mm0wa.jpg" alt="image-20211219211009671"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjg8g18bhj318g0nmwi1.jpg" alt="image-20211219211059511"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjgb2qs82j319s0ncgpo.jpg" alt="image-20211219211330961"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjgd47u7oj317q0nwdj8.jpg" alt="image-20211219211528760"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjgf8zcs8j318c0nmn1b.jpg" alt="image-20211219211731492"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjghi0zxwj317q0o4jto.jpg" alt="image-20211219211941665"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjgirt7mij316q0iq0uy.jpg" alt="image-20211219212056757"></p><h3 id="CCI"><a href="#CCI" class="headerlink" title="CCI"></a>CCI</h3><p>特定行情下发挥奇效的指标，震荡行情不适用</p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjgo7a9f9j31b00m20vr.jpg" alt="image-20211219212608218"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjgoovdvij31e80r442s.jpg" alt="image-20211219212637379"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjgq34c7sj31cw0r8q6d.jpg" alt="image-20211219212748601"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjgrc5b4fj31bk0pi0we.jpg" alt="image-20211219212909328"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjgtgg423j317u0nuwhz.jpg" alt="image-20211219213111340"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjgv6ls2rj317q0nctce.jpg" alt="image-20211219213251009"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjgxydxi2j316m0limz8.jpg" alt="image-20211219213530849"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjgypla0yj317u0m6acg.jpg" alt="image-20211219213614309"></p><h3 id="布林带"><a href="#布林带" class="headerlink" title="布林带"></a>布林带</h3><p>震荡与趋势的抉择</p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjh2s6qf5j31io0oeq64.jpg" alt="image-20211219214008791"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjh3d7dgwj31hi0sqq7v.jpg" alt="image-20211219214042893"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjh4d7m32j31i20sigqh.jpg" alt="image-20211219214140463"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjh922qo5j31hy0ts0xu.jpg" alt="image-20211219214610779"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjha9x6nbj31hi0te42j.jpg" alt="image-20211219214721880"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjhavfvqnj31iw0tujw5.jpg" alt="image-20211219214755448"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjhdqg7k3j31go0rcju7.jpg" alt="image-20211219215039697"></p><h3 id="回调百分百与黄金分割"><a href="#回调百分百与黄金分割" class="headerlink" title="回调百分百与黄金分割"></a>回调百分百与黄金分割</h3><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7bjlkh0j319y0p20v0.jpg" alt="image-20211220124808782"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7bslk84j31880n80v7.jpg" alt="image-20211220124823289"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7d8laj4j319g0nqdjx.jpg" alt="image-20211220124936052"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7ey9kwoj319g0oqq6w.jpg" alt="image-20211220125124000"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7fu3840j31900nuq6z.jpg" alt="image-20211220125216224"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7gp8nhej31980n0wi1.jpg" alt="image-20211220125253952"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7gssmb1j318g0n8n0u.jpg" alt="image-20211220125312475"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7i38xmpj318u0matay.jpg" alt="image-20211220125426935"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7insbstj316y0lkdiu.jpg" alt="image-20211220125500202"></p><h3 id="成交量"><a href="#成交量" class="headerlink" title="成交量"></a>成交量</h3><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7pft4dqj318k0o6q66.jpg" alt="image-20211220130011499"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7qjyx9xj317m0ncdiy.jpg" alt="image-20211220130234880"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7rzznn4j319w0oejv4.jpg" alt="image-20211220130358178"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7u39iqhj318w0ng41t.jpg" alt="image-20211220130558730"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7vl4zs7j316u0mswi8.jpg" alt="image-20211220130725570"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7y6h1u9j31700oin0v.jpg" alt="image-20211220130954556"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7zstw5kj319w0n8ads.jpg" alt="image-20211220131125963"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk810ho2uj317g0mqacb.jpg" alt="image-20211220131237587"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk828dyxcj31860lwn0r.jpg" alt="image-20211220131348889"></p><h3 id="趋势线和形态"><a href="#趋势线和形态" class="headerlink" title="趋势线和形态"></a>趋势线和形态</h3><p>不能创越k线实体</p><p>多点相连，跨度适中</p><p>三角形必须有个直角边，水平线</p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk86za2vwj316a0mi77e.jpg" alt="image-20211220131812318"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk87ln90lj319y0ne41q.jpg" alt="image-20211220131854527"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk8a7vgcyj31aq0o477a.jpg" alt="image-20211220132127963"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk8d6ojcoj318q0mggox.jpg" alt="image-20211220132415854"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk8ep1zzmj318w0loada.jpg" alt="image-20211220132546888"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk8fp0ujyj317w0mkn0c.jpg" alt="image-20211220132644343"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk8h5fobzj31940naadc.jpg" alt="image-20211220132807986"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk8hyxcctj31740miac4.jpg" alt="image-20211220132855724"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk8j2r53jj315a0jsdi6.jpg" alt="image-20211220132959611"></p><h3 id="缺口理论"><a href="#缺口理论" class="headerlink" title="缺口理论"></a>缺口理论</h3><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxkcw05rl5j31920muac6.jpg" alt="image-20211220160049476"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxkcy7b023j31b00ns42h.jpg" alt="image-20211220160255007"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxkcz26496j31600ns0vu.jpg" alt="image-20211220160345056"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxkd0c2p3oj318e0oa0wc.jpg" alt="image-20211220160458100"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxkd3atkdhj31900nawhd.jpg" alt="image-20211220160750577"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxkd4wk2xsj318o0no40l.jpg" alt="image-20211220160921979"></p><h3 id="均线组合"><a href="#均线组合" class="headerlink" title="均线组合"></a>均线组合</h3><p> <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxkdb138uuj319g0nq77q.jpg" alt="image-20211220161515335"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxkddpi7ywj31840niq6c.jpg" alt="image-20211220161749776"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxkdgvulwlj317y0man0z.jpg" alt="image-20211220162049970"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxkdi37juqj317y0ncacz.jpg" alt="image-20211220162202206"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxkdk668z6j319w0nqwi7.jpg" alt="image-20211220162403671"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxkdmiixvhj317k0mq41x.jpg" alt="image-20211220162618601"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxkdnlqkpuj318k0la76f.jpg" alt="image-20211220162718175"></p>]]></content>
-    
-    
-    <summary type="html">技术指标</summary>
-    
-    
-    
-    <category term="technology" scheme="http://amazingcoderpro.github.io/categories/technology/"/>
-    
-    <category term="fin" scheme="http://amazingcoderpro.github.io/categories/technology/fin/"/>
-    
-    
-    <category term="fin" scheme="http://amazingcoderpro.github.io/tags/fin/"/>
     
   </entry>
   
@@ -271,6 +266,29 @@
     
     
     <summary type="html">投资基金应该注意什么？</summary>
+    
+    
+    
+    <category term="technology" scheme="http://amazingcoderpro.github.io/categories/technology/"/>
+    
+    <category term="fin" scheme="http://amazingcoderpro.github.io/categories/technology/fin/"/>
+    
+    
+    <category term="fin" scheme="http://amazingcoderpro.github.io/tags/fin/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>技术指标</title>
+    <link href="http://amazingcoderpro.github.io/2021/06/08/technology/fin/%E6%8A%80%E6%9C%AF%E6%8C%87%E6%A0%87/"/>
+    <id>http://amazingcoderpro.github.io/2021/06/08/technology/fin/%E6%8A%80%E6%9C%AF%E6%8C%87%E6%A0%87/</id>
+    <published>2021-06-08T07:29:00.000Z</published>
+    <updated>2021-10-08T07:29:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="技术指标"><a href="#技术指标" class="headerlink" title="技术指标"></a>技术指标</h1><h3 id="均线"><a href="#均线" class="headerlink" title="均线"></a>均线</h3><ul><li><p>10月均线向上，中期指标</p></li><li><p>30月均线，长期指标</p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjfnhasenj319u0mmmzs.jpg" alt="image-20211219133651915"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjfnfj2bwj317k0n8q5w.jpg" alt="image-20211219133925714"></p></li></ul><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjfniaywaj317w0mugoj.jpg" alt="image-20211219134600341"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjfng0j4zj31700k840w.jpg" alt="image-20211219134720997"></p><h3 id="KDJ"><a href="#KDJ" class="headerlink" title="KDJ"></a>KDJ</h3><p>超买超卖，提示风险</p><p>月线</p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjfniqd5ej317s0n2q76.jpg" alt="image-20211219203418286"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjfngv8f3j316a0mu0vn.jpg" alt="image-20211219203940966"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjfngh609j319u0qkae8.jpg" alt="image-20211219204715570"></p><p>背离是辅助判断，不是买卖点。只是用来更加确认买卖点</p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjfnhr3ibj316q0my40q.jpg" alt="image-20211219204950389"></p><h3 id="MACD"><a href="#MACD" class="headerlink" title="MACD"></a>MACD</h3><p>月线</p><p>以柱线为准，长期稳定</p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjfs3zv8cj315q0l4q6a.jpg" alt="image-20211219205518843"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjfsjgrabj31640nmgok.jpg" alt="image-20211219205543734"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjfuee30pj317u0mu785.jpg" alt="image-20211219205730511"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjfwjqhxgj31880mu41w.jpg" alt="image-20211219205934087"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjg0blg4ej31760miwi2.jpg" alt="image-20211219210253627"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjg3gu0ayj31700m60uz.jpg" alt="image-20211219210614753"></p><h3 id="RSI"><a href="#RSI" class="headerlink" title="RSI"></a>RSI</h3><p>月线，预测未来，不是仅短线用， </p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjg6g0207j31720kaq5t.jpg" alt="image-20211219210906129"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjg7jsrqqj31640mm0wa.jpg" alt="image-20211219211009671"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjg8g18bhj318g0nmwi1.jpg" alt="image-20211219211059511"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjgb2qs82j319s0ncgpo.jpg" alt="image-20211219211330961"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjgd47u7oj317q0nwdj8.jpg" alt="image-20211219211528760"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjgf8zcs8j318c0nmn1b.jpg" alt="image-20211219211731492"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjghi0zxwj317q0o4jto.jpg" alt="image-20211219211941665"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjgirt7mij316q0iq0uy.jpg" alt="image-20211219212056757"></p><h3 id="CCI"><a href="#CCI" class="headerlink" title="CCI"></a>CCI</h3><p>特定行情下发挥奇效的指标，震荡行情不适用</p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjgo7a9f9j31b00m20vr.jpg" alt="image-20211219212608218"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjgoovdvij31e80r442s.jpg" alt="image-20211219212637379"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjgq34c7sj31cw0r8q6d.jpg" alt="image-20211219212748601"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjgrc5b4fj31bk0pi0we.jpg" alt="image-20211219212909328"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjgtgg423j317u0nuwhz.jpg" alt="image-20211219213111340"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjgv6ls2rj317q0nctce.jpg" alt="image-20211219213251009"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjgxydxi2j316m0limz8.jpg" alt="image-20211219213530849"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjgypla0yj317u0m6acg.jpg" alt="image-20211219213614309"></p><h3 id="布林带"><a href="#布林带" class="headerlink" title="布林带"></a>布林带</h3><p>震荡与趋势的抉择</p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjh2s6qf5j31io0oeq64.jpg" alt="image-20211219214008791"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjh3d7dgwj31hi0sqq7v.jpg" alt="image-20211219214042893"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjh4d7m32j31i20sigqh.jpg" alt="image-20211219214140463"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjh922qo5j31hy0ts0xu.jpg" alt="image-20211219214610779"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjha9x6nbj31hi0te42j.jpg" alt="image-20211219214721880"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjhavfvqnj31iw0tujw5.jpg" alt="image-20211219214755448"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxjhdqg7k3j31go0rcju7.jpg" alt="image-20211219215039697"></p><h3 id="回调百分百与黄金分割"><a href="#回调百分百与黄金分割" class="headerlink" title="回调百分百与黄金分割"></a>回调百分百与黄金分割</h3><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7bjlkh0j319y0p20v0.jpg" alt="image-20211220124808782"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7bslk84j31880n80v7.jpg" alt="image-20211220124823289"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7d8laj4j319g0nqdjx.jpg" alt="image-20211220124936052"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7ey9kwoj319g0oqq6w.jpg" alt="image-20211220125124000"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7fu3840j31900nuq6z.jpg" alt="image-20211220125216224"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7gp8nhej31980n0wi1.jpg" alt="image-20211220125253952"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7gssmb1j318g0n8n0u.jpg" alt="image-20211220125312475"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7i38xmpj318u0matay.jpg" alt="image-20211220125426935"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7insbstj316y0lkdiu.jpg" alt="image-20211220125500202"></p><h3 id="成交量"><a href="#成交量" class="headerlink" title="成交量"></a>成交量</h3><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7pft4dqj318k0o6q66.jpg" alt="image-20211220130011499"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7qjyx9xj317m0ncdiy.jpg" alt="image-20211220130234880"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7rzznn4j319w0oejv4.jpg" alt="image-20211220130358178"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7u39iqhj318w0ng41t.jpg" alt="image-20211220130558730"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7vl4zs7j316u0mswi8.jpg" alt="image-20211220130725570"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7y6h1u9j31700oin0v.jpg" alt="image-20211220130954556"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk7zstw5kj319w0n8ads.jpg" alt="image-20211220131125963"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk810ho2uj317g0mqacb.jpg" alt="image-20211220131237587"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk828dyxcj31860lwn0r.jpg" alt="image-20211220131348889"></p><h3 id="趋势线和形态"><a href="#趋势线和形态" class="headerlink" title="趋势线和形态"></a>趋势线和形态</h3><p>不能创越k线实体</p><p>多点相连，跨度适中</p><p>三角形必须有个直角边，水平线</p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk86za2vwj316a0mi77e.jpg" alt="image-20211220131812318"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk87ln90lj319y0ne41q.jpg" alt="image-20211220131854527"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk8a7vgcyj31aq0o477a.jpg" alt="image-20211220132127963"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk8d6ojcoj318q0mggox.jpg" alt="image-20211220132415854"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk8ep1zzmj318w0loada.jpg" alt="image-20211220132546888"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk8fp0ujyj317w0mkn0c.jpg" alt="image-20211220132644343"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk8h5fobzj31940naadc.jpg" alt="image-20211220132807986"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk8hyxcctj31740miac4.jpg" alt="image-20211220132855724"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxk8j2r53jj315a0jsdi6.jpg" alt="image-20211220132959611"></p><h3 id="缺口理论"><a href="#缺口理论" class="headerlink" title="缺口理论"></a>缺口理论</h3><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxkcw05rl5j31920muac6.jpg" alt="image-20211220160049476"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxkcy7b023j31b00ns42h.jpg" alt="image-20211220160255007"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxkcz26496j31600ns0vu.jpg" alt="image-20211220160345056"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxkd0c2p3oj318e0oa0wc.jpg" alt="image-20211220160458100"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxkd3atkdhj31900nawhd.jpg" alt="image-20211220160750577"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxkd4wk2xsj318o0no40l.jpg" alt="image-20211220160921979"></p><h3 id="均线组合"><a href="#均线组合" class="headerlink" title="均线组合"></a>均线组合</h3><p> <img src="https://tva1.sinaimg.cn/large/008i3skNly1gxkdb138uuj319g0nq77q.jpg" alt="image-20211220161515335"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxkddpi7ywj31840niq6c.jpg" alt="image-20211220161749776"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxkdgvulwlj317y0man0z.jpg" alt="image-20211220162049970"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxkdi37juqj317y0ncacz.jpg" alt="image-20211220162202206"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxkdk668z6j319w0nqwi7.jpg" alt="image-20211220162403671"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxkdmiixvhj317k0mq41x.jpg" alt="image-20211220162618601"></p><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxkdnlqkpuj318k0la76f.jpg" alt="image-20211220162718175"></p>]]></content>
+    
+    
+    <summary type="html">技术指标</summary>
     
     
     
@@ -348,6 +366,8 @@
     
     <category term="cs" scheme="http://amazingcoderpro.github.io/tags/cs/"/>
     
+    <category term="efficiency" scheme="http://amazingcoderpro.github.io/tags/efficiency/"/>
+    
     <category term="git" scheme="http://amazingcoderpro.github.io/tags/git/"/>
     
   </entry>
@@ -363,29 +383,6 @@
     
     
     <summary type="html">周易</summary>
-    
-    
-    
-    <category term="essay" scheme="http://amazingcoderpro.github.io/categories/essay/"/>
-    
-    
-    <category term="sinology" scheme="http://amazingcoderpro.github.io/tags/sinology/"/>
-    
-    <category term="writ" scheme="http://amazingcoderpro.github.io/tags/writ/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>无欲乃刚</title>
-    <link href="http://amazingcoderpro.github.io/2020/06/08/essay/%E6%97%A0%E6%AC%B2%E5%88%99%E5%88%9A/"/>
-    <id>http://amazingcoderpro.github.io/2020/06/08/essay/%E6%97%A0%E6%AC%B2%E5%88%99%E5%88%9A/</id>
-    <published>2020-06-08T07:29:00.000Z</published>
-    <updated>2020-10-08T07:29:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="无欲乃刚"><a href="#无欲乃刚" class="headerlink" title="无欲乃刚"></a>无欲乃刚</h1><p>人生而有欲，天经地义。但只能有正当之欲，且应加以节制。林则徐曾经说过：“海纳百川，有容乃大；壁立千仞，无欲则刚。”林则徐在禁毒时不畏凶险，把一切都置之度外。如果顾虑自己的身家性命，他是不可能完成禁毒大业的。</p><p>《史记》上说：“欲而不知止，失其所以欲；有而不知足，失其所以有。”寡欲，才能胸怀宽广、乐观旷达。</p><p>春秋时晋国的大夫祁奚，可以称得上无欲则刚的典范。</p><p>祁奚，字黄羊，春秋时期晋国大夫，历经晋国景、厉、悼、平四世，可谓四朝元老。悼公继位后，立祁奚为中军尉。平公时，复起为公族大夫。祁奚在位约60年，忠公体国，急公好义，誉满朝野，深受人们爱戴。</p><p>祁奚因年事已高，向晋悼公请求告老退休。晋悼公问祁奚：“你退休以后，谁接任你的职务较为合适呢？”</p><p>祁奚回答说：“解狐这个人可以。”晋悼公大惑不解，问道：“解狐不是跟你有仇吗？”祁奚说：“君问我谁适合担任中军尉，并非问谁是我的仇人。”</p><p>晋悼公正准备立解狐为中军尉，解狐却死了。晋悼公又征求祁奚的意见，祁奚回答说：“祁午可以任中军尉。”晋悼公见祁奚推荐祁午，于是问道：“祁午不是你的儿子吗？”祁奚回答说：“君问谁适合担任中军尉，并非问谁是我的儿子。”</p><p>祁奚在推荐继任者的问题上，外举不避仇，内举不避亲，历来为人们所称道。</p><p>后来的事实证明，祁奚的举荐确实具有独到的眼光。祁午担任中军尉后，“好学而不戏，守业而不淫，柔惠小物而镇定大事，有质直而无流心”“军无秕政”，的确是中军尉的合格人选。</p><p>祁奚以大公无私赢得朝野内外的赞誉，他的言行也随之成为衡量是非曲直的标准。</p><p>祁奚退休以后，晋国大臣范宣子审查一个叛乱案件时，抓了一个叫叔向的大臣。叔向的弟弟参与了叛乱，叔向却不是同党。</p><p>叔向有可能以叛乱罪问斩，他却一点儿也不畏惧，他说：“祁大夫外举不弃仇，内举不失亲，难道就只不管我的事吗？”</p><p>祁奚听说后，就去找范宣子，请求范宣子赦免叔向。他对范宣子说，叔向惠而有谋，是国家栋梁之才，以其弟之故而杀之，是弃国家社稷于不顾，这样做，是非常愚蠢的。范宣子听了祁奚的话，就赦免了叔向。</p><p>祁奚见目的已经达成，就准备回去。随从说，你这次专为叔向的事而来，已经办成了，你不去见一下叔向吗？祁奚认为自己救叔向是出于公心而非私谊，所以就没有见叔向而直接回家了。</p><p>叔向的一个部下准备去向祁奚道谢，叔向劝他不要去，但那个部下还是执意去了。</p><p>祁奚说：“我救叔向，不是为了他那条命，而是为了公家，我无恩于你们，你们也没有必要谢我。”</p><p>祁奚正是因为断绝私欲，才能公事公办，成就刚正美名。另一个刚正不阿、光明磊落的例子是大书法家颜真卿。</p>]]></content>
-    
-    
-    <summary type="html">无欲乃刚</summary>
     
     
     
@@ -422,6 +419,29 @@
   </entry>
   
   <entry>
+    <title>无欲乃刚</title>
+    <link href="http://amazingcoderpro.github.io/2020/06/08/essay/%E6%97%A0%E6%AC%B2%E5%88%99%E5%88%9A/"/>
+    <id>http://amazingcoderpro.github.io/2020/06/08/essay/%E6%97%A0%E6%AC%B2%E5%88%99%E5%88%9A/</id>
+    <published>2020-06-08T07:29:00.000Z</published>
+    <updated>2020-10-08T07:29:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="无欲乃刚"><a href="#无欲乃刚" class="headerlink" title="无欲乃刚"></a>无欲乃刚</h1><p>人生而有欲，天经地义。但只能有正当之欲，且应加以节制。林则徐曾经说过：“海纳百川，有容乃大；壁立千仞，无欲则刚。”林则徐在禁毒时不畏凶险，把一切都置之度外。如果顾虑自己的身家性命，他是不可能完成禁毒大业的。</p><p>《史记》上说：“欲而不知止，失其所以欲；有而不知足，失其所以有。”寡欲，才能胸怀宽广、乐观旷达。</p><p>春秋时晋国的大夫祁奚，可以称得上无欲则刚的典范。</p><p>祁奚，字黄羊，春秋时期晋国大夫，历经晋国景、厉、悼、平四世，可谓四朝元老。悼公继位后，立祁奚为中军尉。平公时，复起为公族大夫。祁奚在位约60年，忠公体国，急公好义，誉满朝野，深受人们爱戴。</p><p>祁奚因年事已高，向晋悼公请求告老退休。晋悼公问祁奚：“你退休以后，谁接任你的职务较为合适呢？”</p><p>祁奚回答说：“解狐这个人可以。”晋悼公大惑不解，问道：“解狐不是跟你有仇吗？”祁奚说：“君问我谁适合担任中军尉，并非问谁是我的仇人。”</p><p>晋悼公正准备立解狐为中军尉，解狐却死了。晋悼公又征求祁奚的意见，祁奚回答说：“祁午可以任中军尉。”晋悼公见祁奚推荐祁午，于是问道：“祁午不是你的儿子吗？”祁奚回答说：“君问谁适合担任中军尉，并非问谁是我的儿子。”</p><p>祁奚在推荐继任者的问题上，外举不避仇，内举不避亲，历来为人们所称道。</p><p>后来的事实证明，祁奚的举荐确实具有独到的眼光。祁午担任中军尉后，“好学而不戏，守业而不淫，柔惠小物而镇定大事，有质直而无流心”“军无秕政”，的确是中军尉的合格人选。</p><p>祁奚以大公无私赢得朝野内外的赞誉，他的言行也随之成为衡量是非曲直的标准。</p><p>祁奚退休以后，晋国大臣范宣子审查一个叛乱案件时，抓了一个叫叔向的大臣。叔向的弟弟参与了叛乱，叔向却不是同党。</p><p>叔向有可能以叛乱罪问斩，他却一点儿也不畏惧，他说：“祁大夫外举不弃仇，内举不失亲，难道就只不管我的事吗？”</p><p>祁奚听说后，就去找范宣子，请求范宣子赦免叔向。他对范宣子说，叔向惠而有谋，是国家栋梁之才，以其弟之故而杀之，是弃国家社稷于不顾，这样做，是非常愚蠢的。范宣子听了祁奚的话，就赦免了叔向。</p><p>祁奚见目的已经达成，就准备回去。随从说，你这次专为叔向的事而来，已经办成了，你不去见一下叔向吗？祁奚认为自己救叔向是出于公心而非私谊，所以就没有见叔向而直接回家了。</p><p>叔向的一个部下准备去向祁奚道谢，叔向劝他不要去，但那个部下还是执意去了。</p><p>祁奚说：“我救叔向，不是为了他那条命，而是为了公家，我无恩于你们，你们也没有必要谢我。”</p><p>祁奚正是因为断绝私欲，才能公事公办，成就刚正美名。另一个刚正不阿、光明磊落的例子是大书法家颜真卿。</p>]]></content>
+    
+    
+    <summary type="html">无欲乃刚</summary>
+    
+    
+    
+    <category term="essay" scheme="http://amazingcoderpro.github.io/categories/essay/"/>
+    
+    
+    <category term="sinology" scheme="http://amazingcoderpro.github.io/tags/sinology/"/>
+    
+    <category term="writ" scheme="http://amazingcoderpro.github.io/tags/writ/"/>
+    
+  </entry>
+  
+  <entry>
     <title>知者不惑，仁者不忧，勇者不惧</title>
     <link href="http://amazingcoderpro.github.io/2020/06/08/essay/%E7%9F%A5%E8%80%85%E4%B8%8D%E6%83%91%EF%BC%8C%E4%BB%81%E8%80%85%E4%B8%8D%E5%BF%A7%EF%BC%8C%E5%8B%87%E8%80%85%E4%B8%8D%E6%83%A7/"/>
     <id>http://amazingcoderpro.github.io/2020/06/08/essay/%E7%9F%A5%E8%80%85%E4%B8%8D%E6%83%91%EF%BC%8C%E4%BB%81%E8%80%85%E4%B8%8D%E5%BF%A7%EF%BC%8C%E5%8B%87%E8%80%85%E4%B8%8D%E6%83%A7/</id>
@@ -445,48 +465,52 @@
   </entry>
   
   <entry>
-    <title>为什么要写卡片</title>
-    <link href="http://amazingcoderpro.github.io/2020/06/08/softskills/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%99%E5%8D%A1%E7%89%87/"/>
-    <id>http://amazingcoderpro.github.io/2020/06/08/softskills/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%99%E5%8D%A1%E7%89%87/</id>
+    <title>CentOS7 安装Python3</title>
+    <link href="http://amazingcoderpro.github.io/2020/06/08/technology/201904_CentOS7%20%E5%AE%89%E8%A3%85Python3/"/>
+    <id>http://amazingcoderpro.github.io/2020/06/08/technology/201904_CentOS7%20%E5%AE%89%E8%A3%85Python3/</id>
     <published>2020-06-08T07:29:00.000Z</published>
     <updated>2020-10-08T07:29:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="为什么要写卡片"><a href="#为什么要写卡片" class="headerlink" title="为什么要写卡片"></a>为什么要写卡片</h1><p>from: Day2—《用卡片实现善思会写》<br>听课链接：<a href="https://jcg.h5.xeknow.com/s/HzDLj">https://jcg.h5.xeknow.com/s/HzDLj</a><br>听课密码：1210</p><h2 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h2><ul><li>存入越难提取越容易</li><li>卡片即知识，卡片即知识管理，卡片即写作</li><li>方便写作， </li><li>写作就是：话题、逻辑、卡片</li><li>定期按照标签进行复习，产生新的链接，进而丰富了自己的知识体系</li><li>![[Pasted image 20231022151242.png]]</li><li>![[Pasted image 20231022152923.png]]</li><li>![[Pasted image 20231022153917.png]]</li></ul><h2 id="个人体会"><a href="#个人体会" class="headerlink" title="个人体会"></a>个人体会</h2><ul><li>如何更容易的提取知识才是难点</li></ul><h2 id="行动指引"><a href="#行动指引" class="headerlink" title="行动指引"></a>行动指引</h2><ul><li>当需要写作时可以利用卡片进行填充</li><li>![[Pasted image 20231022154316.png]]</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="CentOS7-安装Python3"><a href="#CentOS7-安装Python3" class="headerlink" title="CentOS7 安装Python3"></a>CentOS7 安装Python3</h1><hr><p><strong>本文主要介绍在CentOS7上通过源码编译的方式案头Python3, 文中用到的是CentOS7.2, Python版本是3.6.7,其他类似版本的处理也是大致相同的.</strong></p><p>在安装Python3之前需要解决两个问题：</p><ul><li><strong>一是 开发环境安装，比如gcc等</strong></li><li><strong>二是 openssl的安装， 因为CentOS自带的openssl版本比较低，导致Python3安装完后，在python命令行中执行import ssl会报错：ImportError: No module named _ssl。</strong></li></ul><p>特别是第二个ssl错误，相信很多人都遇到过，我自己也在这个问题上纠缠了很长时间， 现在将亲测有效的解决方案分享给大家。</p><h2 id="1-安装开发环境依赖"><a href="#1-安装开发环境依赖" class="headerlink" title="1.安装开发环境依赖"></a>1.安装开发环境依赖</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo yum -y groupinstall development</span><br><span class="line">sudo yum -y install zlib-devel</span><br><span class="line">sudo yum -y install libffi-devel</span><br></pre></td></tr></table></figure><h2 id="2-更新openssl"><a href="#2-更新openssl" class="headerlink" title="2.更新openssl"></a>2.更新openssl</h2><p>先通过命令看看筷的openssl版本，如果返回是0.9.x， 那肯定需要升级了</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openssl version</span><br></pre></td></tr></table></figure><p>按照如下方式升级openssl</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">wget http://www.openssl.org/source/openssl-1.0.2e.tar.gz</span><br><span class="line">tar xvzf openssl-1.0.2e.tar.gz</span><br><span class="line">cd openssl-1.0.2e</span><br><span class="line">./config --prefix=/usr/local/openssl --openssldir=/usr/local/openssl</span><br><span class="line">make</span><br><span class="line">make test</span><br><span class="line">make install</span><br></pre></td></tr></table></figure><p>到这openssl安装完成了， 接下来可以开始编译安装Python3了， 注意我们指定的openssl安装路径是在&#x2F;usr&#x2F;local&#x2F;openssl， 这个后面要用到。</p><h2 id="3-安装Python3"><a href="#3-安装Python3" class="headerlink" title="3.安装Python3"></a>3.安装Python3</h2><ul><li><p>先下载解压Python3.6.7安装包</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget https://www.python.org/ftp/python/3.6.7/Python-3.6.7.tgz</span><br><span class="line">tar xvzf Python-3.6.7.tgz</span><br><span class="line">cd Python-3.6.7</span><br></pre></td></tr></table></figure></li><li><p>然后修改Setup.dist, 指定ssl位置</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi Modules/Setup.dist</span><br></pre></td></tr></table></figure><p>搜索ssl, 取消以下几行注释， 并且修改SSL的值为我们实际安装openssl的值， 即：&#x2F;usr&#x2F;local&#x2F;openssl</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">_socket socketmodule.c</span><br><span class="line"></span><br><span class="line"># Socket module helper for SSL support; you must comment out the other</span><br><span class="line"># socket line above, and possibly edit the SSL variable:</span><br><span class="line">SSL=/usr/local/openssl</span><br><span class="line">_ssl _ssl.c \</span><br><span class="line"> -DUSE_SSL -I$(SSL)/include -I$(SSL)/include/openssl \</span><br><span class="line"> -L$(SSL)/lib -lssl -lcrypto</span><br></pre></td></tr></table></figure><p><em>注： 网上很多说在.&#x2F;configure 后面加–with-openssl的方法来指定openssl的方法自测无效， 通过修改Setup.dist方才生效。</em></p></li><li><p>完成以上修改后，即可开始编译Python3, 命令如下。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure></li></ul><h2 id="4-验证Python3"><a href="#4-验证Python3" class="headerlink" title="4.验证Python3"></a>4.验证Python3</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">python3</span><br><span class="line">import ssl</span><br></pre></td></tr></table></figure><p>正常不会报错， 则Python3安装成功。<br>另外，给大家推荐一个Python虚拟环境的包pipenv, 强大又好用， 大家可以试试。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python3 -m pip install pipenv</span><br></pre></td></tr></table></figure><p>至此，CentOS7上安装Python3完毕。<br>这个是我参考的文章，感谢前人的分享！<a href="https://techglimpse.com/install-python-openssl-support-tutorial/#check-python-for-openssl-support">How to Compile and Install Python with OpenSSL Support?</a></p>]]></content>
     
     
-    <summary type="html">为什么要写卡片</summary>
+    <summary type="html">本文主要介绍在CentOS7上通过源码编译的方式案头Python3, 文中用到的是CentOS7.2, Python版本是3.6.7,其他类似版本的处理也是大致相同的</summary>
     
     
     
-    <category term="softskills" scheme="http://amazingcoderpro.github.io/categories/softskills/"/>
+    <category term="technology" scheme="http://amazingcoderpro.github.io/categories/technology/"/>
     
     
-    <category term="writ" scheme="http://amazingcoderpro.github.io/tags/writ/"/>
+    <category term="cs" scheme="http://amazingcoderpro.github.io/tags/cs/"/>
     
-    <category term="softskills" scheme="http://amazingcoderpro.github.io/tags/softskills/"/>
+    <category term="python" scheme="http://amazingcoderpro.github.io/tags/python/"/>
+    
+    <category term="tech" scheme="http://amazingcoderpro.github.io/tags/tech/"/>
     
   </entry>
   
   <entry>
-    <title>为什么要读经典</title>
-    <link href="http://amazingcoderpro.github.io/2020/06/08/softskills/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%AF%BB%E7%BB%8F%E5%85%B8/"/>
-    <id>http://amazingcoderpro.github.io/2020/06/08/softskills/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%AF%BB%E7%BB%8F%E5%85%B8/</id>
+    <title>玩转Python</title>
+    <link href="http://amazingcoderpro.github.io/2020/06/08/technology/201911_%E7%8E%A9%E8%BD%ACPython/"/>
+    <id>http://amazingcoderpro.github.io/2020/06/08/technology/201911_%E7%8E%A9%E8%BD%ACPython/</id>
     <published>2020-06-08T07:29:00.000Z</published>
     <updated>2020-10-08T07:29:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="为什么要读经典"><a href="#为什么要读经典" class="headerlink" title="为什么要读经典"></a>为什么要读经典</h1><p>from: Day3—《我们为什么读经典》<br>听课链接：<a href="https://jcg.h5.xeknow.com/s/i5V0J">https://jcg.h5.xeknow.com/s/i5V0J</a><br>听课密码：1210<br>date: 2023-10-22 15:55</p><h2 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h2><ul><li>书籍分三类：<ul><li>感受性读书，陶冶情操类：比如边城，无需共读，个人体验，放松的读就可以，不用逼自己，这些书籍是给你的知识体系增加底色的。</li><li>经典书，架构性读书，适合用卡片：这类书籍像是你知识体系当中的大节点，链接了很多东西，打个比喻，普通知识是葡萄，而他是葡萄藤，可能不一定提供新的知识给你，但是他帮你搭建起知识体系，可以把你已有的知识串联、升华，让你在更高的纬度去理解过往的经验和知识，常看常新，</li><li>技能工具类：这类书籍根据实际需要去读就好，属于功利性读书、增量型读书。</li></ul></li><li>如何判断是否是经典呢：<ul><li>能提高知识维度，能够串联起一堆书，比如《动机心理学》《穷查理宝典》</li><li>一个行业或领域的起源之作，比如《卓有成效的管理者》《反脆弱》《物种起源》，这类书籍诞生于行业之初，具有通识性，大家之作，反而在后来领域细分之后再难有此大家</li><li>另一个世界，但具有同构性，比如《邓小平传》《心若菩提》。虽然可能和我们的生活离得很远，但是却有共鸣，能让你从中反省自己的生活，提升自己的心性。</li></ul></li><li>知识的周期<br>![[Pasted image 20231022160819.png]]</li><li>知识工作者的全套手艺<ul><li>选书</li><li>内化</li><li>输出：</li><li>知识体系：建立自己的知识库</li><li>写作：变现<br>  -![[Pasted image 20231022161122.png]]</li></ul></li></ul><h2 id="个人体会"><a href="#个人体会" class="headerlink" title="个人体会"></a>个人体会</h2><ul><li>我有一个经验、体验、感悟、发现</li></ul><h2 id="行动指引"><a href="#行动指引" class="headerlink" title="行动指引"></a>行动指引</h2><ul><li>当。。。时候，要。。做</li><li>1.你觉得接下来应该读哪些书？ 书籍应该分为三类 工具类：我理解为“长本事的书”：它往往可以具体解决我们当下遇到的问题和困惑，带着功利性读书可以快速扩张我们的知识增量，给我们现成的好用的工具和方法。 经典性：我理解为“长知识的书”，它提供完整的知识架构，扩充知识边界且自带体系，提高知识维度串联性很强，填补我们知识体系中的空白和缺失。比如理论、教材、科学、哲学类的书籍。 陶冶性：我理解为“长见识的书”，它是一种解离体验型，我们可以进入到作者的视角去体验他人的生活和经历，它可以提供给我们知识底色，让我们体验不一样的人生，比如传记、回忆录，历史等。 2.你觉得选书和掌握一套善思会写的方法哪个更帮到你？为什么？ 1) 善思会写是一种方法论，它是把输入的信息和内容经过内化加工后，转化成输出的外化过程。 2) 通过产出知识卡片，形成无数个锚点，把自己和书籍链接起来，把自己与他人的进行链接。 3) 通过知识卡片交朋友、读精典，与巨人对话，实现脑机连接与共振，它是由内循环（自读苦修）向外循环（分享与交流）的转化，也是把外界能量反向输入给自己的一种路径。 4) 通过选书、内化、输出、知识体系、写作，做知识的创造者，而不是知识的工作者</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="玩转Python"><a href="#玩转Python" class="headerlink" title="玩转Python"></a>玩转Python</h1><h2 id="Python-基础篇"><a href="#Python-基础篇" class="headerlink" title="Python 基础篇"></a>Python 基础篇</h2><h2 id="Python-进阶"><a href="#Python-进阶" class="headerlink" title="Python 进阶"></a>Python 进阶</h2><h2 id="Python-Web"><a href="#Python-Web" class="headerlink" title="Python Web"></a>Python Web</h2><h2 id="Python-爬虫"><a href="#Python-爬虫" class="headerlink" title="Python 爬虫"></a>Python 爬虫</h2><h2 id="Python-数据分析"><a href="#Python-数据分析" class="headerlink" title="Python 数据分析"></a>Python 数据分析</h2>]]></content>
     
     
-    <summary type="html">为什么要读经典</summary>
+    <summary type="html">本文主要介绍python相关的编程基础</summary>
     
     
     
-    <category term="softskills" scheme="http://amazingcoderpro.github.io/categories/softskills/"/>
+    <category term="technology" scheme="http://amazingcoderpro.github.io/categories/technology/"/>
     
     
-    <category term="softskills" scheme="http://amazingcoderpro.github.io/tags/softskills/"/>
+    <category term="cs" scheme="http://amazingcoderpro.github.io/tags/cs/"/>
     
-    <category term="read" scheme="http://amazingcoderpro.github.io/tags/read/"/>
+    <category term="python" scheme="http://amazingcoderpro.github.io/tags/python/"/>
+    
+    <category term="tech" scheme="http://amazingcoderpro.github.io/tags/tech/"/>
     
   </entry>
   
