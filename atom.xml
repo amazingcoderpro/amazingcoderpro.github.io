@@ -95,9 +95,9 @@
     
     <category term="tech" scheme="http://amazingcoderpro.github.io/tags/tech/"/>
     
-    <category term="interview" scheme="http://amazingcoderpro.github.io/tags/interview/"/>
-    
     <category term="cpp" scheme="http://amazingcoderpro.github.io/tags/cpp/"/>
+    
+    <category term="interview" scheme="http://amazingcoderpro.github.io/tags/interview/"/>
     
   </entry>
   
@@ -179,29 +179,25 @@
   </entry>
   
   <entry>
-    <title>机器学习算法四大金刚</title>
-    <link href="http://amazingcoderpro.github.io/2021/06/08/technology/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%9B%9B%E5%A4%A7%E9%87%91%E5%88%9A/"/>
-    <id>http://amazingcoderpro.github.io/2021/06/08/technology/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%9B%9B%E5%A4%A7%E9%87%91%E5%88%9A/</id>
-    <published>2021-06-08T07:29:00.000Z</published>
-    <updated>2021-10-08T07:29:00.000Z</updated>
+    <title>gcc 预处理、编译、汇编、链接</title>
+    <link href="http://amazingcoderpro.github.io/2022/08/21/technology/gcc%E9%A2%84%E5%A4%84%E7%90%86%E3%80%81%E7%BC%96%E8%AF%91%E3%80%81%E6%B1%87%E7%BC%96%E3%80%81%E9%93%BE%E6%8E%A5/"/>
+    <id>http://amazingcoderpro.github.io/2022/08/21/technology/gcc%E9%A2%84%E5%A4%84%E7%90%86%E3%80%81%E7%BC%96%E8%AF%91%E3%80%81%E6%B1%87%E7%BC%96%E3%80%81%E9%93%BE%E6%8E%A5/</id>
+    <published>2022-08-21T09:54:18.000Z</published>
+    <updated>2022-08-21T09:54:18.000Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="四大金刚介绍"><a href="#四大金刚介绍" class="headerlink" title="四大金刚介绍"></a>四大金刚介绍</h2><p><img src="/../../../images/data_dig.jpg" alt="image-20210908195234323"><br>由上图我们可以看到，机器学习分为四大金刚，分别是</p><p>classification (分类)，<br>regression (回归),<br>clustering (聚类),<br>dimensionality reduction (降维)。</p><ul><li>1，给定一个样本特征 , 我们希望预测其对应的属性值 , 如果 是离散的, 那么这就是一个分类问题，反之，如果 是连续的实数, 这就是一个回归问题。</li><li>2，如果给定一组样本特征 , 我们没有对应的属性值 , 而是想发掘这组样本在 二维空间的分布, 比如分析哪些样本靠的更近，哪些样本之间离得很远, 这就是属于聚类问题。</li><li>3，如果我们想用维数更低的子空间来表示原来高维的特征空间, 那么这就是降维问题。</li></ul><p>无论是分类还是回归，都是想建立一个预测模型 ，给定一个输入 , 可以得到一个输出，<strong>不同的只是在分类问题中,结果是离散的; 而在回归问题中结果是连续的</strong></p><h2 id="分类-classification"><a href="#分类-classification" class="headerlink" title="分类 classification"></a>分类 classification</h2><p>有监督学习的两大应用之一，产生离散的结果</p><p><strong>分类问题最常用的学习算法包括 SVM (支持向量机) , SGD (随机梯度下降算法), Bayes (贝叶斯估计), Ensemble, KNN 等。</strong>而<strong>回归问题也能使用 SVR, SGD, Ensemble 等算</strong>法，以及其它线性回归算法。</p><p>例如向模型输入人的各种数据的训练样本，产生“输入一个人的数据，判断是否患有癌症”的结果，结果必定是离散的，只有“是”或“否”。（即有目标和标签，能判断目标特征是属于哪一个类型）</p><h2 id="回归-regression"><a href="#回归-regression" class="headerlink" title="回归 regression"></a>回归 regression</h2><p>有监督学习的两大应用之一，产生连续的结果。</p><p>例如向模型输入人的各种数据的训练样本，产生“输入一个人的数据，判断此人20年后今后的经济能力”的结果，结果是连续的，往往得到一条回归曲线。当输入自变量不同时，输出的因变量非离散分布（不仅仅是一条线性直线，多项曲线也是回归曲线）。</p><p>classification &amp; regression：分类与回归无论是分类还是回归，都是想建立一个预测模型 ，给定一个输入 , 可以得到一个输出 : 不同的只是在分类问题中, 是离散的; 而在回归问题中 是连续的。所以总得来说，两种问题的学习算法都很类似。所以在这个图谱上，我们看到在分类问题中用到的学习算法，在回归问题中也能使用。分类问题最常用的学习算法包括</p><p>SVM (支持向量机) , SGD (随机梯度下降算法), Bayes (贝叶斯估计), Ensemble, KNN 等。而回归问题也能使用</p><p>SVR, SGD, Ensemble 等算法，以及其它线性回归算法。</p><h2 id="聚类-clustering"><a href="#聚类-clustering" class="headerlink" title="聚类 clustering"></a>聚类 clustering</h2><p>聚类也是分析样本的属性, 有点类似classification, 不同的就是classification 在预测之前是知道  的范围, 或者说知道到底有几个类别, 而聚类是不知道属性的范围的。所以 classification 也常常被称为 supervised learning, 而clustering就被称为unsupervised learning。<br>clustering 事先不知道样本的属性范围，只能凭借样本在特征空间的分布来分析样本的属性。这种问题一般更复杂。而常用的算法包括 k-means (K-均值), GMM (高斯混合模型) 等。</p><p>无监督学习的结果。聚类的结果将产生一组集合，集合中的对象与同集合中的对象彼此相似，与其他集合中的对象相异。</p><h2 id="降维-dimensionality-reduction"><a href="#降维-dimensionality-reduction" class="headerlink" title="降维 dimensionality reduction"></a>降维 dimensionality reduction</h2><p>降维是机器学习另一个重要的领域, 降维有很多重要的应用, **特征的维数过高, 会增加训练的负担与存储空间, 降维就是希望去除特征的冗余, 用更加少的维数来表示特征.**降维算法最基础的就是PCA了, 后面的很多算法都是以PCA为基础演化而来。</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="1简介"><a href="#1简介" class="headerlink" title="1简介"></a>1简介</h2><p>GCC 的意思也只是 GNU C Compiler 而已。经过了这么多年的发展，GCC 已经不仅仅能支持 C 语言；它现在还支持 Ada 语言、C++ 语言、Java 语言、Objective C 语言、Pascal 语言、COBOL语言，以及支持函数式编程和逻辑编程的 Mercury 语言，等等。而 GCC 也不再单只是 GNU C 语言编译器的意思了，而是变成了 GNU Compiler Collection 也即是 GNU 编译器家族的意思了。另一方面，说到 GCC 对于操作系统平台及硬件平台支持，概括起来就是一句话：无所不在。</p><h2 id="2-简单编译"><a href="#2-简单编译" class="headerlink" title="2 简单编译"></a>2 简单编译</h2><p>示例程序如下：</p><p>&#x2F;&#x2F;test.c</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello World!\n&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这个程序，一步到位的编译指令是:</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc test.c -o test</span><br></pre></td></tr></table></figure><p>实质上，上述编译过程是分为四个阶段进行的，即预处理(也称预编译，Preprocessing)、编译(Compilation)、汇编 (Assembly)和连接(Linking)。</p><h3 id="2-1-预处理"><a href="#2-1-预处理" class="headerlink" title="2.1 预处理"></a>2.1 预处理</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc -E test.c -o test.i 或 gcc -E test.c</span><br></pre></td></tr></table></figure><p> </p><p>可以输出test.i文件中存放着test.c经预处理之后的代码。打开test.i文件，看一看，就明白了。后面那条指令，是直接在命令行窗口中输出预处理后的代码.</p><p>gcc的-E选项，可以让编译器在预处理后停止，并输出预处理结果。在本例中，预处理结果就是将stdio.h 文件中的内容插入到test.c中了。</p><h3 id="2-2-编译为汇编代码-Compilation"><a href="#2-2-编译为汇编代码-Compilation" class="headerlink" title="2.2 编译为汇编代码(Compilation)"></a>2.2 编译为汇编代码(Compilation)</h3><p>预处理之后，可直接对生成的test.i文件编译，生成汇编代码：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc -S test.i -o test.s</span><br></pre></td></tr></table></figure><p>gcc的-S选项，表示在程序编译期间，在生成汇编代码后，停止，-o输出汇编代码文件。</p><h3 id="2-3-汇编-Assembly"><a href="#2-3-汇编-Assembly" class="headerlink" title="2.3 汇编(Assembly)"></a>2.3 汇编(Assembly)</h3><p>对于上一小节中生成的汇编代码文件test.s，gas汇编器负责将其编译为目标文件，如下：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc -c test.s -o test.o</span><br></pre></td></tr></table></figure><h3 id="2-4-连接-Linking"><a href="#2-4-连接-Linking" class="headerlink" title="2.4 连接(Linking)"></a>2.4 连接(Linking)</h3><p>gcc连接器是gas提供的，负责将程序的目标文件与所需的所有附加的目标文件连接起来，最终生成可执行文件。附加的目标文件包括静态连接库和动态连接库。</p><p>对于上一小节中生成的test.o，将其与Ｃ标准输入输出库进行连接，最终生成程序test</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc test.o -o test</span><br></pre></td></tr></table></figure><p> </p><p>在命令行窗口中，执行.&#x2F;test, 让它说HelloWorld吧！</p><h2 id="3-多个程序文件的编译"><a href="#3-多个程序文件的编译" class="headerlink" title="3 多个程序文件的编译"></a>3 多个程序文件的编译</h2><p>通常整个程序是由多个源文件组成的，相应地也就形成了多个编译单元，使用GCC能够很好地管理这些编译单元。假设有一个由test1.c和 test2.c两个源文件组成的程序，为了对它们进行编译，并最终生成可执行程序test，可以使用下面这条命令：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc test1.c test2.c -o test</span><br></pre></td></tr></table></figure><p>如果同时处理的文件不止一个，GCC仍然会按照预处理、编译和链接的过程依次进行。如果深究起来，上面这条命令大致相当于依次执行如下三条命令：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">gcc -c test1.c -o test1.o</span><br><span class="line">gcc -c test2.c -o test2.o</span><br><span class="line">gcc test1.o test2.o -o test</span><br></pre></td></tr></table></figure><h2 id="4-检错"><a href="#4-检错" class="headerlink" title="4 检错"></a>4 检错</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc -pedantic illcode.c -o illcode</span><br></pre></td></tr></table></figure><p>-pedantic编译选项并不能保证被编译程序与ANSI&#x2F;ISO C标准的完全兼容，它仅仅只能用来帮助Linux程序员离这个目标越来越近。或者换句话说，-pedantic选项能够帮助程序员发现一些不符合 ANSI&#x2F;ISO C标准的代码，但不是全部，事实上只有ANSI&#x2F;ISO C语言标准中要求进行编译器诊断的那些情况，才有可能被GCC发现并提出警告。</p><p>除了-pedantic之外，GCC还有一些其它编译选项也能够产生有用的警告信息。这些选项大多以-W开头，其中最有价值的当数-Wall了，使用它能够使GCC产生尽可能多的警告信息。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc -Wall illcode.c -o illcode</span><br></pre></td></tr></table></figure><p>GCC给出的警告信息虽然从严格意义上说不能算作错误，但却很可能成为错误的栖身之所。一个优秀的Linux程序员应该尽量避免产生警告信息，使自己的代码始终保持标准、健壮的特性。所以将警告信息当成编码错误来对待，是一种值得赞扬的行为！所以，在编译程序时带上-Werror选项，那么GCC会在所有产生警告的地方停止编译，迫使程序员对自己的代码进行修改，如下：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc -Werror test.c -o test</span><br></pre></td></tr></table></figure><p> </p><h2 id="5-库文件连接"><a href="#5-库文件连接" class="headerlink" title="5 库文件连接"></a>5 库文件连接</h2><p>开发软件时，完全不使用第三方函数库的情况是比较少见的，通常来讲都需要借助许多函数库的支持才能够完成相应的功能。从程序员的角度看，函数库实际上就是一些头文件（.h）和库文件（so、或lib、dll）的集合。。虽然Linux下的大多数函数都默认将头文件放到&#x2F;usr&#x2F;include&#x2F;目录下，而库文件则放到&#x2F;usr&#x2F;lib&#x2F;目录下；Windows所使用的库文件主要放在Visual Stido的目录下的include和lib，以及系统文件夹下。但也有的时候，我们要用的库不再这些目录下，所以GCC在编译时必须用自己的办法来查找所需要的头文件和库文件。</p><p>例如我们的程序test.c是在linux上使用c连接mysql，这个时候我们需要去mysql官网下载MySQL Connectors的C库，下载下来解压之后，有一个include文件夹，里面包含mysql connectors的头文件，还有一个lib文件夹，里面包含二进制so文件libmysqlclient.so</p><p>其中inclulde文件夹的路径是&#x2F;usr&#x2F;dev&#x2F;mysql&#x2F;include,lib文件夹是&#x2F;usr&#x2F;dev&#x2F;mysql&#x2F;lib</p><p> </p><h3 id="5-1-编译成可执行文件"><a href="#5-1-编译成可执行文件" class="headerlink" title="5.1 编译成可执行文件"></a>5.1 编译成可执行文件</h3><p>首先我们要进行编译test.c为目标文件，这个时候需要执行</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc –c –I /usr/dev/mysql/include test.c –o test.o</span><br></pre></td></tr></table></figure><h3 id="5-2-链接"><a href="#5-2-链接" class="headerlink" title="5.2 链接"></a>5.2 链接</h3><p>最后我们把所有目标文件链接成可执行文件:</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc –L /usr/dev/mysql/lib –lmysqlclient test.o –o test</span><br></pre></td></tr></table></figure><p>Linux下的库文件分为两大类分别是动态链接库（通常以.so结尾）和静态链接库（通常以.a结尾），二者的区别仅在于程序执行时所需的代码是在运行时动态加载的，还是在编译时静态加载的。</p><h3 id="5-3-强制链接时使用静态链接库"><a href="#5-3-强制链接时使用静态链接库" class="headerlink" title="5.3 强制链接时使用静态链接库"></a>5.3 强制链接时使用静态链接库</h3><p>默认情况下， GCC在链接时优先使用动态链接库，只有当动态链接库不存在时才考虑使用静态链接库，如果需要的话可以在编译时加上-static选项，强制使用静态链接库。</p><p>在&#x2F;usr&#x2F;dev&#x2F;mysql&#x2F;lib目录下有链接时所需要的库文件libmysqlclient.so和libmysqlclient.a，为了让GCC在链接时只用到静态链接库，可以使用下面的命令:</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc –L /usr/dev/mysql/lib –static –lmysqlclient test.o –o test</span><br></pre></td></tr></table></figure><p> </p><p>静态库链接时搜索路径顺序：</p><p>ld会去找GCC命令中的参数-L</p><p>再找gcc的环境变量LIBRARY_PATH</p><p>再找内定目录 &#x2F;lib &#x2F;usr&#x2F;lib &#x2F;usr&#x2F;local&#x2F;lib 这是当初compile gcc时写在程序内的。 动态链接时、执行时搜索路径顺序:</p><ul><li><p>编译目标代码时指定的动态库搜索路径</p></li><li><p>环境变量LD_LIBRARY_PATH指定的动态库搜索路径</p></li><li><p>配置文件&#x2F;etc&#x2F;ld.so.conf中指定的动态库搜索路径</p></li><li><p>默认的动态库搜索路径&#x2F;lib</p></li><li><p>默认的动态库搜索路径&#x2F;usr&#x2F;lib</p></li></ul><p>其中环境变量：<br>LIBRARY_PATH环境变量：指定程序静态链接库文件搜索路径<br>LD_LIBRARY_PATH环境变量：指定程序动态链接库文件搜索路径</p>]]></content>
     
     
-    <summary type="html">介绍机器学习算法中常见集中算法的使用场景和异同点，包括分类、回归、聚类、降维</summary>
+    <summary type="html">Linux平台编译离不开 gcc, 这里说的编译过程是其实是分为四个阶段进行的，即预处理(也称预编译，Preprocessing)、编译(Compilation)、汇编 (Assembly)和连接(Linking)。 一起拆开来看看吧...</summary>
     
     
     
     <category term="technology" scheme="http://amazingcoderpro.github.io/categories/technology/"/>
     
     
-    <category term="cs" scheme="http://amazingcoderpro.github.io/tags/cs/"/>
+    <category term="cpp" scheme="http://amazingcoderpro.github.io/tags/cpp/"/>
     
-    <category term="tech" scheme="http://amazingcoderpro.github.io/tags/tech/"/>
-    
-    <category term="data" scheme="http://amazingcoderpro.github.io/tags/data/"/>
-    
-    <category term="ai" scheme="http://amazingcoderpro.github.io/tags/ai/"/>
+    <category term="gcc" scheme="http://amazingcoderpro.github.io/tags/gcc/"/>
     
   </entry>
   
@@ -229,6 +225,33 @@
     <category term="tech" scheme="http://amazingcoderpro.github.io/tags/tech/"/>
     
     <category term="data" scheme="http://amazingcoderpro.github.io/tags/data/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习算法四大金刚</title>
+    <link href="http://amazingcoderpro.github.io/2021/06/08/technology/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%9B%9B%E5%A4%A7%E9%87%91%E5%88%9A/"/>
+    <id>http://amazingcoderpro.github.io/2021/06/08/technology/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%9B%9B%E5%A4%A7%E9%87%91%E5%88%9A/</id>
+    <published>2021-06-08T07:29:00.000Z</published>
+    <updated>2021-10-08T07:29:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="四大金刚介绍"><a href="#四大金刚介绍" class="headerlink" title="四大金刚介绍"></a>四大金刚介绍</h2><p><img src="/../../../images/data_dig.jpg" alt="image-20210908195234323"><br>由上图我们可以看到，机器学习分为四大金刚，分别是</p><p>classification (分类)，<br>regression (回归),<br>clustering (聚类),<br>dimensionality reduction (降维)。</p><ul><li>1，给定一个样本特征 , 我们希望预测其对应的属性值 , 如果 是离散的, 那么这就是一个分类问题，反之，如果 是连续的实数, 这就是一个回归问题。</li><li>2，如果给定一组样本特征 , 我们没有对应的属性值 , 而是想发掘这组样本在 二维空间的分布, 比如分析哪些样本靠的更近，哪些样本之间离得很远, 这就是属于聚类问题。</li><li>3，如果我们想用维数更低的子空间来表示原来高维的特征空间, 那么这就是降维问题。</li></ul><p>无论是分类还是回归，都是想建立一个预测模型 ，给定一个输入 , 可以得到一个输出，<strong>不同的只是在分类问题中,结果是离散的; 而在回归问题中结果是连续的</strong></p><h2 id="分类-classification"><a href="#分类-classification" class="headerlink" title="分类 classification"></a>分类 classification</h2><p>有监督学习的两大应用之一，产生离散的结果</p><p><strong>分类问题最常用的学习算法包括 SVM (支持向量机) , SGD (随机梯度下降算法), Bayes (贝叶斯估计), Ensemble, KNN 等。</strong>而<strong>回归问题也能使用 SVR, SGD, Ensemble 等算</strong>法，以及其它线性回归算法。</p><p>例如向模型输入人的各种数据的训练样本，产生“输入一个人的数据，判断是否患有癌症”的结果，结果必定是离散的，只有“是”或“否”。（即有目标和标签，能判断目标特征是属于哪一个类型）</p><h2 id="回归-regression"><a href="#回归-regression" class="headerlink" title="回归 regression"></a>回归 regression</h2><p>有监督学习的两大应用之一，产生连续的结果。</p><p>例如向模型输入人的各种数据的训练样本，产生“输入一个人的数据，判断此人20年后今后的经济能力”的结果，结果是连续的，往往得到一条回归曲线。当输入自变量不同时，输出的因变量非离散分布（不仅仅是一条线性直线，多项曲线也是回归曲线）。</p><p>classification &amp; regression：分类与回归无论是分类还是回归，都是想建立一个预测模型 ，给定一个输入 , 可以得到一个输出 : 不同的只是在分类问题中, 是离散的; 而在回归问题中 是连续的。所以总得来说，两种问题的学习算法都很类似。所以在这个图谱上，我们看到在分类问题中用到的学习算法，在回归问题中也能使用。分类问题最常用的学习算法包括</p><p>SVM (支持向量机) , SGD (随机梯度下降算法), Bayes (贝叶斯估计), Ensemble, KNN 等。而回归问题也能使用</p><p>SVR, SGD, Ensemble 等算法，以及其它线性回归算法。</p><h2 id="聚类-clustering"><a href="#聚类-clustering" class="headerlink" title="聚类 clustering"></a>聚类 clustering</h2><p>聚类也是分析样本的属性, 有点类似classification, 不同的就是classification 在预测之前是知道  的范围, 或者说知道到底有几个类别, 而聚类是不知道属性的范围的。所以 classification 也常常被称为 supervised learning, 而clustering就被称为unsupervised learning。<br>clustering 事先不知道样本的属性范围，只能凭借样本在特征空间的分布来分析样本的属性。这种问题一般更复杂。而常用的算法包括 k-means (K-均值), GMM (高斯混合模型) 等。</p><p>无监督学习的结果。聚类的结果将产生一组集合，集合中的对象与同集合中的对象彼此相似，与其他集合中的对象相异。</p><h2 id="降维-dimensionality-reduction"><a href="#降维-dimensionality-reduction" class="headerlink" title="降维 dimensionality reduction"></a>降维 dimensionality reduction</h2><p>降维是机器学习另一个重要的领域, 降维有很多重要的应用, **特征的维数过高, 会增加训练的负担与存储空间, 降维就是希望去除特征的冗余, 用更加少的维数来表示特征.**降维算法最基础的就是PCA了, 后面的很多算法都是以PCA为基础演化而来。</p>]]></content>
+    
+    
+    <summary type="html">介绍机器学习算法中常见集中算法的使用场景和异同点，包括分类、回归、聚类、降维</summary>
+    
+    
+    
+    <category term="technology" scheme="http://amazingcoderpro.github.io/categories/technology/"/>
+    
+    
+    <category term="cs" scheme="http://amazingcoderpro.github.io/tags/cs/"/>
+    
+    <category term="tech" scheme="http://amazingcoderpro.github.io/tags/tech/"/>
+    
+    <category term="data" scheme="http://amazingcoderpro.github.io/tags/data/"/>
+    
+    <category term="ai" scheme="http://amazingcoderpro.github.io/tags/ai/"/>
     
   </entry>
   
@@ -279,16 +302,16 @@
   </entry>
   
   <entry>
-    <title>制定投资计划</title>
-    <link href="http://amazingcoderpro.github.io/2021/06/08/technology/fin/%E5%88%B6%E5%AE%9A%E6%8A%95%E8%B5%84%E8%AE%A1%E5%88%92/"/>
-    <id>http://amazingcoderpro.github.io/2021/06/08/technology/fin/%E5%88%B6%E5%AE%9A%E6%8A%95%E8%B5%84%E8%AE%A1%E5%88%92/</id>
+    <title>短线技巧跟庄，长线看趋势</title>
+    <link href="http://amazingcoderpro.github.io/2021/06/08/technology/fin/%E7%9F%AD%E7%BA%BF%E6%8A%80%E5%B7%A7%E8%B7%9F%E5%BA%84%EF%BC%8C%E9%95%BF%E7%BA%BF%E7%9C%8B%E8%B6%8B%E5%8A%BF/"/>
+    <id>http://amazingcoderpro.github.io/2021/06/08/technology/fin/%E7%9F%AD%E7%BA%BF%E6%8A%80%E5%B7%A7%E8%B7%9F%E5%BA%84%EF%BC%8C%E9%95%BF%E7%BA%BF%E7%9C%8B%E8%B6%8B%E5%8A%BF/</id>
     <published>2021-06-08T07:29:00.000Z</published>
     <updated>2021-10-08T07:29:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="确定投资理财组合"><a href="#确定投资理财组合" class="headerlink" title="确定投资理财组合"></a>确定投资理财组合</h2><h3 id="永久组合"><a href="#永久组合" class="headerlink" title="永久组合"></a>永久组合</h3><p>上世纪 80 年代，美国的专业投资人哈利·布朗就提出了永久组合，它以相等的权重，配置于四类非常常规并且“永久”的资产：25% 的股票、25% 的国债、25% 的黄金和 25% 的现金。股票和国债，我们在介绍股债组合的时候都熟悉了，新加入的黄金则是一把对抗通货膨胀的“利器”，而现金可以最大程度上削弱风险，并留出流动资金用沪深 300 指数代表股票资产，上证 5 年国债指数代表债券资产，黄金资产则用黄金期货指数来代表，现金资产呢，我们使用货币基金</p><h3 id="耶鲁组合"><a href="#耶鲁组合" class="headerlink" title="耶鲁组合"></a>耶鲁组合</h3><p>。我们用“万得 - 普通股票型基金指数”代表中国的主动股票型基金资产，使用“标普 500 人民币指数”代表美国股票资产，使用上证 5 年国债指数代表债券资产。按 30% 中国主动股基，10% 美国股票资产和 60% 债券的权重在</p><h3 id="基金筛选"><a href="#基金筛选" class="headerlink" title="基金筛选"></a>基金筛选</h3><ul><li>用基金评级结果进行初步筛选，剔除掉成立时间太短、基金经理近期换过、偏行业或主题型的主动股票基金和被动指数型基金，得到 3 到 5 只符合条件的备选基金；</li><li>把这 3 到 5 只基金放入价格比工具，和沪深 300 指数比较，看哪只价格比的曲线斜率更高，走势更平稳。</li><li>根据你的风险偏好，选出最适合你的那只基金。</li><li>在配置美股资产的时候，我建议直接选被动指数基金，既省心效果也不错投资美股时，投资 QDII 被动指数基金是一个兼顾收益率和便捷性的选择；</li></ul><h2 id="实操"><a href="#实操" class="headerlink" title="实操"></a>实操</h2><p>对于波动性比较小的债基，不同时点的建仓成本变化不大，所以没必要定投，直接一步到位就可以，分批定投反而会错失债券的时间收益。对于波动性比较大的股票型基金，比如说国内的普通股票型基金和标普 500 的指数基金，是可以考虑在 3 个月到半年这样的时间尺度上分批建仓的，因为这样可以平滑掉你的建仓时点选择的风险。另外，如果你的可投现金流是按月收到的，那就没得选，只能是定投，每月收到一笔钱投一笔。</p><p>作为普通投资者，只要我们在购买基金的时候进行了充足的分析，是没有必要在平时频繁查看这个配置组合的。我们只需要每隔一个季度，或者在市场出现大幅波动的时候，计算一下基金组合在几类资产上的配置比例是否因为价格的变化偏离过大。如果偏离不多，就可以不用管，如果偏离得比较大了，就把它再平衡一次，重新调回初始比例。</p><h3 id="个人投资计划"><a href="#个人投资计划" class="headerlink" title="个人投资计划"></a>个人投资计划</h3><p>每月平均投资1万（每月6000定投股值+每季度12000的债券）一个季度3万&#x3D; 3*6000+12000 &#x3D; 30000</p><h4 id="主动型占比30-，-月投入3000："><a href="#主动型占比30-，-月投入3000：" class="headerlink" title="主动型占比30%， 月投入3000："></a>主动型占比30%， 月投入3000：</h4><ul><li>000803 工银研究精选股票 - 10% (每两周四定投500) </li><li><a href="http://fund.eastmoney.com/001070.html">建信信息产业股票 (001070)</a>–10%（每两周四定投500）； </li><li>700003 平安策略先锋混合  —10%（每两周四定投500）</li></ul><h4 id="混合型占比10"><a href="#混合型占比10" class="headerlink" title="混合型占比10%"></a>混合型占比10%</h4><ul><li>易方达安心回馈（偏债） 10% （每两周四定投500）</li></ul><h4 id="美股-20"><a href="#美股-20" class="headerlink" title="美股 20%"></a>美股 20%</h4><ul><li>博时标普500ETF联接A(050025  20%  （每两周四定投1000）</li></ul><h4 id="债券-40"><a href="#债券-40" class="headerlink" title="债券 40%"></a>债券 40%</h4><ul><li>天弘永利债券A(420002)-10%（每个季度投入3000）</li><li><a href="http://fund.eastmoney.com/000297.html">鹏华可转债债券A</a> – 10% （每季度3000）</li><li>160513 博时稳健回报债券  – 20%（每季度投入6000）</li></ul><h4 id="复盘"><a href="#复盘" class="headerlink" title="复盘"></a>复盘</h4><ul><li>每个季度做一次再平衡</li><li>每个月检验一次支点： 是否五星评级，最大回撤不能超过15%，基金经理没有变动，</li></ul><h4 id="是买点吗"><a href="#是买点吗" class="headerlink" title="是买点吗"></a>是买点吗</h4><p>遇到买点（后期看涨），买也行，不买也行，不卖 </p><p>遇到卖点（后期看空），卖也行，不卖也行，不要买</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="短线技巧跟庄，长线看趋势"><a href="#短线技巧跟庄，长线看趋势" class="headerlink" title="短线技巧跟庄，长线看趋势"></a>短线技巧跟庄，长线看趋势</h1><h3 id="短线技巧跟庄，长线看趋势-1"><a href="#短线技巧跟庄，长线看趋势-1" class="headerlink" title="短线技巧跟庄，长线看趋势"></a>短线技巧跟庄，长线看趋势</h3><h3 id="风险识别"><a href="#风险识别" class="headerlink" title="风险识别"></a>风险识别</h3><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxnhza25iwj31fu0u0q6w.jpg" alt="image-20211223091107242"></p><h3 id="二次突破"><a href="#二次突破" class="headerlink" title="二次突破"></a>二次突破</h3><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxni7emwx5j31e10u0n2m.jpg" alt="image-20211223092128192"></p><h3 id="lt-自律的交易者-gt"><a href="#lt-自律的交易者-gt" class="headerlink" title="&lt;自律的交易者&gt;"></a>&lt;自律的交易者&gt;</h3><p>心态80%+20%技术</p>]]></content>
     
     
-    <summary type="html">如何科学合理的制定投资计划？</summary>
+    <summary type="html">短线技巧跟庄，长线看趋势</summary>
     
     
     
@@ -302,16 +325,16 @@
   </entry>
   
   <entry>
-    <title>短线技巧跟庄，长线看趋势</title>
-    <link href="http://amazingcoderpro.github.io/2021/06/08/technology/fin/%E7%9F%AD%E7%BA%BF%E6%8A%80%E5%B7%A7%E8%B7%9F%E5%BA%84%EF%BC%8C%E9%95%BF%E7%BA%BF%E7%9C%8B%E8%B6%8B%E5%8A%BF/"/>
-    <id>http://amazingcoderpro.github.io/2021/06/08/technology/fin/%E7%9F%AD%E7%BA%BF%E6%8A%80%E5%B7%A7%E8%B7%9F%E5%BA%84%EF%BC%8C%E9%95%BF%E7%BA%BF%E7%9C%8B%E8%B6%8B%E5%8A%BF/</id>
+    <title>制定投资计划</title>
+    <link href="http://amazingcoderpro.github.io/2021/06/08/technology/fin/%E5%88%B6%E5%AE%9A%E6%8A%95%E8%B5%84%E8%AE%A1%E5%88%92/"/>
+    <id>http://amazingcoderpro.github.io/2021/06/08/technology/fin/%E5%88%B6%E5%AE%9A%E6%8A%95%E8%B5%84%E8%AE%A1%E5%88%92/</id>
     <published>2021-06-08T07:29:00.000Z</published>
     <updated>2021-10-08T07:29:00.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="短线技巧跟庄，长线看趋势"><a href="#短线技巧跟庄，长线看趋势" class="headerlink" title="短线技巧跟庄，长线看趋势"></a>短线技巧跟庄，长线看趋势</h1><h3 id="短线技巧跟庄，长线看趋势-1"><a href="#短线技巧跟庄，长线看趋势-1" class="headerlink" title="短线技巧跟庄，长线看趋势"></a>短线技巧跟庄，长线看趋势</h3><h3 id="风险识别"><a href="#风险识别" class="headerlink" title="风险识别"></a>风险识别</h3><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxnhza25iwj31fu0u0q6w.jpg" alt="image-20211223091107242"></p><h3 id="二次突破"><a href="#二次突破" class="headerlink" title="二次突破"></a>二次突破</h3><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gxni7emwx5j31e10u0n2m.jpg" alt="image-20211223092128192"></p><h3 id="lt-自律的交易者-gt"><a href="#lt-自律的交易者-gt" class="headerlink" title="&lt;自律的交易者&gt;"></a>&lt;自律的交易者&gt;</h3><p>心态80%+20%技术</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="确定投资理财组合"><a href="#确定投资理财组合" class="headerlink" title="确定投资理财组合"></a>确定投资理财组合</h2><h3 id="永久组合"><a href="#永久组合" class="headerlink" title="永久组合"></a>永久组合</h3><p>上世纪 80 年代，美国的专业投资人哈利·布朗就提出了永久组合，它以相等的权重，配置于四类非常常规并且“永久”的资产：25% 的股票、25% 的国债、25% 的黄金和 25% 的现金。股票和国债，我们在介绍股债组合的时候都熟悉了，新加入的黄金则是一把对抗通货膨胀的“利器”，而现金可以最大程度上削弱风险，并留出流动资金用沪深 300 指数代表股票资产，上证 5 年国债指数代表债券资产，黄金资产则用黄金期货指数来代表，现金资产呢，我们使用货币基金</p><h3 id="耶鲁组合"><a href="#耶鲁组合" class="headerlink" title="耶鲁组合"></a>耶鲁组合</h3><p>。我们用“万得 - 普通股票型基金指数”代表中国的主动股票型基金资产，使用“标普 500 人民币指数”代表美国股票资产，使用上证 5 年国债指数代表债券资产。按 30% 中国主动股基，10% 美国股票资产和 60% 债券的权重在</p><h3 id="基金筛选"><a href="#基金筛选" class="headerlink" title="基金筛选"></a>基金筛选</h3><ul><li>用基金评级结果进行初步筛选，剔除掉成立时间太短、基金经理近期换过、偏行业或主题型的主动股票基金和被动指数型基金，得到 3 到 5 只符合条件的备选基金；</li><li>把这 3 到 5 只基金放入价格比工具，和沪深 300 指数比较，看哪只价格比的曲线斜率更高，走势更平稳。</li><li>根据你的风险偏好，选出最适合你的那只基金。</li><li>在配置美股资产的时候，我建议直接选被动指数基金，既省心效果也不错投资美股时，投资 QDII 被动指数基金是一个兼顾收益率和便捷性的选择；</li></ul><h2 id="实操"><a href="#实操" class="headerlink" title="实操"></a>实操</h2><p>对于波动性比较小的债基，不同时点的建仓成本变化不大，所以没必要定投，直接一步到位就可以，分批定投反而会错失债券的时间收益。对于波动性比较大的股票型基金，比如说国内的普通股票型基金和标普 500 的指数基金，是可以考虑在 3 个月到半年这样的时间尺度上分批建仓的，因为这样可以平滑掉你的建仓时点选择的风险。另外，如果你的可投现金流是按月收到的，那就没得选，只能是定投，每月收到一笔钱投一笔。</p><p>作为普通投资者，只要我们在购买基金的时候进行了充足的分析，是没有必要在平时频繁查看这个配置组合的。我们只需要每隔一个季度，或者在市场出现大幅波动的时候，计算一下基金组合在几类资产上的配置比例是否因为价格的变化偏离过大。如果偏离不多，就可以不用管，如果偏离得比较大了，就把它再平衡一次，重新调回初始比例。</p><h3 id="个人投资计划"><a href="#个人投资计划" class="headerlink" title="个人投资计划"></a>个人投资计划</h3><p>每月平均投资1万（每月6000定投股值+每季度12000的债券）一个季度3万&#x3D; 3*6000+12000 &#x3D; 30000</p><h4 id="主动型占比30-，-月投入3000："><a href="#主动型占比30-，-月投入3000：" class="headerlink" title="主动型占比30%， 月投入3000："></a>主动型占比30%， 月投入3000：</h4><ul><li>000803 工银研究精选股票 - 10% (每两周四定投500) </li><li><a href="http://fund.eastmoney.com/001070.html">建信信息产业股票 (001070)</a>–10%（每两周四定投500）； </li><li>700003 平安策略先锋混合  —10%（每两周四定投500）</li></ul><h4 id="混合型占比10"><a href="#混合型占比10" class="headerlink" title="混合型占比10%"></a>混合型占比10%</h4><ul><li>易方达安心回馈（偏债） 10% （每两周四定投500）</li></ul><h4 id="美股-20"><a href="#美股-20" class="headerlink" title="美股 20%"></a>美股 20%</h4><ul><li>博时标普500ETF联接A(050025  20%  （每两周四定投1000）</li></ul><h4 id="债券-40"><a href="#债券-40" class="headerlink" title="债券 40%"></a>债券 40%</h4><ul><li>天弘永利债券A(420002)-10%（每个季度投入3000）</li><li><a href="http://fund.eastmoney.com/000297.html">鹏华可转债债券A</a> – 10% （每季度3000）</li><li>160513 博时稳健回报债券  – 20%（每季度投入6000）</li></ul><h4 id="复盘"><a href="#复盘" class="headerlink" title="复盘"></a>复盘</h4><ul><li>每个季度做一次再平衡</li><li>每个月检验一次支点： 是否五星评级，最大回撤不能超过15%，基金经理没有变动，</li></ul><h4 id="是买点吗"><a href="#是买点吗" class="headerlink" title="是买点吗"></a>是买点吗</h4><p>遇到买点（后期看涨），买也行，不买也行，不卖 </p><p>遇到卖点（后期看空），卖也行，不卖也行，不要买</p>]]></content>
     
     
-    <summary type="html">短线技巧跟庄，长线看趋势</summary>
+    <summary type="html">如何科学合理的制定投资计划？</summary>
     
     
     
@@ -366,9 +389,30 @@
     
     <category term="cs" scheme="http://amazingcoderpro.github.io/tags/cs/"/>
     
+    <category term="efficiency" scheme="http://amazingcoderpro.github.io/tags/efficiency/"/>
+    
     <category term="git" scheme="http://amazingcoderpro.github.io/tags/git/"/>
     
-    <category term="efficiency" scheme="http://amazingcoderpro.github.io/tags/efficiency/"/>
+  </entry>
+  
+  <entry>
+    <title>cpp程序构建过程</title>
+    <link href="http://amazingcoderpro.github.io/2020/08/21/technology/cpp%E7%A8%8B%E5%BA%8F%E6%9E%84%E5%BB%BA%E8%BF%87%E7%A8%8B/"/>
+    <id>http://amazingcoderpro.github.io/2020/08/21/technology/cpp%E7%A8%8B%E5%BA%8F%E6%9E%84%E5%BB%BA%E8%BF%87%E7%A8%8B/</id>
+    <published>2020-08-21T09:24:12.000Z</published>
+    <updated>2020-08-21T09:24:12.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>源码要运行，必须先转成二进制的机器码。这是编译器的任务。<br>如源码test.c</p><p><img src="/../../images/source.png" alt="source"></p><p>要编译器处理一下才能运行。</p><p><img src="/../../images/image.png" alt="alt text"></p><p>对于复杂的项目，编译过程还必须分成三步。</p><p><img src="/../../images/image-1.png" alt="alt text"></p><h2 id="第一步-配置（configure）"><a href="#第一步-配置（configure）" class="headerlink" title="第一步 配置（configure）"></a>第一步 配置（configure）</h2><p>编译器在开始工作之前，需要知道当前的系统环境，比如标准库在哪里、软件的安装位置在哪里、需要安装哪些组件等等。这是因为不同计算机的系统环境不一样，通过指定编译参数，编译器就可以灵活适应环境，编译出各种环境都能运行的机器码。这个确定编译参数的步骤，就叫做”配置”（configure）。</p><p>这些配置信息保存在一个配置文件之中，约定俗成是一个叫做configure的脚本文件。通常它是由autoconf工具生成的。编译器通过运行这个脚本，获知编译参数。</p><p>configure脚本已经尽量考虑到不同系统的差异，并且对各种编译参数给出了默认值。如果用户的系统环境比较特别，或者有一些特定的需求，就需要手动向configure脚本提供编译参数。</p><h2 id="第二步-确定标准库和头文件的位置"><a href="#第二步-确定标准库和头文件的位置" class="headerlink" title="第二步 确定标准库和头文件的位置"></a>第二步 确定标准库和头文件的位置</h2><p>源码肯定会用到标准库函数（standard library）和头文件（header）。它们可以存放在系统的任意目录中，编译器实际上没办法自动检测它们的位置，只有通过配置文件才能知道。</p><p>编译的第二步，就是从配置文件中知道标准库和头文件的位置。一般来说，配置文件会给出一个清单，列出几个具体的目录。等到编译时，编译器就按顺序到这几个目录中，寻找目标。</p><h2 id="第三步-确定依赖关系"><a href="#第三步-确定依赖关系" class="headerlink" title="第三步 确定依赖关系"></a>第三步 确定依赖关系</h2><p>对于大型项目来说，源码文件之间往往存在依赖关系，编译器需要确定编译的先后顺序。假定A文件依赖于B文件，编译器应该保证做到下面两点。</p><ul><li>（1）只有在B文件编译完成后，才开始编详A文件。</li><li>（2） 当B文件发生变化时，A文件会被重新编译</li></ul><p>编译顺序保存在一个叫做makefile的文件中，里面列出哪个文件先编译，哪个文件后编译。而makefile文件由configure脚本运行生成，这就是为什么编译时configure必须首先运行的原因。</p><p>在确定依赖关系的同时，编译器也确定了，编译时会用到哪些头文件。</p><h2 id="第四步-头文件的预编译"><a href="#第四步-头文件的预编译" class="headerlink" title="第四步 头文件的预编译"></a>第四步 头文件的预编译</h2><p>不同的源码文件，可能引用同一个头文件（比如stdio.h）。编译的时候，头文件也必须一起编译。为了节省时间，编译器会在编译源码之前，先编译头文件。这保证了头文件只需编译一次，不必每次用到的时候，都重新编译了。</p><p>不过，并不是头文件的所有内容，都会被预编译。用来声明宏的#define命令，就不会被预编译。</p><h2 id="第五步-预处理（Preprocessing）"><a href="#第五步-预处理（Preprocessing）" class="headerlink" title="第五步 预处理（Preprocessing）"></a>第五步 预处理（Preprocessing）</h2><p>预编译完成后，编译器就开始替换掉源码中bash的头文件和宏。以本文开头的那段源码为例，它包含头文件stdio.h，替换后的样子如下。<br><img src="/../../images/image-2.png" alt="alt text"></p><p>为了便于阅读，上面代码只截取了头文件中与源码相关的那部分，即fputs和FILE的声明，省略了stdio.h的其他部分（因为它们非常长）。另外，上面代码的头文件没有经过预编译，而实际上，插入源码的是预编译后的结果。编译器在这一步还会移除注释。</p><p>这一步称为”预处理”（Preprocessing），因为完成之后，就要开始真正的处理了。</p><h2 id="第六步-编译（Compilation）"><a href="#第六步-编译（Compilation）" class="headerlink" title="第六步 编译（Compilation）"></a>第六步 编译（Compilation）</h2><p>预处理之后，编译器就开始生成机器码。对于某些编译器来说，还存在一个中间步骤，会先把源码转为汇编码（assembly），然后再把汇编码转为机器码。</p><p>下面是本文开头的那段源码转成的汇编码。</p><p><img src="/../../images/image-3.png" alt="alt text"></p><p>这种转码后的文件称为对象文件（object file）。</p><h2 id="第七步-连接（Linking）"><a href="#第七步-连接（Linking）" class="headerlink" title="第七步 连接（Linking）"></a>第七步 连接（Linking）</h2><p>对象文件还不能运行，必须进一步转成可执行文件。如果你仔细看上一步的转码结果，会发现其中引用了stdout函数和fwrite函数。也就是说，程序要正常运行，除了上面的代码以外，还必须有stdout和fwrite这两个函数的代码，它们是由C语言的标准库提供的。</p><p>编译器的下一步工作，就是把外部函数的代码（通常是后缀名为.lib和.a的文件），添加到可执行文件中。这就叫做连接（linking）。这种通过拷贝，将外部函数库添加到可执行文件的方式，叫做静态连接（static linking），后文会提到还有动态连接（dynamic linking）。</p><p>make命令的作用，就是从第四步头文件预编译开始，一直到做完这一步。</p><h2 id="第八步-安装（Installation）"><a href="#第八步-安装（Installation）" class="headerlink" title="第八步 安装（Installation）"></a>第八步 安装（Installation）</h2><p>上一步的连接是在内存中进行的，即编译器在内存中生成了可执行文件。下一步，必须将可执行文件保存到用户事先指定的安装目录。</p><p>表面上，这一步很简单，就是将可执行文件（连带相关的数据文件）拷贝过去就行了。但是实际上，这一步还必须完成创建目录、保存文件、设置权限等步骤。这整个的保存过程就称为”安装”（Installation）。</p><h2 id="第九步-操作系统连接"><a href="#第九步-操作系统连接" class="headerlink" title="第九步 操作系统连接"></a>第九步 操作系统连接</h2><p>可执行文件安装后，必须以某种方式通知操作系统，让其知道可以使用这个程序了。比如，我们安装了一个文本阅读程序，往往希望双击txt文件，该程序就会自动运行。</p><p>这就要求在操作系统中，登记这个程序的元数据：文件名、文件描述、关联后缀名等等。Linux系统中，这些信息通常保存在 &#x2F; usr&#x2F; share&#x2F; applications目录下的.desktop文件中。另外，在Windows操作系统中，还需要在Start启动菜单中，建立一个快捷方式。</p><p>这些事情就叫做”操作系统连接”。make install命令，就用来完成”安装”和”操作系统连接”这两步。</p><h2 id="生成安装包"><a href="#生成安装包" class="headerlink" title="生成安装包"></a>生成安装包</h2><p>写到这里，源码编译的整个过程就基本完成了。但是只有很少一部分用户，愿意耐着性子，从头到尾做一遍这个过程。事实上，如果你只有源码可以交给用户，他们会认定你是一个不友好的家伙。大部分用户要的是一个二进制的可执行程序，立刻就能运行。这就要求开发者，将上一步生成的可执行文件，做成可以分发的安装包。</p><p>所以，编译器还必须有生成安装包的功能。通常是将可执行文件（连带相关的数据文件），以某种目录结构，保存成压缩文件包，交给用户。</p><h2 id="动态连接（Dynamic-linking）"><a href="#动态连接（Dynamic-linking）" class="headerlink" title="动态连接（Dynamic linking）"></a>动态连接（Dynamic linking）</h2><p>正常情况下，到这一步，程序已经可以运行了。至于运行期间（runtime）发生的事情，与编译器一概无关。但是，开发者可以在编译阶段选择可执行文件连接外部函数库的方式，到底是静态连接（编译时连接），还是动态连接（运行时连接）。所以，最后还要提一下，什么叫做动态连接。</p><p>前面已经说过，静态连接就是把外部函数库，拷贝到可执行文件中。这样做的好处是，适用范围比较广，不用担心用户机器缺少某个库文件；缺点是安装包会比较大，而且多个应用程序之间，无法共享库文件。动态连接的做法正好相反，外部函数库不进入安装包，只在运行时动态引用。好处是安装包会比较小，多个应用程序可以共享库文件；缺点是用户必须事先安装好库文件，而且版本和安装位置都必须符合要求，否则就不能正常运行。</p><p>现实中，大部分软件采用动态连接，共享库文件。这种动态共享的库文件，Linux平台是后缀名为.so的文件，Windows平台是.dll文件，Mac平台是.dylib文件。</p>]]></content>
+    
+    
+    <summary type="html">c/cpp的源码要运行，必须先转成二进制的机器码。这是编译器的任务。那你知道编译器是怎么一步步把源码变成二进制的吗？</summary>
+    
+    
+    
+    <category term="technology" scheme="http://amazingcoderpro.github.io/categories/technology/"/>
+    
+    
+    <category term="cpp" scheme="http://amazingcoderpro.github.io/tags/cpp/"/>
     
   </entry>
   
@@ -461,52 +505,6 @@
     <category term="sinology" scheme="http://amazingcoderpro.github.io/tags/sinology/"/>
     
     <category term="writ" scheme="http://amazingcoderpro.github.io/tags/writ/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>为什么要写卡片</title>
-    <link href="http://amazingcoderpro.github.io/2020/06/08/softskills/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%99%E5%8D%A1%E7%89%87/"/>
-    <id>http://amazingcoderpro.github.io/2020/06/08/softskills/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%99%E5%8D%A1%E7%89%87/</id>
-    <published>2020-06-08T07:29:00.000Z</published>
-    <updated>2020-10-08T07:29:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="为什么要写卡片"><a href="#为什么要写卡片" class="headerlink" title="为什么要写卡片"></a>为什么要写卡片</h1><p>from: Day2—《用卡片实现善思会写》<br>听课链接：<a href="https://jcg.h5.xeknow.com/s/HzDLj">https://jcg.h5.xeknow.com/s/HzDLj</a><br>听课密码：1210</p><h2 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h2><ul><li>存入越难提取越容易</li><li>卡片即知识，卡片即知识管理，卡片即写作</li><li>方便写作， </li><li>写作就是：话题、逻辑、卡片</li><li>定期按照标签进行复习，产生新的链接，进而丰富了自己的知识体系</li><li>![[Pasted image 20231022151242.png]]</li><li>![[Pasted image 20231022152923.png]]</li><li>![[Pasted image 20231022153917.png]]</li></ul><h2 id="个人体会"><a href="#个人体会" class="headerlink" title="个人体会"></a>个人体会</h2><ul><li>如何更容易的提取知识才是难点</li></ul><h2 id="行动指引"><a href="#行动指引" class="headerlink" title="行动指引"></a>行动指引</h2><ul><li>当需要写作时可以利用卡片进行填充</li><li>![[Pasted image 20231022154316.png]]</li></ul>]]></content>
-    
-    
-    <summary type="html">为什么要写卡片</summary>
-    
-    
-    
-    <category term="softskills" scheme="http://amazingcoderpro.github.io/categories/softskills/"/>
-    
-    
-    <category term="writ" scheme="http://amazingcoderpro.github.io/tags/writ/"/>
-    
-    <category term="softskills" scheme="http://amazingcoderpro.github.io/tags/softskills/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>为什么要读经典</title>
-    <link href="http://amazingcoderpro.github.io/2020/06/08/softskills/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%AF%BB%E7%BB%8F%E5%85%B8/"/>
-    <id>http://amazingcoderpro.github.io/2020/06/08/softskills/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%AF%BB%E7%BB%8F%E5%85%B8/</id>
-    <published>2020-06-08T07:29:00.000Z</published>
-    <updated>2020-10-08T07:29:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="为什么要读经典"><a href="#为什么要读经典" class="headerlink" title="为什么要读经典"></a>为什么要读经典</h1><p>from: Day3—《我们为什么读经典》<br>听课链接：<a href="https://jcg.h5.xeknow.com/s/i5V0J">https://jcg.h5.xeknow.com/s/i5V0J</a><br>听课密码：1210<br>date: 2023-10-22 15:55</p><h2 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h2><ul><li>书籍分三类：<ul><li>感受性读书，陶冶情操类：比如边城，无需共读，个人体验，放松的读就可以，不用逼自己，这些书籍是给你的知识体系增加底色的。</li><li>经典书，架构性读书，适合用卡片：这类书籍像是你知识体系当中的大节点，链接了很多东西，打个比喻，普通知识是葡萄，而他是葡萄藤，可能不一定提供新的知识给你，但是他帮你搭建起知识体系，可以把你已有的知识串联、升华，让你在更高的纬度去理解过往的经验和知识，常看常新，</li><li>技能工具类：这类书籍根据实际需要去读就好，属于功利性读书、增量型读书。</li></ul></li><li>如何判断是否是经典呢：<ul><li>能提高知识维度，能够串联起一堆书，比如《动机心理学》《穷查理宝典》</li><li>一个行业或领域的起源之作，比如《卓有成效的管理者》《反脆弱》《物种起源》，这类书籍诞生于行业之初，具有通识性，大家之作，反而在后来领域细分之后再难有此大家</li><li>另一个世界，但具有同构性，比如《邓小平传》《心若菩提》。虽然可能和我们的生活离得很远，但是却有共鸣，能让你从中反省自己的生活，提升自己的心性。</li></ul></li><li>知识的周期<br>![[Pasted image 20231022160819.png]]</li><li>知识工作者的全套手艺<ul><li>选书</li><li>内化</li><li>输出：</li><li>知识体系：建立自己的知识库</li><li>写作：变现<br>  -![[Pasted image 20231022161122.png]]</li></ul></li></ul><h2 id="个人体会"><a href="#个人体会" class="headerlink" title="个人体会"></a>个人体会</h2><ul><li>我有一个经验、体验、感悟、发现</li></ul><h2 id="行动指引"><a href="#行动指引" class="headerlink" title="行动指引"></a>行动指引</h2><ul><li>当。。。时候，要。。做</li><li>1.你觉得接下来应该读哪些书？ 书籍应该分为三类 工具类：我理解为“长本事的书”：它往往可以具体解决我们当下遇到的问题和困惑，带着功利性读书可以快速扩张我们的知识增量，给我们现成的好用的工具和方法。 经典性：我理解为“长知识的书”，它提供完整的知识架构，扩充知识边界且自带体系，提高知识维度串联性很强，填补我们知识体系中的空白和缺失。比如理论、教材、科学、哲学类的书籍。 陶冶性：我理解为“长见识的书”，它是一种解离体验型，我们可以进入到作者的视角去体验他人的生活和经历，它可以提供给我们知识底色，让我们体验不一样的人生，比如传记、回忆录，历史等。 2.你觉得选书和掌握一套善思会写的方法哪个更帮到你？为什么？ 1) 善思会写是一种方法论，它是把输入的信息和内容经过内化加工后，转化成输出的外化过程。 2) 通过产出知识卡片，形成无数个锚点，把自己和书籍链接起来，把自己与他人的进行链接。 3) 通过知识卡片交朋友、读精典，与巨人对话，实现脑机连接与共振，它是由内循环（自读苦修）向外循环（分享与交流）的转化，也是把外界能量反向输入给自己的一种路径。 4) 通过选书、内化、输出、知识体系、写作，做知识的创造者，而不是知识的工作者</li></ul>]]></content>
-    
-    
-    <summary type="html">为什么要读经典</summary>
-    
-    
-    
-    <category term="softskills" scheme="http://amazingcoderpro.github.io/categories/softskills/"/>
-    
-    
-    <category term="softskills" scheme="http://amazingcoderpro.github.io/tags/softskills/"/>
-    
-    <category term="read" scheme="http://amazingcoderpro.github.io/tags/read/"/>
     
   </entry>
   
